@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Restaurant Brasileira Section -->
+    <template id="s_restaurant_info" name="Restaurante Brasileiro">
+        <section class="s_ha_restaurant s_ha_brasileira pt64 pb64"
+                 data-snippet="s_restaurant_info"
+                 data-name="Restaurante Brasileiro">
+            <div class="container">
+                <div class="ha-sub-title brasileira-tag">Restaurante Brasileiro</div>
+                <h2 class="brasileira-title">
+                    Brazilská kuchyně <em>přímo v hotelu</em>
+                </h2>
+                <div class="row align-items-center mt-5">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <div class="row g-2">
+                            <div class="col-6">
+                                <div class="ha-img-hover-zoom brasileira-img-tall">
+                                    <img src="/theme_hotel_arena/static/src/img/homepage/uvodni-stranka-restaurace.webp"
+                                         alt="Restaurante Brasileiro Arena" class="img-fluid" loading="lazy"/>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="ha-img-hover-zoom brasileira-img-short mb-2">
+                                    <img src="/theme_hotel_arena/static/src/img/homepage/uvodni-stranka-bar.webp"
+                                         alt="Bar Restaurante Brasileiro" class="img-fluid" loading="lazy"/>
+                                </div>
+                                <div class="ha-img-hover-zoom brasileira-img-short">
+                                    <img src="/theme_hotel_arena/static/src/img/homepage/snidane.webp"
+                                         alt="Snídaně Hotel Arena" class="img-fluid" loading="lazy"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="brasileira-heading">Autentické chutě Brazílie od šéfkuchaře Rafaela</h3>
+                        <p class="brasileira-text">
+                            Restaurante Brasileiro — to je brazilská kuchyně s mezinárodním přesahem
+                            přímo v srdci Hotel Arena. Šéfkuchař Rafael přináší autentické recepty
+                            z Brazílie, doplněné o české a mezinárodní speciality.
+                        </p>
+                        <p class="brasileira-text">
+                            Kapacita 110 míst včetně 2 salonků a letní zahrádky s 60 místy.
+                            Součástí je bar ideální pro setkání i obchodní jednání.
+                        </p>
+                        <div class="mt-4">
+                            <a href="https://brasileiroarena.cz" target="_blank" rel="noopener"
+                               class="ha-btn-brasileira me-2 mb-2">brasileiroarena.cz →</a>
+                            <a href="https://brasileiroarena.cz/menu/" target="_blank" rel="noopener"
+                               class="ha-btn-outline-brasileira me-2 mb-2">Jídelní lístek</a>
+                            <a href="https://dish.co" target="_blank" rel="noopener"
+                               class="ha-btn-outline-brasileira mb-2">Rezervovat stůl</a>
+                        </div>
+                        <div class="brasileira-hours mt-4 pt-4">
+                            <div class="row">
+                                <div class="col-sm-6 mb-3 mb-sm-0">
+                                    <strong class="brasileira-hours-label">Restaurace</strong>
+                                    <span class="brasileira-hours-text">
+                                        Po — Čt · 15:00 — 23:00<br/>
+                                        Pá — So · 15:00 — 00:00<br/>
+                                        Ne · 15:00 — 23:00
+                                    </span>
+                                </div>
+                                <div class="col-sm-6">
+                                    <strong class="brasileira-hours-label">Snídaně</strong>
+                                    <span class="brasileira-hours-text">
+                                        Po — Pá · 6:30 — 9:30<br/>
+                                        So — Ne · 7:00 — 10:00
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- Parallax Bar Section -->
+    <template id="s_parallax_bar" name="Parallax Bar">
+        <section class="s_ha_parallax_bar o_cc o_cc5 pt0 pb0 o_colored_level"
+                 data-snippet="s_parallax_bar"
+                 data-name="Parallax Bar">
+            <div class="ha-parallax-section"
+                 style="background-image: url('/theme_hotel_arena/static/src/img/parallax/paralax-bar.webp');">
+                <div class="ha-overlay-dark" style="position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.6);"></div>
+                <div class="container" style="position: relative; z-index: 1;">
+                    <div class="text-center">
+                        <h2 class="text-white" style="text-transform: uppercase; margin-bottom: 20px;">
+                            Hotelový Bar</h2>
+                        <p class="text-white" style="max-width: 600px; margin: 0 auto 30px; font-size: 16px;">
+                            Stylový bar s širokou nabídkou koktejlů, vín a dalších nápojů.
+                            Ideální místo pro relaxaci po náročném dni.</p>
+                        <a href="/restaurace-a-bar" class="ha-btn-outline-white"
+                           style="display:inline-block;padding:10px 30px;border:2px solid #fff;color:#fff;text-transform:uppercase;font-weight:600;text-decoration:none;">
+                            Více informací</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

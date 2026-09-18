@@ -1,0 +1,282 @@
+// =============================================================================
+// Hotel Arena - Rooms Styles (Dark Theme)
+// =============================================================================
+
+$ha-red: #F07070;
+$ha-crimson: #8B1A2B;
+$ha-dark: #1A1A22;
+$ha-dark-card: #22222C;
+$ha-text: #E8E6E1;
+$ha-text-muted: #C5C2BA;
+$ha-white: #FAFAF8;
+$ha-font-heading: 'Playfair Display', serif;
+$ha-transition-cubic: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+// -----------------------------------------------------------------------------
+// Room Cards Grid (New Design — 3:4 aspect ratio cards)
+// -----------------------------------------------------------------------------
+.rooms-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+
+    @media (max-width: 1024px) { grid-template-columns: 1fr 1fr; }
+    @media (max-width: 768px) { grid-template-columns: 1fr 1fr; }
+    @media (max-width: 480px) { grid-template-columns: 1fr; }
+}
+
+.rooms-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.room-card {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 3/4;
+    cursor: pointer;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    &:hover img { transform: scale(1.08); }
+
+    @media (max-width: 768px) { aspect-ratio: 3/4; }
+    @media (max-width: 480px) { aspect-ratio: 4/3; }
+}
+
+.room-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 40%, rgba($ha-dark, 0.9) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1.8rem;
+    transition: background 0.5s;
+}
+
+.room-card:hover .room-overlay {
+    background: linear-gradient(180deg, rgba($ha-crimson, 0.1) 0%, rgba($ha-dark, 0.95) 100%);
+}
+
+.room-name {
+    font-family: $ha-font-heading;
+    font-size: 1.4rem;
+    color: $ha-white;
+    margin-bottom: 0.3rem;
+}
+
+.room-price {
+    font-size: 1.05rem;
+    color: $ha-red;
+    font-weight: 500;
+
+    span {
+        font-size: 0.85rem;
+        color: $ha-text-muted;
+    }
+}
+
+.room-arrow {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translate(-8px, 8px);
+    transition: all 0.4s ease;
+    color: $ha-white;
+
+    svg, i { width: 18px; height: 18px; }
+}
+
+.room-card:hover .room-arrow {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+// -----------------------------------------------------------------------------
+// Room Listing (Alternating Layout — for /ubytovani detail page)
+// -----------------------------------------------------------------------------
+.ha-room-listing {
+    margin-bottom: 60px;
+}
+
+.ha-room-item {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+
+    &:nth-child(even) { flex-direction: row-reverse; }
+
+    .ha-room-item-img {
+        flex: 0 0 50%;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        &:hover img { transform: scale(1.03); }
+    }
+
+    .ha-room-item-content {
+        flex: 0 0 50%;
+        padding: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: $ha-dark-card;
+
+        h3 {
+            font-family: $ha-font-heading;
+            font-size: 2rem;
+            font-weight: 400;
+            color: $ha-white;
+            margin-bottom: 1rem;
+        }
+
+        .ha-room-item-price {
+            color: $ha-red;
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+
+            small {
+                font-size: 0.9rem;
+                font-weight: 400;
+                color: $ha-text-muted;
+            }
+        }
+
+        p {
+            color: $ha-text-muted;
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+            font-size: 1.1rem;
+        }
+    }
+
+    @media (max-width: 991px) {
+        flex-direction: column !important;
+
+        .ha-room-item-img,
+        .ha-room-item-content {
+            flex: 0 0 100%;
+        }
+
+        .ha-room-item-content { padding: 2.5rem; }
+    }
+}
+
+// Room Amenities
+.ha-room-amenities {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+
+    li {
+        font-size: 0.95rem;
+        color: $ha-text-muted;
+
+        i {
+            color: $ha-red;
+            margin-right: 6px;
+            opacity: 0.8;
+        }
+    }
+}
+
+// -----------------------------------------------------------------------------
+// Price Table (Dark Theme)
+// -----------------------------------------------------------------------------
+.ha-price-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+
+    thead {
+        background-color: $ha-dark-card;
+        color: $ha-white;
+
+        th {
+            padding: 15px 20px;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            border-bottom: 2px solid rgba($ha-red, 0.2);
+        }
+    }
+
+    tbody {
+        tr {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+            transition: all 0.3s;
+
+            &:hover { background-color: rgba($ha-red, 0.03); }
+        }
+
+        td {
+            padding: 15px 20px;
+            font-size: 1rem;
+            color: $ha-text-muted;
+
+            strong { color: $ha-white; }
+
+            &.ha-price-cell {
+                font-weight: 500;
+                color: $ha-red;
+                white-space: nowrap;
+            }
+        }
+    }
+
+    @media (max-width: 767px) {
+        font-size: 0.85rem;
+        thead th, tbody td { padding: 10px; }
+    }
+}
+
+// Icon list for price page
+.ha-iconlist {
+    list-style: none;
+    padding: 0;
+
+    li {
+        position: relative;
+        padding-left: 30px;
+        margin-bottom: 12px;
+        color: $ha-text-muted;
+        font-size: 1.05rem;
+
+        &::before {
+            content: '\f00c';
+            font-family: 'FontAwesome';
+            position: absolute;
+            left: 0;
+            color: $ha-red;
+        }
+    }
+}

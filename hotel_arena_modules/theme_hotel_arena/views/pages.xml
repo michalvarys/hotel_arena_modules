@@ -1,0 +1,1186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Homepage (/) is set via data/homepage.xml inherit on website.homepage.
+         This /hlavni-stranka page is a BACKUP with the same content. -->
+
+    <!-- ===================================================================
+         HLAVNÍ STRÁNKA (Backup homepage at /hlavni-stranka)
+         =================================================================== -->
+    <template id="ha_page_hlavni" name="Hlavní stránka">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+
+                <!-- Hero Slider -->
+                <section class="s_ha_hero_slider o_cc o_cc5 pt0 pb0 o_colored_level"
+                         data-snippet="s_hero_slider"
+                         data-name="Hotel Arena Slider"
+                         style="position:relative; height:100vh; min-height:700px; display:flex; align-items:flex-end; overflow:hidden;">
+                    <div style="position:absolute;inset:0;overflow:hidden;">
+                        <div style="position:absolute;inset:0;
+                             background-image:url('/theme_hotel_arena/static/src/img/parallax/paralax-hotel.webp');
+                             background-size:cover;background-position:center;"></div>
+                        <div style="position:absolute;inset:0;
+                             background:linear-gradient(180deg,rgba(26,26,34,0.45) 0%,rgba(26,26,34,0.25) 30%,rgba(26,26,34,0.55) 60%,rgba(26,26,34,0.97) 100%),
+                             linear-gradient(135deg,rgba(26,26,34,0.6) 0%,transparent 50%);
+                             pointer-events:none;z-index:1;"></div>
+                        <div style="position:absolute;bottom:0;left:0;width:60%;height:70%;
+                             background:radial-gradient(ellipse at bottom left,rgba(139,26,43,0.25) 0%,transparent 65%);
+                             pointer-events:none;z-index:1;"></div>
+                    </div>
+                    <div class="brand-stripe" style="position:absolute;bottom:0;left:0;right:0;z-index:10;"></div>
+                    <div class="container" style="position:relative;z-index:2;padding-bottom:6rem;max-width:800px;">
+                        <div class="section-tag" style="color:#F07070;margin-bottom:1.5rem;">
+                            Chomutov, Česká republika
+                        </div>
+                        <h1 style="font-family:'Playfair Display',serif;font-size:clamp(3rem,6vw,5.5rem);
+                            font-weight:400;line-height:1.1;letter-spacing:-0.02em;color:#FAFAF8;margin-bottom:1.5rem;">
+                            Kde sport potkává <em style="font-style:italic;color:#F07070;">eleganci</em>
+                        </h1>
+                        <p style="font-size:1.3rem;line-height:1.7;color:rgba(255,255,255,0.9);
+                           max-width:500px;margin-bottom:2.5rem;">
+                            Moderní hotel v srdci sportovně-relaxačního centra u Kamencového jezera.
+                            96 pokojů, restaurace, concierge — vše pro váš dokonalý pobyt.
+                        </p>
+                        <div style="display:flex;gap:1.5rem;align-items:center;flex-wrap:wrap;">
+                            <a href="https://www.secure-hotel-booking.com/Hotel-Arena/JJZW/cs?hotelId=24506"
+                               class="btn-reserve" target="_blank" rel="noopener">Rezervovat pobyt</a>
+                            <a href="/ubytovani" class="btn-outline">Prohlédnout pokoje</a>
+                        </div>
+                    </div>
+                    <div class="ev-badge" style="position:absolute;bottom:2rem;right:10rem;z-index:10;">
+                        <i class="fa fa-bolt" style="color:#F07070;"/>
+                        Nabíjecí stanice ČEZ pro elektromobily
+                    </div>
+                </section>
+
+                <!-- About / Ubytování intro -->
+                <section class="s_ha_home_about o_cc o_cc1 pt104 pb104 o_colored_level"
+                         data-snippet="s_home_about"
+                         data-name="Úvod - O nás">
+                    <div class="container">
+                        <div class="features-layout">
+                            <div class="reveal">
+                                <div class="section-tag">Pokoje a apartmá</div>
+                                <h2 class="section-title">Ubytování</h2>
+                                <p style="font-size:1.25rem;line-height:1.7;color:#C5C2BA;margin-bottom:2rem;">
+                                    Pokoje v hotelu Arena se vyznačují svěžím a moderním designem.
+                                    Každý pokoj je vybavený vlastním sociálním zařízením, satelitní
+                                    televizí, trezorem a vlastně ovládanou klimatizací. Bezbariérový
+                                    přístup do všech pater hotelu zajišťuje výtah.
+                                </p>
+                                <div class="row g-3">
+                                    <div class="col-6">
+                                        <div class="concierge-item" style="padding:1.5rem;text-align:center;">
+                                            <div class="concierge-icon"><i class="fa fa-wifi"/></div>
+                                            <h4 style="font-size:1rem;">WiFi zdarma</h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="concierge-item" style="padding:1.5rem;text-align:center;">
+                                            <div class="concierge-icon"><i class="fa fa-car"/></div>
+                                            <h4 style="font-size:1rem;">Parkování zdarma</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="features-img reveal">
+                                <img src="/theme_hotel_arena/static/src/img/homepage/o-nas2.webp"
+                                     alt="Hotel Arena ubytování" loading="lazy"/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Restaurace -->
+                <section class="s_ha_home_restaurant o_cc o_cc2 pt104 pb104 o_colored_level"
+                         data-snippet="s_home_restaurant"
+                         data-name="Úvod - Restaurace">
+                    <div class="container">
+                        <div class="features-layout">
+                            <div class="features-img reveal">
+                                <img src="/theme_hotel_arena/static/src/img/homepage/uvodni-stranka-restaurace.webp"
+                                     alt="Restaurace" loading="lazy"/>
+                            </div>
+                            <div class="reveal">
+                                <div class="section-tag">Gastronomie</div>
+                                <h2 class="section-title">Restaurace</h2>
+                                <p style="font-size:1.25rem;line-height:1.7;color:#C5C2BA;margin-bottom:2rem;">
+                                    Hotel Arena poskytuje svým hostům nejen optimální podmínky pro
+                                    volnočasové aktivity, ale také gastronomické služby na vysoké
+                                    úrovni v nově otevřené hotelové restauraci.</p>
+                            </div>
+                        </div>
+                        <div class="features-layout" style="margin-top:5rem;">
+                            <div class="reveal">
+                                <div class="section-tag">Nápoje</div>
+                                <h2 class="section-title">Bar</h2>
+                                <p style="font-size:1.25rem;line-height:1.7;color:#C5C2BA;">
+                                    Najdete u nás také bar, který je vhodný pro soukromá i obchodní
+                                    setkání. Obsluha baru je připravena splnit Vaše přání.</p>
+                            </div>
+                            <div class="features-img reveal">
+                                <img src="/theme_hotel_arena/static/src/img/homepage/uvodni-stranka-bar.webp"
+                                     alt="Bar" loading="lazy"/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Rooms Preview -->
+                <section class="s_ha_rooms_preview o_cc o_cc1 pt104 pb104 o_colored_level"
+                         data-snippet="s_rooms_preview"
+                         data-name="Pokoje - Náhled">
+                    <div class="container-fluid" style="max-width:1400px;">
+                        <div class="rooms-header reveal">
+                            <div>
+                                <div class="section-tag">Ubytování</div>
+                                <h2 class="section-title">Pokoje &amp; Apartmá</h2>
+                                <p class="section-desc">Každý pokoj je vybavený klimatizací, trezorem,
+                                   TV se satelitem a moderní koupelnou. Bezbariérový přístup výtahem do všech pater.</p>
+                            </div>
+                            <a href="https://www.secure-hotel-booking.com/Hotel-Arena/JJZW/cs?hotelId=24506"
+                               class="btn-outline" target="_blank" rel="noopener">Všechny pokoje →</a>
+                        </div>
+                        <div class="rooms-grid">
+                            <div class="room-card reveal">
+                                <img src="/theme_hotel_arena/static/src/img/rooms/pokoj-standard.webp"
+                                     alt="Standard pokoj" loading="lazy"/>
+                                <div class="room-overlay">
+                                    <div class="room-name">Standard</div>
+                                    <div class="room-price">od 1 350 Kč <span>/noc</span></div>
+                                </div>
+                            </div>
+                            <div class="room-card reveal">
+                                <img src="/theme_hotel_arena/static/src/img/rooms/bezbarierovy-pokoj.webp"
+                                     alt="Bezbariérový pokoj" loading="lazy"/>
+                                <div class="room-overlay">
+                                    <div class="room-name">Bezbariérový</div>
+                                    <div class="room-price">od 1 935 Kč <span>/noc</span></div>
+                                </div>
+                            </div>
+                            <div class="room-card reveal">
+                                <img src="/theme_hotel_arena/static/src/img/rooms/rodinny-pokoj.webp"
+                                     alt="Rodinný pokoj" loading="lazy"/>
+                                <div class="room-overlay">
+                                    <div class="room-name">Rodinný</div>
+                                    <div class="room-price">od 2 115 Kč <span>/noc</span></div>
+                                </div>
+                            </div>
+                            <div class="room-card reveal">
+                                <img src="/theme_hotel_arena/static/src/img/rooms/pokoj-deluxe-queen.webp"
+                                     alt="Deluxe Queen" loading="lazy"/>
+                                <div class="room-overlay">
+                                    <div class="room-name">Deluxe Queen</div>
+                                    <div class="room-price">od 3 150 Kč <span>/noc</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Gallery Preview -->
+                <section class="s_image_gallery o_masonry pt24 pb24 s_ha_gallery o_colored_level"
+                         data-vcss="002" data-columns="4"
+                         data-snippet="s_hotel_gallery"
+                         data-name="Galerie hotelu"
+                         style="overflow:hidden;background:#1A1A22;">
+                    <div class="container">
+                        <div class="text-center reveal" style="margin-bottom:3rem;">
+                            <div class="section-tag" style="justify-content:center;">Naše fotografie</div>
+                            <h2 class="section-title">Galerie</h2>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row s_nb_column_fixed">
+                            <div class="o_masonry_col o_snippet_not_selectable col-lg-3">
+                                <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_004_2048px.jpg" data-index="0" data-name="Image" alt="Hotel Arena"/>
+                                <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_008_2048px.jpg" data-index="4" data-name="Image" alt="Hotel Arena"/>
+                            </div>
+                            <div class="o_masonry_col o_snippet_not_selectable col-lg-3">
+                                <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_005_2048px.jpg" data-index="1" data-name="Image" alt="Hotel Arena"/>
+                                <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_009_2048px.jpg" data-index="5" data-name="Image" alt="Hotel Arena"/>
+                            </div>
+                            <div class="o_masonry_col o_snippet_not_selectable col-lg-3">
+                                <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_006_2048px.jpg" data-index="2" data-name="Image" alt="Hotel Arena"/>
+                                <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_010_2048px.jpg" data-index="6" data-name="Image" alt="Hotel Arena"/>
+                            </div>
+                            <div class="o_masonry_col o_snippet_not_selectable col-lg-3">
+                                <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_007_2048px.jpg" data-index="3" data-name="Image" alt="Hotel Arena"/>
+                                <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_011_2048px.jpg" data-index="7" data-name="Image" alt="Hotel Arena"/>
+                            </div>
+                        </div>
+                        <div class="text-center mt-5">
+                            <a href="/galerie" class="btn-outline">Zobrazit celou galerii →</a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Contact / Location -->
+                <section class="s_ha_contact_info o_cc o_cc2 pt104 pb104 o_colored_level"
+                         data-snippet="s_contact_info"
+                         data-name="Kontaktní informace">
+                    <div class="container">
+                        <div class="location-grid">
+                            <div class="reveal">
+                                <div class="section-tag">Kontakt</div>
+                                <h2 class="section-title">Kde nás <em>najdete</em></h2>
+                                <p style="font-size:1.2rem;line-height:1.7;color:#C5C2BA;margin-bottom:2rem;">
+                                    Hotel Arena se nachází v bezprostřední blízkosti Kamencového jezera,
+                                    ve sportovně-relaxačním centru Chomutova.</p>
+                                <div class="location-highlights">
+                                    <div class="highlight">
+                                        <strong>Kamencové jezero</strong>
+                                        <span>5 min pěšky</span>
+                                    </div>
+                                    <div class="highlight">
+                                        <strong>Zimní stadion</strong>
+                                        <span>2 min pěšky</span>
+                                    </div>
+                                    <div class="highlight">
+                                        <strong>Centrum města</strong>
+                                        <span>10 min autem</span>
+                                    </div>
+                                    <div class="highlight">
+                                        <strong>Dálnice D7</strong>
+                                        <span>15 min autem</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="map-container reveal">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2528.8!2d13.427579!3d50.468502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsDI4JzA3LjAiTiAxM8KwMjUnMzkuMyJF!5e0!3m2!1scs!2scz!4v1"
+                                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                                        allowfullscreen="">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </t>
+    </template>
+
+    <record id="ha_page_hlavni_page" model="theme.website.page">
+        <field name="url">/hlavni-stranka</field>
+        <field name="view_id" ref="ha_page_hlavni"/>
+        <field name="is_published" eval="True"/>
+    </record>
+
+    <!-- ===================================================================
+         UBYTOVÁNÍ (Accommodation)
+         =================================================================== -->
+    <template id="ha_page_ubytovani" name="Ubytování">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+                <!-- Dark Sub Banner -->
+                <section class="s_ha_sub_banner o_cc o_cc5 pt0 pb0">
+                    <div style="position:relative;height:350px;display:flex;align-items:center;justify-content:center;
+                         background-image:url('/theme_hotel_arena/static/src/img/parallax/paralax-pokoj.webp');
+                         background-size:cover;background-position:center;">
+                        <div style="position:absolute;inset:0;
+                             background:linear-gradient(180deg,rgba(26,26,34,0.5) 0%,rgba(26,26,34,0.85) 100%);"></div>
+                        <div style="position:absolute;bottom:0;left:0;width:50%;height:60%;
+                             background:radial-gradient(ellipse at bottom left,rgba(139,26,43,0.2) 0%,transparent 65%);"></div>
+                        <div style="position:relative;z-index:1;text-align:center;">
+                            <div class="section-tag" style="justify-content:center;color:#F07070;">Pokoje a apartmá</div>
+                            <h2 style="font-family:'Playfair Display',serif;color:#FAFAF8;font-weight:400;
+                                font-size:clamp(2rem,4vw,3.5rem);">Ubytování</h2>
+                        </div>
+                    </div>
+                    <div class="brand-stripe"></div>
+                </section>
+
+                <!-- s_rooms_intro -->
+                <section class="s_ha_rooms_intro o_cc o_cc1 pt104 pb104 o_colored_level"
+                         data-snippet="s_rooms_intro"
+                         data-name="Pokoje - úvod">
+                    <div class="container text-center">
+                        <div class="section-tag" style="justify-content:center;">Naše ubytování</div>
+                        <h2 class="section-title">Pokoje &amp; Apartmá</h2>
+                        <p style="max-width:700px;margin:0 auto;color:#C5C2BA;line-height:1.8;font-size:1.25rem;">
+                            Pokoje v hotelu Arena se vyznačují svěžím a moderním designem.
+                            Každý pokoj je vybavený vlastním sociálním zařízením, satelitní
+                            televizí, trezorem a vlastně ovládanou klimatizací.
+                            Bezbariérový přístup do všech pater hotelu zajišťuje výtah.</p>
+                    </div>
+                </section>
+
+                <!-- s_rooms_listing -->
+                <section class="s_ha_rooms_listing o_cc o_cc1 pt104 pb104 o_colored_level"
+                         data-snippet="s_rooms_listing"
+                         data-name="Pokoje - seznam">
+                    <div class="container">
+                        <div class="ha-room-listing">
+                            <!-- Standard Double (twin beds) -->
+                            <div class="ha-room-item">
+                                <div class="ha-room-item-img">
+                                    <img src="/theme_hotel_arena/static/src/img/rooms/pokoj-standard.webp"
+                                         alt="Dvoulůžkový pokoj Standard" loading="lazy"/>
+                                </div>
+                                <div class="ha-room-item-content">
+                                    <div class="ha-sub-title">Dvoulůžkový</div>
+                                    <h3>DVOULŮŽKOVÝ POKOJ STANDARD</h3>
+                                    <div class="ha-room-item-price">od 1 350 Kč <small>/ noc</small></div>
+                                    <p>Komfortní dvoulůžkový pokoj se dvěma oddělenými postelemi nebo
+                                       manželskou postelí. Pokoj je vybaven klimatizací, bezplatným Wi-Fi,
+                                       satelitní televizí a trezorem.</p>
+                                    <ul class="ha-room-amenities">
+                                        <li><i class="fa fa-wifi"/> WiFi</li>
+                                        <li><i class="fa fa-snowflake-o"/> Klimatizace</li>
+                                        <li><i class="fa fa-tv"/> Satelitní TV</li>
+                                        <li><i class="fa fa-bath"/> Koupelna</li>
+                                        <li><i class="fa fa-lock"/> Trezor</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Barrier-free -->
+                            <div class="ha-room-item">
+                                <div class="ha-room-item-img">
+                                    <img src="/theme_hotel_arena/static/src/img/rooms/bezbarierovy-pokoj.webp"
+                                         alt="Bezbariérový dvoulůžkový pokoj" loading="lazy"/>
+                                </div>
+                                <div class="ha-room-item-content">
+                                    <div class="ha-sub-title">Bezbariérový</div>
+                                    <h3>BEZBARIÉROVÝ DVOULŮŽKOVÝ POKOJ</h3>
+                                    <div class="ha-room-item-price">od 1 935 Kč <small>/ noc</small></div>
+                                    <p>Dvoulůžkový bezbariérový pokoj s kompletním přístupem pro osoby
+                                       s omezenou pohyblivostí. Bezbariérový přístup do všech pater
+                                       hotelu zajišťuje výtah.</p>
+                                    <ul class="ha-room-amenities">
+                                        <li><i class="fa fa-wifi"/> WiFi</li>
+                                        <li><i class="fa fa-snowflake-o"/> Klimatizace</li>
+                                        <li><i class="fa fa-tv"/> Satelitní TV</li>
+                                        <li><i class="fa fa-wheelchair"/> Bezbariérový</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Family Room -->
+                            <div class="ha-room-item">
+                                <div class="ha-room-item-img">
+                                    <img src="/theme_hotel_arena/static/src/img/rooms/rodinny-pokoj.webp"
+                                         alt="Rodinný pokoj" loading="lazy"/>
+                                </div>
+                                <div class="ha-room-item-content">
+                                    <div class="ha-sub-title">Čtyřlůžkový</div>
+                                    <h3>RODINNÝ POKOJ</h3>
+                                    <div class="ha-room-item-price">od 2 115 Kč <small>/ noc</small></div>
+                                    <p>Prostorný pokoj pro rodiny se 4 lůžky.
+                                       Vhodný pro rodiny s dětmi nebo skupiny přátel.</p>
+                                    <ul class="ha-room-amenities">
+                                        <li><i class="fa fa-wifi"/> WiFi</li>
+                                        <li><i class="fa fa-snowflake-o"/> Klimatizace</li>
+                                        <li><i class="fa fa-tv"/> Satelitní TV</li>
+                                        <li><i class="fa fa-bath"/> Koupelna</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Deluxe Queen -->
+                            <div class="ha-room-item">
+                                <div class="ha-room-item-img">
+                                    <img src="/theme_hotel_arena/static/src/img/rooms/pokoj-deluxe-queen.webp"
+                                         alt="Pokoj Deluxe Queen" loading="lazy"/>
+                                </div>
+                                <div class="ha-room-item-content">
+                                    <div class="ha-sub-title">Luxusní</div>
+                                    <h3>POKOJ DELUXE QUEEN</h3>
+                                    <div class="ha-room-item-price">od 3 150 Kč <small>/ noc</small></div>
+                                    <p>Luxusní pokoj se dvěma queen size postelemi.
+                                       Nabízí maximální komfort a eleganci pro náročné hosty.</p>
+                                    <ul class="ha-room-amenities">
+                                        <li><i class="fa fa-wifi"/> WiFi</li>
+                                        <li><i class="fa fa-snowflake-o"/> Klimatizace</li>
+                                        <li><i class="fa fa-tv"/> Satelitní TV</li>
+                                        <li><i class="fa fa-bath"/> Koupelna</li>
+                                        <li><i class="fa fa-lock"/> Trezor</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </t>
+    </template>
+
+    <record id="ha_page_ubytovani_page" model="theme.website.page">
+        <field name="url">/ubytovani</field>
+        <field name="view_id" ref="ha_page_ubytovani"/>
+        <field name="is_published" eval="True"/>
+    </record>
+
+    <!-- ===================================================================
+         O HOTELU (About)
+         =================================================================== -->
+    <template id="ha_page_about" name="O hotelu">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+                <section class="s_ha_sub_banner o_cc o_cc5 pt0 pb0">
+                    <div style="position:relative;height:350px;display:flex;align-items:center;justify-content:center;
+                         background-image:url('/theme_hotel_arena/static/src/img/parallax/paralax-hotel.webp');
+                         background-size:cover;background-position:center;">
+                        <div style="position:absolute;inset:0;
+                             background:linear-gradient(180deg,rgba(26,26,34,0.5) 0%,rgba(26,26,34,0.85) 100%);"></div>
+                        <div style="position:absolute;bottom:0;left:0;width:50%;height:60%;
+                             background:radial-gradient(ellipse at bottom left,rgba(139,26,43,0.2) 0%,transparent 65%);"></div>
+                        <div style="position:relative;z-index:1;text-align:center;">
+                            <div class="section-tag" style="justify-content:center;color:#F07070;">Hotel Arena</div>
+                            <h2 style="font-family:'Playfair Display',serif;color:#FAFAF8;font-weight:400;
+                                font-size:clamp(2rem,4vw,3.5rem);">O hotelu</h2>
+                        </div>
+                    </div>
+                    <div class="brand-stripe"></div>
+                </section>
+
+                <!-- s_about_hotel -->
+                <section class="s_ha_about_hotel o_cc o_cc1 pt104 pb104 o_colored_level"
+                         data-snippet="s_about_hotel"
+                         data-name="O hotelu">
+                    <div class="container">
+                        <div class="exterior-layout">
+                            <div class="exterior-img reveal">
+                                <img src="/theme_hotel_arena/static/src/img/parallax/paralax-hotel.webp"
+                                     alt="Hotel Arena Chomutov" loading="lazy"/>
+                                <div class="exterior-badge">
+                                    <i class="fa fa-map-marker" style="color:#F07070;"/>
+                                    <span>Chomutov</span> u Kamencového jezera
+                                </div>
+                            </div>
+                            <div class="reveal">
+                                <div class="section-tag">O hotelu</div>
+                                <h2 class="section-title">Sportovně-relaxační <em>zázemí</em></h2>
+                                <p class="section-desc" style="margin-bottom:2rem;">
+                                    Nově postavený hotel Arena je situován ve sportovně-relaxačním centru
+                                    na Zadních Vinohradech na okraji města Chomutova a umožňuje svým
+                                    hostům aktivní trávení volného času v bezprostřední blízkosti
+                                    unikátního Kamencového jezera.
+                                </p>
+                                <p style="font-size:1.15rem;line-height:1.7;color:#C5C2BA;">
+                                    Hotel je zařízen v moderním designu s celkovou kapacitou 210 lůžek.
+                                    Z 96 dvoulůžkových pokojů je několik bezbariérových.
+                                </p>
+                                <div class="exterior-stats">
+                                    <div>
+                                        <div class="stat-num">96</div>
+                                        <div class="stat-label">Pokojů</div>
+                                    </div>
+                                    <div>
+                                        <div class="stat-num">210</div>
+                                        <div class="stat-label">Lůžek</div>
+                                    </div>
+                                    <div>
+                                        <div class="stat-num">24/7</div>
+                                        <div class="stat-label">Recepce</div>
+                                    </div>
+                                    <div>
+                                        <div class="stat-num">★★★</div>
+                                        <div class="stat-label">Hotel</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- s_hotel_services -->
+                <section class="s_ha_hotel_services o_cc o_cc2 pt104 pb104 o_colored_level"
+                         data-snippet="s_hotel_services"
+                         data-name="Služby pro hosty">
+                    <div class="container text-center">
+                        <div class="section-tag" style="justify-content:center;">
+                            <span style="display:none;">—</span>Pro naše hosty
+                        </div>
+                        <h2 class="section-title">Služby pro <em>hosty</em></h2>
+                        <p class="section-desc" style="max-width:650px;margin:0 auto 4rem;">
+                            Vše co potřebujete pro bezstarostný pobyt.</p>
+                        <div class="concierge-grid">
+                            <div class="concierge-item">
+                                <div class="concierge-icon"><i class="fa fa-coffee"/></div>
+                                <h4>Snídaně formou bufetu</h4>
+                                <p>Bohatý snídaňový bufet každé ráno.</p>
+                            </div>
+                            <div class="concierge-item">
+                                <div class="concierge-icon"><i class="fa fa-cutlery"/></div>
+                                <h4>Hotelová restaurace</h4>
+                                <p>Brazilská i mezinárodní kuchyně.</p>
+                            </div>
+                            <div class="concierge-item">
+                                <div class="concierge-icon"><i class="fa fa-car"/></div>
+                                <h4>Hlídané parkoviště</h4>
+                                <p>Pod dozorem kamer, zdarma.</p>
+                            </div>
+                            <div class="concierge-item">
+                                <div class="concierge-icon"><i class="fa fa-wifi"/></div>
+                                <h4>Bezplatný Wi-Fi</h4>
+                                <p>V celém hotelu včetně pokojů.</p>
+                            </div>
+                            <div class="concierge-item">
+                                <div class="concierge-icon"><i class="fa fa-map"/></div>
+                                <h4>Turistické materiály</h4>
+                                <p>Informace o okolí a tipy na výlety.</p>
+                            </div>
+                            <div class="concierge-item">
+                                <div class="concierge-icon"><i class="fa fa-suitcase"/></div>
+                                <h4>Úschova zavazadel</h4>
+                                <p>Bezpečné uložení před check-in/po check-out.</p>
+                            </div>
+                            <div class="concierge-item">
+                                <div class="concierge-icon"><i class="fa fa-tint"/></div>
+                                <h4>Praní a žehlení</h4>
+                                <p>Za příplatek, do druhého dne.</p>
+                            </div>
+                            <div class="concierge-item">
+                                <div class="concierge-icon"><i class="fa fa-clock-o"/></div>
+                                <h4>Early / Late checkout</h4>
+                                <p>Flexibilní časy na přání.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- s_hotel_features -->
+                <section class="s_ha_hotel_features o_cc o_cc2 pt104 pb104 o_colored_level"
+                         data-snippet="s_hotel_features"
+                         data-name="Vybavení hotelu">
+                    <div class="container">
+                        <div class="features-layout">
+                            <div class="features-img reveal">
+                                <img src="/theme_hotel_arena/static/src/img/homepage/o-nas2.webp"
+                                     alt="Vybavení hotelu Arena" loading="lazy"/>
+                            </div>
+                            <div class="features-list reveal">
+                                <div class="section-tag">Vybavení</div>
+                                <h2 class="section-title">Komfort v každém <em>detailu</em></h2>
+                                <div class="feature-item">
+                                    <div class="feature-num">01</div>
+                                    <div class="feature-text">
+                                        <h3>Klimatizace &amp; trezor</h3>
+                                        <p>Každý pokoj vybavený individuálně ovládanou klimatizací
+                                           a bezpečnostním trezorem.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-num">02</div>
+                                    <div class="feature-text">
+                                        <h3>Satelitní TV &amp; Wi-Fi</h3>
+                                        <p>LCD televizor se satelitním příjmem a bezplatné
+                                           bezdrátové připojení v celém hotelu.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-num">03</div>
+                                    <div class="feature-text">
+                                        <h3>Non-stop recepce</h3>
+                                        <p>Recepce k dispozici 24 hodin denně. Check-in kdykoliv,
+                                           concierge služby na přání.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-num">04</div>
+                                    <div class="feature-text">
+                                        <h3>Hlídané parkoviště</h3>
+                                        <p>Vlastní parkoviště pod dozorem kamerového systému
+                                           zdarma pro všechny hosty.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </t>
+    </template>
+
+    <record id="ha_page_about_page" model="theme.website.page">
+        <field name="url">/o-hotelu</field>
+        <field name="view_id" ref="ha_page_about"/>
+        <field name="is_published" eval="True"/>
+    </record>
+
+    <!-- ===================================================================
+         RESTAURACE A BAR
+         =================================================================== -->
+    <template id="ha_page_restaurant" name="Restaurace a bar">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+                <section class="s_ha_sub_banner o_cc o_cc5 pt0 pb0">
+                    <div style="position:relative;height:350px;display:flex;align-items:center;justify-content:center;
+                         background-image:url('/theme_hotel_arena/static/src/img/parallax/paralax-bar.webp');
+                         background-size:cover;background-position:center;">
+                        <div style="position:absolute;inset:0;
+                             background:linear-gradient(180deg,rgba(26,26,34,0.5) 0%,rgba(26,26,34,0.85) 100%);"></div>
+                        <div style="position:absolute;bottom:0;left:0;width:50%;height:60%;
+                             background:radial-gradient(ellipse at bottom left,rgba(139,26,43,0.2) 0%,transparent 65%);"></div>
+                        <div style="position:relative;z-index:1;text-align:center;">
+                            <div class="section-tag" style="justify-content:center;color:#F07070;">Gastronomie</div>
+                            <h2 style="font-family:'Playfair Display',serif;color:#FAFAF8;font-weight:400;
+                                font-size:clamp(2rem,4vw,3.5rem);">Restaurace a bar</h2>
+                        </div>
+                    </div>
+                    <div class="brand-stripe"></div>
+                </section>
+
+                <!-- s_restaurant_info -->
+                <section class="s_ha_restaurant s_ha_brasileira pt64 pb64"
+                         data-snippet="s_restaurant_info"
+                         data-name="Restaurante Brasileiro">
+                    <div class="container">
+                        <div class="ha-sub-title brasileira-tag">Restaurante Brasileiro</div>
+                        <h2 class="brasileira-title">
+                            Brazilská kuchyně <em>přímo v hotelu</em>
+                        </h2>
+                        <div class="row align-items-center mt-5">
+                            <div class="col-lg-6 mb-4 mb-lg-0">
+                                <div class="row g-2">
+                                    <div class="col-6">
+                                        <div class="ha-img-hover-zoom brasileira-img-tall">
+                                            <img src="/theme_hotel_arena/static/src/img/homepage/uvodni-stranka-restaurace.webp"
+                                                 alt="Restaurante Brasileiro Arena" class="img-fluid" loading="lazy"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="ha-img-hover-zoom brasileira-img-short mb-2">
+                                            <img src="/theme_hotel_arena/static/src/img/homepage/uvodni-stranka-bar.webp"
+                                                 alt="Bar Restaurante Brasileiro" class="img-fluid" loading="lazy"/>
+                                        </div>
+                                        <div class="ha-img-hover-zoom brasileira-img-short">
+                                            <img src="/theme_hotel_arena/static/src/img/homepage/snidane.webp"
+                                                 alt="Snídaně Hotel Arena" class="img-fluid" loading="lazy"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h3 class="brasileira-heading">Autentické chutě Brazílie od šéfkuchaře Rafaela</h3>
+                                <p class="brasileira-text">
+                                    Restaurante Brasileiro — to je brazilská kuchyně s mezinárodním přesahem
+                                    přímo v srdci Hotel Arena. Šéfkuchař Rafael přináší autentické recepty
+                                    z Brazílie, doplněné o české a mezinárodní speciality.
+                                </p>
+                                <p class="brasileira-text">
+                                    Kapacita 110 míst včetně 2 salonků a letní zahrádky s 60 místy.
+                                    Součástí je bar ideální pro setkání i obchodní jednání.
+                                </p>
+                                <div class="mt-4">
+                                    <a href="https://brasileiroarena.cz" target="_blank" rel="noopener"
+                                       class="ha-btn-brasileira me-2 mb-2">brasileiroarena.cz →</a>
+                                    <a href="https://brasileiroarena.cz/menu/" target="_blank" rel="noopener"
+                                       class="ha-btn-outline-brasileira me-2 mb-2">Jídelní lístek</a>
+                                    <a href="https://dish.co" target="_blank" rel="noopener"
+                                       class="ha-btn-outline-brasileira mb-2">Rezervovat stůl</a>
+                                </div>
+                                <div class="brasileira-hours mt-4 pt-4">
+                                    <div class="row">
+                                        <div class="col-sm-6 mb-3 mb-sm-0">
+                                            <strong class="brasileira-hours-label">Restaurace</strong>
+                                            <span class="brasileira-hours-text">
+                                                Po — Čt · 15:00 — 23:00<br/>
+                                                Pá — So · 15:00 — 00:00<br/>
+                                                Ne · 15:00 — 23:00
+                                            </span>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <strong class="brasileira-hours-label">Snídaně</strong>
+                                            <span class="brasileira-hours-text">
+                                                Po — Pá · 6:30 — 9:30<br/>
+                                                So — Ne · 7:00 — 10:00
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- s_breakfast_info -->
+                <section class="s_ha_breakfast o_cc o_cc1 pt104 pb104 o_colored_level"
+                         data-snippet="s_breakfast_info"
+                         data-name="Snídaně">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <div class="ha-sub-title">Gastronomie</div>
+                                <h2 style="text-transform: uppercase; margin-bottom: 20px;">SNÍDANĚ</h2>
+                                <p style="line-height: 1.8; color:#C5C2BA;">
+                                    Každé ráno pro vás připravujeme bohaté snídaňové buffet
+                                    s výběrem čerstvého pečiva, sýrů, uzenin, ovoce a dalších pochutin.
+                                </p>
+                                <div class="mt-3" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.04); padding: 20px;">
+                                    <h5 style="text-transform: uppercase; margin-bottom: 15px;">Čas snídaní</h5>
+                                    <p style="color:#C5C2BA; margin-bottom: 5px;">
+                                        <strong>Pracovní dny:</strong> 6:30 — 9:30</p>
+                                    <p style="color:#C5C2BA; margin-bottom: 15px;">
+                                        <strong>Víkendy:</strong> 7:00 — 10:00</p>
+                                    <p style="color:#C5C2BA; margin-bottom: 0;">
+                                        <i class="fa fa-check" style="color:#F07070; margin-right: 8px;"/>
+                                        Pro hotelové hosty <strong>zdarma</strong></p>
+                                    <p style="color:#C5C2BA; margin-bottom: 0;">
+                                        <i class="fa fa-info-circle" style="color:#F07070; margin-right: 8px;"/>
+                                        Pro ostatní hosty: <strong>200 Kč / osoba</strong></p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mt-4 mt-lg-0">
+                                <div class="ha-img-hover-zoom" style="overflow: hidden;">
+                                    <img src="/theme_hotel_arena/static/src/img/homepage/snidane.webp"
+                                         alt="Snídaně" class="img-fluid" loading="lazy"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </t>
+    </template>
+
+    <record id="ha_page_restaurant_page" model="theme.website.page">
+        <field name="url">/restaurace-a-bar</field>
+        <field name="view_id" ref="ha_page_restaurant"/>
+        <field name="is_published" eval="True"/>
+    </record>
+
+    <!-- ===================================================================
+         GALERIE
+         =================================================================== -->
+    <template id="ha_page_gallery" name="Galerie">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+                <section class="s_ha_sub_banner o_cc o_cc5 pt0 pb0">
+                    <div style="position:relative;height:350px;display:flex;align-items:center;justify-content:center;
+                         background-image:url('/theme_hotel_arena/static/src/img/parallax/paralax1.webp');
+                         background-size:cover;background-position:center;">
+                        <div style="position:absolute;inset:0;
+                             background:linear-gradient(180deg,rgba(26,26,34,0.5) 0%,rgba(26,26,34,0.85) 100%);"></div>
+                        <div style="position:absolute;bottom:0;left:0;width:50%;height:60%;
+                             background:radial-gradient(ellipse at bottom left,rgba(139,26,43,0.2) 0%,transparent 65%);"></div>
+                        <div style="position:relative;z-index:1;text-align:center;">
+                            <div class="section-tag" style="justify-content:center;color:#F07070;">Fotografie</div>
+                            <h2 style="font-family:'Playfair Display',serif;color:#FAFAF8;font-weight:400;
+                                font-size:clamp(2rem,4vw,3.5rem);">Galerie</h2>
+                        </div>
+                    </div>
+                    <div class="brand-stripe"></div>
+                </section>
+                <!-- Gallery description -->
+                <section class="o_cc o_cc1 pt32 pb0 o_colored_level" style="background:#1A1A22;">
+                    <div class="container text-center">
+                        <p style="max-width:700px;margin:0 auto;color:#C5C2BA;line-height:1.8;">
+                            Prohlédněte si prostory hotelu</p>
+                    </div>
+                </section>
+
+                <!-- s_hotel_gallery -->
+                <section class="s_image_gallery o_masonry pt24 pb24 s_ha_gallery o_colored_level"
+                         data-vcss="002" data-columns="4"
+                         data-snippet="s_hotel_gallery"
+                         data-name="Galerie hotelu"
+                         style="overflow:hidden;background:#1A1A22;">
+                    <div class="container-fluid">
+                        <div class="row s_nb_column_fixed">
+                            <div class="o_masonry_col o_snippet_not_selectable col-lg-3">
+                                <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_004_2048px.jpg" data-index="0" data-name="Image" alt="Hotel Arena"/>
+                                <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_008_2048px.jpg" data-index="4" data-name="Image" alt="Hotel Arena"/>
+                                <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_012_2048px.jpg" data-index="8" data-name="Image" alt="Hotel Arena"/>
+                                <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_016_2048px.jpg" data-index="12" data-name="Image" alt="Hotel Arena"/>
+                                <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_020_2048px.jpg" data-index="16" data-name="Image" alt="Hotel Arena"/>
+                            </div>
+                            <div class="o_masonry_col o_snippet_not_selectable col-lg-3">
+                                <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_005_2048px.jpg" data-index="1" data-name="Image" alt="Hotel Arena"/>
+                                <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_009_2048px.jpg" data-index="5" data-name="Image" alt="Hotel Arena"/>
+                                <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_013_2048px.jpg" data-index="9" data-name="Image" alt="Hotel Arena"/>
+                                <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_017_2048px.jpg" data-index="13" data-name="Image" alt="Hotel Arena"/>
+                            </div>
+                            <div class="o_masonry_col o_snippet_not_selectable col-lg-3">
+                                <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_006_2048px.jpg" data-index="2" data-name="Image" alt="Hotel Arena"/>
+                                <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_010_2048px.jpg" data-index="6" data-name="Image" alt="Hotel Arena"/>
+                                <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_014_2048px.jpg" data-index="10" data-name="Image" alt="Hotel Arena"/>
+                                <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_018_2048px.jpg" data-index="14" data-name="Image" alt="Hotel Arena"/>
+                            </div>
+                            <div class="o_masonry_col o_snippet_not_selectable col-lg-3">
+                                <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_007_2048px.jpg" data-index="3" data-name="Image" alt="Hotel Arena"/>
+                                <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_011_2048px.jpg" data-index="7" data-name="Image" alt="Hotel Arena"/>
+                                <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_015_2048px.jpg" data-index="11" data-name="Image" alt="Hotel Arena"/>
+                                <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_019_2048px.jpg" data-index="15" data-name="Image" alt="Hotel Arena"/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </t>
+    </template>
+
+    <record id="ha_page_gallery_page" model="theme.website.page">
+        <field name="url">/galerie</field>
+        <field name="view_id" ref="ha_page_gallery"/>
+        <field name="is_published" eval="True"/>
+    </record>
+
+    <!-- ===================================================================
+         KONTAKT
+         =================================================================== -->
+    <template id="ha_page_contact" name="Kontakt">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+                <section class="s_ha_sub_banner o_cc o_cc5 pt0 pb0">
+                    <div style="position:relative;height:350px;display:flex;align-items:center;justify-content:center;
+                         background-image:url('/theme_hotel_arena/static/src/img/parallax/paralax-hotel.webp');
+                         background-size:cover;background-position:center;">
+                        <div style="position:absolute;inset:0;
+                             background:linear-gradient(180deg,rgba(26,26,34,0.5) 0%,rgba(26,26,34,0.85) 100%);"></div>
+                        <div style="position:absolute;bottom:0;left:0;width:50%;height:60%;
+                             background:radial-gradient(ellipse at bottom left,rgba(139,26,43,0.2) 0%,transparent 65%);"></div>
+                        <div style="position:relative;z-index:1;text-align:center;">
+                            <div class="section-tag" style="justify-content:center;color:#F07070;">Napište nám</div>
+                            <h2 style="font-family:'Playfair Display',serif;color:#FAFAF8;font-weight:400;
+                                font-size:clamp(2rem,4vw,3.5rem);">Kontakt</h2>
+                        </div>
+                    </div>
+                    <div class="brand-stripe"></div>
+                </section>
+
+                <!-- s_contact_form -->
+                <section class="s_ha_contact_form o_cc o_cc2 pt104 pb104 o_colored_level"
+                         data-snippet="s_contact_form"
+                         data-name="Kontaktní formulář">
+                    <div class="container">
+                        <div class="row">
+                            <!-- Contact Info -->
+                            <div class="col-lg-5 mb-4 mb-lg-0">
+                                <div class="section-tag">Napište nám</div>
+                                <h2 class="section-title">Kontakty</h2>
+                                <p style="color:#C5C2BA;margin-bottom:30px;">Rádi zodpovíme každý dotaz.</p>
+
+                                <div class="ha-contact-info">
+                                    <div class="ha-contact-info-item">
+                                        <div class="ha-contact-info-icon"><i class="fa fa-map-marker"/></div>
+                                        <div class="ha-contact-info-text">
+                                            <h6>Adresa</h6>
+                                            <p>Hotel Arena<br/>Beethovenova 5275<br/>430 01 Chomutov</p>
+                                        </div>
+                                    </div>
+                                    <div class="ha-contact-info-item">
+                                        <div class="ha-contact-info-icon"><i class="fa fa-phone"/></div>
+                                        <div class="ha-contact-info-text">
+                                            <h6>Recepce</h6>
+                                            <p>
+                                                <a href="tel:+420474721290">+420 474 721 290</a><br/>
+                                                <a href="tel:+420474721291">+420 474 721 291</a><br/>
+                                                <a href="tel:+420474721292">+420 474 721 292</a><br/>
+                                                <a href="tel:+420602495576">+420 602 495 576</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="ha-contact-info-item">
+                                        <div class="ha-contact-info-icon"><i class="fa fa-envelope"/></div>
+                                        <div class="ha-contact-info-text">
+                                            <h6>E-mail</h6>
+                                            <p><a href="mailto:recepce@arenahotel.cz">recepce@arenahotel.cz</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="ha-contact-info-item">
+                                        <div class="ha-contact-info-icon"><i class="fa fa-cutlery"/></div>
+                                        <div class="ha-contact-info-text">
+                                            <h6>Restaurace</h6>
+                                            <p>
+                                                <a href="tel:+420474721293">+420 474 721 293</a><br/>
+                                                Jaroslav Šulta<br/>
+                                                <a href="mailto:sulta@kamencak.cz">sulta@kamencak.cz</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="ha-contact-info-item">
+                                        <div class="ha-contact-info-icon"><i class="fa fa-user"/></div>
+                                        <div class="ha-contact-info-text">
+                                            <h6>Manažer hotelu</h6>
+                                            <p>
+                                                Zdeněk Fojtík<br/>
+                                                <a href="mailto:fojtik@arenahotel.cz">fojtik@arenahotel.cz</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Operator info -->
+                                <div style="margin-top:30px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.04);">
+                                    <h6 style="text-transform:uppercase;margin-bottom:10px;font-family:'DM Sans',sans-serif;
+                                        letter-spacing:0.1em;font-size:0.85rem;color:#FAFAF8;">Provozovatel</h6>
+                                    <p style="color:#C5C2BA;font-size:0.9rem;line-height:1.8;">
+                                        Czech Republic Investment, a.s.<br/>
+                                        Belgická 681/5<br/>
+                                        120 00 Praha 2<br/>
+                                        IČ: 27917690<br/>
+                                        DIČ: CZ27917690<br/>
+                                        Spisová značka: B 12028 u Městského soudu v Praze
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Form -->
+                            <div class="col-lg-7">
+                                <form id="ha-contact-form" class="ha-contact-form"
+                                      action="/hotel-arena/contact" method="post">
+                                    <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="ha-name">Jméno *</label>
+                                                <input type="text" id="ha-name" name="name"
+                                                       placeholder="Vaše jméno" required="required"/>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="ha-email">E-mail *</label>
+                                                <input type="email" id="ha-email" name="email"
+                                                       placeholder="Váš e-mail" required="required"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="ha-phone">Telefon</label>
+                                                <input type="tel" id="ha-phone" name="phone"
+                                                       placeholder="Váš telefon"/>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="ha-subject">Předmět *</label>
+                                                <input type="text" id="ha-subject" name="subject"
+                                                       placeholder="Předmět zprávy" required="required"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="ha-message">Zpráva *</label>
+                                        <textarea id="ha-message" name="message"
+                                                  placeholder="Vaše zpráva (doporučený počet znaků 80–300)" required="required"></textarea>
+                                    </div>
+                                    <button type="submit" class="ha-btn-submit">Odeslat</button>
+                                    <div id="ha-form-result" class="ha-form-message"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- s_google_map -->
+                <section class="s_ha_google_map o_cc o_cc1 pt104 pb104 o_colored_level"
+                         data-snippet="s_google_map"
+                         data-name="Mapa">
+                    <div class="map-container" style="aspect-ratio:21/9;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2528.8!2d13.427579!3d50.468502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsDI4JzA3LjAiTiAxM8KwMjUnMzkuMyJF!5e0!3m2!1scs!2scz!4v1"
+                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                                allowfullscreen="">
+                        </iframe>
+                    </div>
+                </section>
+
+            </div>
+        </t>
+    </template>
+
+    <record id="ha_page_contact_page" model="theme.website.page">
+        <field name="url">/kontakt</field>
+        <field name="view_id" ref="ha_page_contact"/>
+        <field name="is_published" eval="True"/>
+    </record>
+
+    <!-- ===================================================================
+         CENÍK (Pricelist)
+         =================================================================== -->
+    <template id="ha_page_pricelist" name="Ceník">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+                <section class="s_ha_sub_banner o_cc o_cc5 pt0 pb0">
+                    <div style="position:relative;height:350px;display:flex;align-items:center;justify-content:center;
+                         background-image:url('/theme_hotel_arena/static/src/img/parallax/paralax-pokoj.webp');
+                         background-size:cover;background-position:center;">
+                        <div style="position:absolute;inset:0;
+                             background:linear-gradient(180deg,rgba(26,26,34,0.5) 0%,rgba(26,26,34,0.85) 100%);"></div>
+                        <div style="position:absolute;bottom:0;left:0;width:50%;height:60%;
+                             background:radial-gradient(ellipse at bottom left,rgba(139,26,43,0.2) 0%,transparent 65%);"></div>
+                        <div style="position:relative;z-index:1;text-align:center;">
+                            <div class="section-tag" style="justify-content:center;color:#F07070;">Ceny ubytování</div>
+                            <h2 style="font-family:'Playfair Display',serif;color:#FAFAF8;font-weight:400;
+                                font-size:clamp(2rem,4vw,3.5rem);">Ceník</h2>
+                        </div>
+                    </div>
+                    <div class="brand-stripe"></div>
+                </section>
+
+                <!-- s_room_prices -->
+                <section class="s_ha_room_prices o_cc o_cc1 pt104 pb104 o_colored_level"
+                         data-snippet="s_room_prices"
+                         data-name="Ceník pokojů">
+                    <div class="container">
+                        <div class="text-center" style="margin-bottom:4rem;">
+                            <div class="section-tag" style="justify-content:center;">Naše ceny</div>
+                            <h2 class="section-title">Ceník ubytování</h2>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="ha-price-table">
+                                <thead>
+                                    <tr>
+                                        <th>Typ pokoje</th>
+                                        <th>Lůžka</th>
+                                        <th>1 osoba</th>
+                                        <th>2 osoby</th>
+                                        <th>3 osoby</th>
+                                        <th>4 osoby</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Standard (2 oddělené postele)</strong></td>
+                                        <td>2</td>
+                                        <td class="ha-price-cell">1 500 Kč</td>
+                                        <td class="ha-price-cell">2 150 Kč</td>
+                                        <td class="ha-price-cell">—</td>
+                                        <td class="ha-price-cell">—</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Standard (manželská postel)</strong></td>
+                                        <td>1</td>
+                                        <td class="ha-price-cell">2 150 Kč</td>
+                                        <td class="ha-price-cell">2 150 Kč</td>
+                                        <td class="ha-price-cell">—</td>
+                                        <td class="ha-price-cell">—</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Bezbariérový pokoj</strong></td>
+                                        <td>2</td>
+                                        <td class="ha-price-cell">2 350 Kč</td>
+                                        <td class="ha-price-cell">3 000 Kč</td>
+                                        <td class="ha-price-cell">—</td>
+                                        <td class="ha-price-cell">—</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Rodinný pokoj</strong></td>
+                                        <td>4</td>
+                                        <td class="ha-price-cell">2 500 Kč</td>
+                                        <td class="ha-price-cell">3 000 Kč</td>
+                                        <td class="ha-price-cell">3 500 Kč</td>
+                                        <td class="ha-price-cell">4 000 Kč</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Deluxe Queen (2 queen postele)</strong></td>
+                                        <td>2</td>
+                                        <td class="ha-price-cell">3 500 Kč</td>
+                                        <td class="ha-price-cell">4 000 Kč</td>
+                                        <td class="ha-price-cell">4 500 Kč</td>
+                                        <td class="ha-price-cell">5 000 Kč</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Included in price -->
+                        <div class="mt-5">
+                            <h4 style="text-transform: uppercase; margin-bottom: 20px;">V ceně ubytování je zahrnuto:</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="ha-iconlist">
+                                        <li>Snídaně formou bufetových stolů</li>
+                                        <li>Satelitní televize a trezor na pokoji</li>
+                                        <li>Bezdrátové připojení k internetu v celém hotelu</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="ha-iconlist">
+                                        <li>DPH a městský poplatek</li>
+                                        <li>Non-stop recepce</li>
+                                        <li>Možnost parkování na hotelovém parkovišti pod dozorem kamerového systému bez poplatku</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Additional services -->
+                        <div class="mt-4">
+                            <h4 style="text-transform: uppercase; margin-bottom: 20px;">Doplňkové služby:</h4>
+                            <ul class="ha-iconlist">
+                                <li>Ubytování dětí do 3 let — zdarma</li>
+                                <li>Pro vybrané pokoje možnost přistýlky pro dítě</li>
+                                <li>Polopenze, případně plná penze (skupinové pobyty, za příplatek)</li>
+                                <li>Vysokorychlostní připojení k internetu (za příplatek)</li>
+                                <li>Praní a žehlení prádla (za příplatek)</li>
+                                <li>Zajištění vstupenek</li>
+                            </ul>
+                        </div>
+
+                        <!-- Pet policy -->
+                        <div class="mt-4 p-3" style="background:rgba(240,112,112,0.06);border-left:4px solid #F07070;">
+                            <p style="margin: 0; font-weight: 600;">
+                                <i class="fa fa-paw" style="color:#F07070;margin-right:8px;"/>
+                                Domácí zvířata nejsou povolena.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- s_hotel_features -->
+                <section class="s_ha_hotel_features o_cc o_cc2 pt104 pb104 o_colored_level"
+                         data-snippet="s_hotel_features"
+                         data-name="Vybavení hotelu">
+                    <div class="container">
+                        <div class="features-layout">
+                            <div class="features-img reveal">
+                                <img src="/theme_hotel_arena/static/src/img/homepage/o-nas2.webp"
+                                     alt="Vybavení hotelu Arena" loading="lazy"/>
+                            </div>
+                            <div class="features-list reveal">
+                                <div class="section-tag">Vybavení</div>
+                                <h2 class="section-title">Komfort v každém <em>detailu</em></h2>
+                                <div class="feature-item">
+                                    <div class="feature-num">01</div>
+                                    <div class="feature-text">
+                                        <h3>Klimatizace &amp; trezor</h3>
+                                        <p>Každý pokoj vybavený individuálně ovládanou klimatizací
+                                           a bezpečnostním trezorem.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-num">02</div>
+                                    <div class="feature-text">
+                                        <h3>Satelitní TV &amp; Wi-Fi</h3>
+                                        <p>LCD televizor se satelitním příjmem a bezplatné
+                                           bezdrátové připojení v celém hotelu.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-num">03</div>
+                                    <div class="feature-text">
+                                        <h3>Non-stop recepce</h3>
+                                        <p>Recepce k dispozici 24 hodin denně. Check-in kdykoliv,
+                                           concierge služby na přání.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-num">04</div>
+                                    <div class="feature-text">
+                                        <h3>Hlídané parkoviště</h3>
+                                        <p>Vlastní parkoviště pod dozorem kamerového systému
+                                           zdarma pro všechny hosty.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </t>
+    </template>
+
+    <record id="ha_page_pricelist_page" model="theme.website.page">
+        <field name="url">/cenik</field>
+        <field name="view_id" ref="ha_page_pricelist"/>
+        <field name="is_published" eval="True"/>
+    </record>
+
+</odoo>

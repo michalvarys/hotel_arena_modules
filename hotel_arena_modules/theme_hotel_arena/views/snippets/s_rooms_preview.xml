@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Rooms Preview — Dark card grid with 3:4 aspect ratio -->
+    <template id="s_rooms_preview" name="Pokoje - Náhled">
+        <section class="s_ha_rooms_preview o_cc o_cc1 pt104 pb104 o_colored_level"
+                 data-snippet="s_rooms_preview"
+                 data-name="Pokoje - Náhled">
+            <div class="container-fluid" style="max-width:1400px;">
+                <div class="rooms-header reveal">
+                    <div>
+                        <div class="section-tag">Ubytování</div>
+                        <h2 class="section-title">Pokoje &amp; Apartmá</h2>
+                        <p class="section-desc">Každý pokoj je vybavený klimatizací, trezorem,
+                           TV se satelitem a moderní koupelnou. Bezbariérový přístup výtahem do všech pater.</p>
+                    </div>
+                    <a href="https://www.secure-hotel-booking.com/Hotel-Arena/JJZW/cs?hotelId=24506"
+                       class="btn-outline" target="_blank" rel="noopener">Všechny pokoje →</a>
+                </div>
+                <div class="rooms-grid">
+                    <!-- Standard -->
+                    <div class="room-card reveal">
+                        <img src="/theme_hotel_arena/static/src/img/rooms/pokoj-standard-hires.jpg"
+                             alt="Standard pokoj" loading="lazy"/>
+                        <div class="room-overlay">
+                            <div class="room-name">Standard</div>
+                            <div class="room-price">od 1 350 Kč <span>/noc</span></div>
+                        </div>
+                        <div class="room-arrow"><i class="fa fa-arrow-right" style="font-size:14px;color:#fff;"/></div>
+                    </div>
+                    <!-- Bezbariérový -->
+                    <div class="room-card reveal">
+                        <img src="/theme_hotel_arena/static/src/img/rooms/bezbarierovy-pokoj-hires.jpg"
+                             alt="Bezbariérový pokoj" loading="lazy"/>
+                        <div class="room-overlay">
+                            <div class="room-name">Bezbariérový</div>
+                            <div class="room-price">od 1 935 Kč <span>/noc</span></div>
+                        </div>
+                        <div class="room-arrow"><i class="fa fa-arrow-right" style="font-size:14px;color:#fff;"/></div>
+                    </div>
+                    <!-- Rodinný -->
+                    <div class="room-card reveal">
+                        <img src="/theme_hotel_arena/static/src/img/rooms/rodinny-pokoj-hires.jpg"
+                             alt="Rodinný pokoj" loading="lazy"/>
+                        <div class="room-overlay">
+                            <div class="room-name">Rodinný</div>
+                            <div class="room-price">od 2 115 Kč <span>/noc</span></div>
+                        </div>
+                        <div class="room-arrow"><i class="fa fa-arrow-right" style="font-size:14px;color:#fff;"/></div>
+                    </div>
+                    <!-- Deluxe Queen -->
+                    <div class="room-card reveal">
+                        <img src="/theme_hotel_arena/static/src/img/rooms/pokoj-deluxe-queen-hires.jpg"
+                             alt="Deluxe Queen" loading="lazy"/>
+                        <div class="room-overlay">
+                            <div class="room-name">Deluxe Queen</div>
+                            <div class="room-price">od 3 150 Kč <span>/noc</span></div>
+                        </div>
+                        <div class="room-arrow"><i class="fa fa-arrow-right" style="font-size:14px;color:#fff;"/></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

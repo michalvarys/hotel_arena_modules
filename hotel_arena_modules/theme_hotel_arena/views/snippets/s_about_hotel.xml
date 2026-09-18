@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- About Hotel — Exterior showcase with stats (dark theme) -->
+    <template id="s_about_hotel" name="O hotelu">
+        <section class="s_ha_about_hotel o_cc o_cc1 pt104 pb104 o_colored_level"
+                 data-snippet="s_about_hotel"
+                 data-name="O hotelu">
+            <div class="container">
+                <div class="exterior-layout">
+                    <div class="exterior-img reveal">
+                        <img src="/theme_hotel_arena/static/src/img/parallax/paralax-hotel.webp"
+                             alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <div class="exterior-badge">
+                            <i class="fa fa-map-marker" style="color:#F07070;"/>
+                            <span>Chomutov</span> u Kamencového jezera
+                        </div>
+                    </div>
+                    <div class="reveal">
+                        <div class="section-tag">O hotelu</div>
+                        <h2 class="section-title">Sportovně-relaxační <em>zázemí</em></h2>
+                        <p class="section-desc" style="margin-bottom:2rem;">
+                            Nově postavený hotel Arena je situován ve sportovně-relaxačním centru
+                            na Zadních Vinohradech na okraji města Chomutova a umožňuje svým
+                            hostům aktivní trávení volného času v bezprostřední blízkosti
+                            unikátního Kamencového jezera.
+                        </p>
+                        <p style="font-size:1.15rem;line-height:1.7;color:#C5C2BA;">
+                            Hotel je zařízen v moderním designu s celkovou kapacitou 210 lůžek.
+                            Z 96 dvoulůžkových pokojů je několik bezbariérových.
+                        </p>
+                        <div class="exterior-stats">
+                            <div>
+                                <div class="stat-num">96</div>
+                                <div class="stat-label">Pokojů</div>
+                            </div>
+                            <div>
+                                <div class="stat-num">210</div>
+                                <div class="stat-label">Lůžek</div>
+                            </div>
+                            <div>
+                                <div class="stat-num">24/7</div>
+                                <div class="stat-label">Recepce</div>
+                            </div>
+                            <div>
+                                <div class="stat-num">★★★</div>
+                                <div class="stat-label">Hotel</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- Hotel Services (for /o-hotelu page) -->
+    <template id="s_hotel_services" name="Služby pro hosty">
+        <section class="s_ha_hotel_services o_cc o_cc2 pt104 pb104 o_colored_level"
+                 data-snippet="s_hotel_services"
+                 data-name="Služby pro hosty">
+            <div class="container text-center">
+                <div class="section-tag" style="justify-content:center;">
+                    <span style="display:none;">—</span>Pro naše hosty
+                </div>
+                <h2 class="section-title">Služby pro <em>hosty</em></h2>
+                <p class="section-desc" style="max-width:650px;margin:0 auto 4rem;">
+                    Vše co potřebujete pro bezstarostný pobyt.</p>
+                <div class="concierge-grid">
+                    <div class="concierge-item">
+                        <div class="concierge-icon"><i class="fa fa-coffee"/></div>
+                        <h4>Snídaně formou bufetu</h4>
+                        <p>Bohatý snídaňový bufet každé ráno.</p>
+                    </div>
+                    <div class="concierge-item">
+                        <div class="concierge-icon"><i class="fa fa-cutlery"/></div>
+                        <h4>Hotelová restaurace</h4>
+                        <p>Brazilská i mezinárodní kuchyně.</p>
+                    </div>
+                    <div class="concierge-item">
+                        <div class="concierge-icon"><i class="fa fa-car"/></div>
+                        <h4>Hlídané parkoviště</h4>
+                        <p>Pod dozorem kamer, zdarma.</p>
+                    </div>
+                    <div class="concierge-item">
+                        <div class="concierge-icon"><i class="fa fa-wifi"/></div>
+                        <h4>Bezplatný Wi-Fi</h4>
+                        <p>V celém hotelu včetně pokojů.</p>
+                    </div>
+                    <div class="concierge-item">
+                        <div class="concierge-icon"><i class="fa fa-map"/></div>
+                        <h4>Turistické materiály</h4>
+                        <p>Informace o okolí a tipy na výlety.</p>
+                    </div>
+                    <div class="concierge-item">
+                        <div class="concierge-icon"><i class="fa fa-suitcase"/></div>
+                        <h4>Úschova zavazadel</h4>
+                        <p>Bezpečné uložení před check-in/po check-out.</p>
+                    </div>
+                    <div class="concierge-item">
+                        <div class="concierge-icon"><i class="fa fa-tint"/></div>
+                        <h4>Praní a žehlení</h4>
+                        <p>Za příplatek, do druhého dne.</p>
+                    </div>
+                    <div class="concierge-item">
+                        <div class="concierge-icon"><i class="fa fa-clock-o"/></div>
+                        <h4>Early / Late checkout</h4>
+                        <p>Flexibilní časy na přání.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- Home About — Ubytování intro for homepage -->
+    <template id="s_home_about" name="Úvod - O nás">
+        <section class="s_ha_home_about o_cc o_cc1 pt104 pb104 o_colored_level"
+                 data-snippet="s_home_about"
+                 data-name="Úvod - O nás">
+            <div class="container">
+                <div class="features-layout">
+                    <div class="reveal">
+                        <div class="section-tag">Pokoje a apartmá</div>
+                        <h2 class="section-title">Ubytování</h2>
+                        <p style="font-size:1.25rem;line-height:1.7;color:#C5C2BA;margin-bottom:2rem;">
+                            Pokoje v hotelu Arena se vyznačují svěžím a moderním designem.
+                            Každý pokoj je vybavený vlastním sociálním zařízením, satelitní
+                            televizí, trezorem a vlastně ovládanou klimatizací. Bezbariérový
+                            přístup do všech pater hotelu zajišťuje výtah.
+                        </p>
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <div class="concierge-item" style="padding:1.5rem;text-align:center;">
+                                    <div class="concierge-icon"><i class="fa fa-wifi"/></div>
+                                    <h4 style="font-size:1rem;">WiFi zdarma</h4>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="concierge-item" style="padding:1.5rem;text-align:center;">
+                                    <div class="concierge-icon"><i class="fa fa-car"/></div>
+                                    <h4 style="font-size:1rem;">Parkování zdarma</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="features-img reveal">
+                        <img src="/theme_hotel_arena/static/src/img/homepage/o-nas2.webp"
+                             alt="Hotel Arena ubytování" loading="lazy"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- Homepage - Restaurace section -->
+    <template id="s_home_restaurant" name="Úvod - Restaurace">
+        <section class="s_ha_home_restaurant o_cc o_cc2 pt104 pb104 o_colored_level"
+                 data-snippet="s_home_restaurant"
+                 data-name="Úvod - Restaurace">
+            <div class="container">
+                <div class="features-layout">
+                    <div class="features-img reveal">
+                        <img src="/theme_hotel_arena/static/src/img/homepage/uvodni-stranka-restaurace.webp"
+                             alt="Restaurace" loading="lazy"/>
+                    </div>
+                    <div class="reveal">
+                        <div class="section-tag">Gastronomie</div>
+                        <h2 class="section-title">Restaurace</h2>
+                        <p style="font-size:1.25rem;line-height:1.7;color:#C5C2BA;margin-bottom:2rem;">
+                            Hotel Arena poskytuje svým hostům nejen optimální podmínky pro
+                            volnočasové aktivity, ale také gastronomické služby na vysoké
+                            úrovni v nově otevřené hotelové restauraci.</p>
+                    </div>
+                </div>
+                <div class="features-layout" style="margin-top:5rem;">
+                    <div class="reveal">
+                        <div class="section-tag">Nápoje</div>
+                        <h2 class="section-title">Bar</h2>
+                        <p style="font-size:1.25rem;line-height:1.7;color:#C5C2BA;">
+                            Najdete u nás také bar, který je vhodný pro soukromá i obchodní
+                            setkání. Obsluha baru je připravena splnit Vaše přání.</p>
+                    </div>
+                    <div class="features-img reveal">
+                        <img src="/theme_hotel_arena/static/src/img/homepage/uvodni-stranka-bar.webp"
+                             alt="Bar" loading="lazy"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- Homepage - Concierge Services -->
+    <template id="s_concierge_services" name="Concierge služby">
+        <section class="s_ha_concierge o_cc o_cc1 pt104 pb104 o_colored_level"
+                 data-snippet="s_concierge_services"
+                 data-name="Concierge služby">
+            <div class="container">
+                <div class="section-tag" style="justify-content:center;">
+                    At your service
+                </div>
+                <h2 class="section-title" style="margin-bottom:1rem;">Concierge</h2>
+                <p class="section-desc" style="max-width:650px;margin:0 auto 4rem;">
+                    Ať už plánujete obchodní cestu, rodinnou dovolenou nebo
+                    sportovní víkend — náš tým je tu pro vás.</p>
+                <div class="concierge-grid">
+                    <div class="concierge-item reveal">
+                        <div class="concierge-icon"><i class="fa fa-plane"/></div>
+                        <h4>Transfer z letiště</h4>
+                        <p>Zajistíme pohodlný transfer přímo k hotelu.</p>
+                    </div>
+                    <div class="concierge-item reveal">
+                        <div class="concierge-icon"><i class="fa fa-ticket"/></div>
+                        <h4>Vstupenky</h4>
+                        <p>Kino, divadlo, koncerty, hokej, fotbal.</p>
+                    </div>
+                    <div class="concierge-item reveal">
+                        <div class="concierge-icon"><i class="fa fa-cutlery"/></div>
+                        <h4>Restaurace</h4>
+                        <p>Rezervace v restauracích v okolí.</p>
+                    </div>
+                    <div class="concierge-item reveal">
+                        <div class="concierge-icon"><i class="fa fa-compass"/></div>
+                        <h4>Výlety</h4>
+                        <p>Zajištění výletů, turistické materiály zdarma.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Hotel Gallery — Uses Odoo native s_image_gallery with masonry mode -->
+    <template id="s_hotel_gallery" name="Galerie hotelu">
+        <section class="s_image_gallery o_masonry pt24 pb24 s_ha_gallery o_colored_level"
+                 data-vcss="002" data-columns="4"
+                 data-snippet="s_hotel_gallery"
+                 data-name="Galerie hotelu"
+                 style="overflow:hidden;background:#1A1A22;">
+            <div class="container">
+                <div class="text-center reveal" style="margin-bottom:3rem;">
+                    <div class="section-tag" style="justify-content:center;">Naše fotografie</div>
+                    <h2 class="section-title">Galerie</h2>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row s_nb_column_fixed">
+                    <div class="o_masonry_col o_snippet_not_selectable col-lg-3">
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_004_2048px.jpg" data-index="0" data-name="Image" alt="Hotel Arena"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_008_2048px.jpg" data-index="4" data-name="Image" alt="Hotel Arena"/>
+                    </div>
+                    <div class="o_masonry_col o_snippet_not_selectable col-lg-3">
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_005_2048px.jpg" data-index="1" data-name="Image" alt="Hotel Arena"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_009_2048px.jpg" data-index="5" data-name="Image" alt="Hotel Arena"/>
+                    </div>
+                    <div class="o_masonry_col o_snippet_not_selectable col-lg-3">
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_006_2048px.jpg" data-index="2" data-name="Image" alt="Hotel Arena"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_010_2048px.jpg" data-index="6" data-name="Image" alt="Hotel Arena"/>
+                    </div>
+                    <div class="o_masonry_col o_snippet_not_selectable col-lg-3">
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_007_2048px.jpg" data-index="3" data-name="Image" alt="Hotel Arena"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_011_2048px.jpg" data-index="7" data-name="Image" alt="Hotel Arena"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

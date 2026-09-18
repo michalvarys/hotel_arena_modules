@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Homepage override: inject Hotel Arena content into website.homepage -->
+    <template id="ha_homepage_content" name="Hotel Arena Homepage"
+              inherit_id="website.homepage" active="True">
+        <xpath expr="//div[@id='wrap']" position="replace">
+            <div id="wrap" class="oe_structure oe_empty">
+
+                <!-- Hero Slider -->
+                <section class="s_ha_hero_slider o_cc o_cc5 pt0 pb0 o_colored_level"
+                         data-snippet="s_hero_slider"
+                         data-name="Hotel Arena Slider"
+                         style="position:relative; height:100vh; min-height:700px; display:flex; align-items:flex-end; overflow:hidden;">
+                    <div style="position:absolute;inset:0;overflow:hidden;">
+                        <div style="position:absolute;inset:0;
+                             background-image:url('/theme_hotel_arena/static/src/img/parallax/paralax-hotel.webp');
+                             background-size:cover;background-position:center;"></div>
+                        <div style="position:absolute;inset:0;
+                             background:linear-gradient(180deg,rgba(26,26,34,0.45) 0%,rgba(26,26,34,0.25) 30%,rgba(26,26,34,0.55) 60%,rgba(26,26,34,0.97) 100%),
+                             linear-gradient(135deg,rgba(26,26,34,0.6) 0%,transparent 50%);
+                             pointer-events:none;z-index:1;"></div>
+                        <div style="position:absolute;bottom:0;left:0;width:60%;height:70%;
+                             background:radial-gradient(ellipse at bottom left,rgba(139,26,43,0.25) 0%,transparent 65%);
+                             pointer-events:none;z-index:1;"></div>
+                    </div>
+                    <div class="brand-stripe" style="position:absolute;bottom:0;left:0;right:0;z-index:10;"></div>
+                    <div class="container" style="position:relative;z-index:2;padding-bottom:6rem;max-width:800px;">
+                        <div class="section-tag" style="color:#F07070;margin-bottom:1.5rem;">
+                            Chomutov, &#268;esk&#225; republika
+                        </div>
+                        <h1 style="font-family:'Playfair Display',serif;font-size:clamp(3rem,6vw,5.5rem);
+                            font-weight:400;line-height:1.1;letter-spacing:-0.02em;color:#FAFAF8;margin-bottom:1.5rem;">
+                            Kde sport potk&#225;v&#225; <em style="font-style:italic;color:#F07070;">eleganci</em>
+                        </h1>
+                        <p style="font-size:1.3rem;line-height:1.7;color:rgba(255,255,255,0.9);
+                           max-width:500px;margin-bottom:2.5rem;">
+                            Modern&#237; hotel v srdci sportovn&#283;-relaxa&#269;n&#237;ho centra u Kamencov&#233;ho jezera.
+                            96 pokoj&#367;, restaurace, concierge &#8212; v&#353;e pro v&#225;&#353; dokonal&#253; pobyt.
+                        </p>
+                        <div style="display:flex;gap:1.5rem;align-items:center;flex-wrap:wrap;">
+                            <a href="https://www.secure-hotel-booking.com/Hotel-Arena/JJZW/cs?hotelId=24506"
+                               class="btn-reserve" target="_blank" rel="noopener">Rezervovat pobyt</a>
+                            <a href="/ubytovani" class="btn-outline">Prohl&#233;dnout pokoje</a>
+                        </div>
+                    </div>
+                    <div class="ev-badge" style="position:absolute;bottom:2rem;right:10rem;z-index:10;">
+                        <i class="fa fa-bolt" style="color:#F07070;"/>
+                        Nab&#237;jec&#237; stanice &#268;EZ pro elektromobily
+                    </div>
+                </section>
+
+                <!-- About / Ubytování intro -->
+                <section class="s_ha_home_about o_cc o_cc1 pt104 pb104 o_colored_level"
+                         data-snippet="s_home_about"
+                         data-name="&#218;vod - O n&#225;s">
+                    <div class="container">
+                        <div class="features-layout">
+                            <div class="reveal">
+                                <div class="section-tag">Pokoje a apartm&#225;</div>
+                                <h2 class="section-title">Ubytov&#225;n&#237;</h2>
+                                <p style="font-size:1.25rem;line-height:1.7;color:#C5C2BA;margin-bottom:2rem;">
+                                    Pokoje v hotelu Arena se vyzna&#269;uj&#237; sv&#283;&#382;&#237;m a modern&#237;m designem.
+                                    Ka&#382;d&#253; pokoj je vybaven&#253; vlastn&#237;m soci&#225;ln&#237;m za&#345;&#237;zen&#237;m, satelitn&#237;
+                                    televiz&#237;, trezorem a vlastn&#283; ovl&#225;danou klimatizac&#237;. Bezbarierov&#253;
+                                    p&#345;&#237;stup do v&#353;ech pater hotelu zaji&#353;&#357;uje v&#253;tah.
+                                </p>
+                                <div class="row g-3">
+                                    <div class="col-6">
+                                        <div class="concierge-item" style="padding:1.5rem;text-align:center;">
+                                            <div class="concierge-icon"><i class="fa fa-wifi"/></div>
+                                            <h4 style="font-size:1rem;">WiFi zdarma</h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="concierge-item" style="padding:1.5rem;text-align:center;">
+                                            <div class="concierge-icon"><i class="fa fa-car"/></div>
+                                            <h4 style="font-size:1rem;">Parkov&#225;n&#237; zdarma</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="features-img reveal">
+                                <img src="/theme_hotel_arena/static/src/img/homepage/o-nas2.webp"
+                                     alt="Hotel Arena ubytov&#225;n&#237;" loading="lazy"/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Restaurace -->
+                <section class="s_ha_home_restaurant o_cc o_cc2 pt104 pb104 o_colored_level"
+                         data-snippet="s_home_restaurant"
+                         data-name="&#218;vod - Restaurace">
+                    <div class="container">
+                        <div class="features-layout">
+                            <div class="features-img reveal">
+                                <img src="/theme_hotel_arena/static/src/img/homepage/uvodni-stranka-restaurace.webp"
+                                     alt="Restaurace" loading="lazy"/>
+                            </div>
+                            <div class="reveal">
+                                <div class="section-tag">Gastronomie</div>
+                                <h2 class="section-title">Restaurace</h2>
+                                <p style="font-size:1.25rem;line-height:1.7;color:#C5C2BA;margin-bottom:2rem;">
+                                    Hotel Arena poskytuje sv&#253;m host&#367;m nejen optim&#225;ln&#237; podm&#237;nky pro
+                                    volno&#269;asov&#233; aktivity, ale tak&#233; gastronomick&#233; slu&#382;by na vysok&#233;
+                                    &#250;rovni v nov&#283; otev&#345;en&#233; hotelov&#233; restauraci.</p>
+                            </div>
+                        </div>
+                        <div class="features-layout" style="margin-top:5rem;">
+                            <div class="reveal">
+                                <div class="section-tag">N&#225;poje</div>
+                                <h2 class="section-title">Bar</h2>
+                                <p style="font-size:1.25rem;line-height:1.7;color:#C5C2BA;">
+                                    Najdete u n&#225;s tak&#233; bar, kter&#253; je vhodn&#253; pro soukrom&#225; i obchodn&#237;
+                                    setk&#225;n&#237;. Obsluha baru je p&#345;ipravena splnit Va&#353;e p&#345;&#225;n&#237;.</p>
+                            </div>
+                            <div class="features-img reveal">
+                                <img src="/theme_hotel_arena/static/src/img/homepage/uvodni-stranka-bar.webp"
+                                     alt="Bar" loading="lazy"/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Rooms Preview -->
+                <section class="s_ha_rooms_preview o_cc o_cc1 pt104 pb104 o_colored_level"
+                         data-snippet="s_rooms_preview"
+                         data-name="Pokoje - N&#225;hled">
+                    <div class="container-fluid" style="max-width:1400px;">
+                        <div class="rooms-header reveal">
+                            <div>
+                                <div class="section-tag">Ubytov&#225;n&#237;</div>
+                                <h2 class="section-title">Pokoje &amp; Apartm&#225;</h2>
+                                <p class="section-desc">Ka&#382;d&#253; pokoj je vybaven&#253; klimatizac&#237;, trezorem,
+                                   TV se satelitem a modern&#237; koupelnou. Bezbarierov&#253; p&#345;&#237;stup v&#253;tahem do v&#353;ech pater.</p>
+                            </div>
+                            <a href="https://www.secure-hotel-booking.com/Hotel-Arena/JJZW/cs?hotelId=24506"
+                               class="btn-outline" target="_blank" rel="noopener">V&#353;echny pokoje &#8594;</a>
+                        </div>
+                        <div class="rooms-grid">
+                            <div class="room-card reveal">
+                                <img src="/theme_hotel_arena/static/src/img/rooms/pokoj-standard.webp"
+                                     alt="Standard pokoj" loading="lazy"/>
+                                <div class="room-overlay">
+                                    <div class="room-name">Standard</div>
+                                    <div class="room-price">od 1 350 K&#269; <span>/noc</span></div>
+                                </div>
+                            </div>
+                            <div class="room-card reveal">
+                                <img src="/theme_hotel_arena/static/src/img/rooms/bezbarierovy-pokoj.webp"
+                                     alt="Bezbarierov&#253; pokoj" loading="lazy"/>
+                                <div class="room-overlay">
+                                    <div class="room-name">Bezbarierov&#253;</div>
+                                    <div class="room-price">od 1 935 K&#269; <span>/noc</span></div>
+                                </div>
+                            </div>
+                            <div class="room-card reveal">
+                                <img src="/theme_hotel_arena/static/src/img/rooms/rodinny-pokoj.webp"
+                                     alt="Rodinn&#253; pokoj" loading="lazy"/>
+                                <div class="room-overlay">
+                                    <div class="room-name">Rodinn&#253;</div>
+                                    <div class="room-price">od 2 115 K&#269; <span>/noc</span></div>
+                                </div>
+                            </div>
+                            <div class="room-card reveal">
+                                <img src="/theme_hotel_arena/static/src/img/rooms/pokoj-deluxe-queen.webp"
+                                     alt="Deluxe Queen" loading="lazy"/>
+                                <div class="room-overlay">
+                                    <div class="room-name">Deluxe Queen</div>
+                                    <div class="room-price">od 3 150 K&#269; <span>/noc</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Gallery Preview -->
+                <section class="s_image_gallery o_masonry pt24 pb24 s_ha_gallery o_colored_level"
+                         data-vcss="002" data-columns="4"
+                         data-snippet="s_hotel_gallery"
+                         data-name="Galerie hotelu"
+                         style="overflow:hidden;background:#1A1A22;">
+                    <div class="container">
+                        <div class="text-center reveal" style="margin-bottom:3rem;">
+                            <div class="section-tag" style="justify-content:center;">Na&#353;e fotografie</div>
+                            <h2 class="section-title">Galerie</h2>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row s_nb_column_fixed">
+                            <div class="o_masonry_col o_snippet_not_selectable col-lg-3">
+                                <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_004_2048px.jpg" data-index="0" data-name="Image" alt="Hotel Arena"/>
+                                <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_008_2048px.jpg" data-index="4" data-name="Image" alt="Hotel Arena"/>
+                            </div>
+                            <div class="o_masonry_col o_snippet_not_selectable col-lg-3">
+                                <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_005_2048px.jpg" data-index="1" data-name="Image" alt="Hotel Arena"/>
+                                <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_009_2048px.jpg" data-index="5" data-name="Image" alt="Hotel Arena"/>
+                            </div>
+                            <div class="o_masonry_col o_snippet_not_selectable col-lg-3">
+                                <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_006_2048px.jpg" data-index="2" data-name="Image" alt="Hotel Arena"/>
+                                <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_010_2048px.jpg" data-index="6" data-name="Image" alt="Hotel Arena"/>
+                            </div>
+                            <div class="o_masonry_col o_snippet_not_selectable col-lg-3">
+                                <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_007_2048px.jpg" data-index="3" data-name="Image" alt="Hotel Arena"/>
+                                <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_011_2048px.jpg" data-index="7" data-name="Image" alt="Hotel Arena"/>
+                            </div>
+                        </div>
+                        <div class="text-center mt-5">
+                            <a href="/galerie" class="btn-outline">Zobrazit celou galerii &#8594;</a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Contact / Location -->
+                <section class="s_ha_contact_info o_cc o_cc2 pt104 pb104 o_colored_level"
+                         data-snippet="s_contact_info"
+                         data-name="Kontaktn&#237; informace">
+                    <div class="container">
+                        <div class="location-grid">
+                            <div class="reveal">
+                                <div class="section-tag">Kontakt</div>
+                                <h2 class="section-title">Kde n&#225;s <em>najdete</em></h2>
+                                <p style="font-size:1.2rem;line-height:1.7;color:#C5C2BA;margin-bottom:2rem;">
+                                    Hotel Arena se nach&#225;z&#237; v bezprost&#345;edn&#237; bl&#237;zkosti Kamencov&#233;ho jezera,
+                                    ve sportovn&#283;-relaxa&#269;n&#237;m centru Chomutova.</p>
+                                <div class="location-highlights">
+                                    <div class="highlight">
+                                        <strong>Kamencov&#233; jezero</strong>
+                                        <span>5 min p&#283;&#353;ky</span>
+                                    </div>
+                                    <div class="highlight">
+                                        <strong>Zimn&#237; stadion</strong>
+                                        <span>2 min p&#283;&#353;ky</span>
+                                    </div>
+                                    <div class="highlight">
+                                        <strong>Centrum m&#283;sta</strong>
+                                        <span>10 min autem</span>
+                                    </div>
+                                    <div class="highlight">
+                                        <strong>D&#225;lnice D7</strong>
+                                        <span>15 min autem</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="map-container reveal">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2528.8!2d13.427579!3d50.468502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsDI4JzA3LjAiTiAxM8KwMjUnMzkuMyJF!5e0!3m2!1scs!2scz!4v1"
+                                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                                        allowfullscreen="">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </xpath>
+    </template>
+
+</odoo>

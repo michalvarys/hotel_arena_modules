@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Contact Form — Dark theme with red accent -->
+    <template id="s_contact_form" name="Kontaktní formulář">
+        <section class="s_ha_contact_form o_cc o_cc2 pt104 pb104 o_colored_level"
+                 data-snippet="s_contact_form"
+                 data-name="Kontaktní formulář">
+            <div class="container">
+                <div class="row">
+                    <!-- Contact Info -->
+                    <div class="col-lg-5 mb-4 mb-lg-0">
+                        <div class="section-tag">Napište nám</div>
+                        <h2 class="section-title">Kontakty</h2>
+                        <p style="color:#C5C2BA;margin-bottom:30px;">Rádi zodpovíme každý dotaz.</p>
+
+                        <div class="ha-contact-info">
+                            <div class="ha-contact-info-item">
+                                <div class="ha-contact-info-icon"><i class="fa fa-map-marker"/></div>
+                                <div class="ha-contact-info-text">
+                                    <h6>Adresa</h6>
+                                    <p>Hotel Arena<br/>Beethovenova 5275<br/>430 01 Chomutov</p>
+                                </div>
+                            </div>
+                            <div class="ha-contact-info-item">
+                                <div class="ha-contact-info-icon"><i class="fa fa-phone"/></div>
+                                <div class="ha-contact-info-text">
+                                    <h6>Recepce</h6>
+                                    <p>
+                                        <a href="tel:+420474721290">+420 474 721 290</a><br/>
+                                        <a href="tel:+420474721291">+420 474 721 291</a><br/>
+                                        <a href="tel:+420474721292">+420 474 721 292</a><br/>
+                                        <a href="tel:+420602495576">+420 602 495 576</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="ha-contact-info-item">
+                                <div class="ha-contact-info-icon"><i class="fa fa-envelope"/></div>
+                                <div class="ha-contact-info-text">
+                                    <h6>E-mail</h6>
+                                    <p><a href="mailto:recepce@arenahotel.cz">recepce@arenahotel.cz</a></p>
+                                </div>
+                            </div>
+                            <div class="ha-contact-info-item">
+                                <div class="ha-contact-info-icon"><i class="fa fa-cutlery"/></div>
+                                <div class="ha-contact-info-text">
+                                    <h6>Restaurace</h6>
+                                    <p>
+                                        <a href="tel:+420474721293">+420 474 721 293</a><br/>
+                                        Jaroslav Šulta<br/>
+                                        <a href="mailto:sulta@kamencak.cz">sulta@kamencak.cz</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="ha-contact-info-item">
+                                <div class="ha-contact-info-icon"><i class="fa fa-user"/></div>
+                                <div class="ha-contact-info-text">
+                                    <h6>Manažer hotelu</h6>
+                                    <p>
+                                        Zdeněk Fojtík<br/>
+                                        <a href="mailto:fojtik@arenahotel.cz">fojtik@arenahotel.cz</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Operator info -->
+                        <div style="margin-top:30px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.04);">
+                            <h6 style="text-transform:uppercase;margin-bottom:10px;font-family:'DM Sans',sans-serif;
+                                letter-spacing:0.1em;font-size:0.85rem;color:#FAFAF8;">Provozovatel</h6>
+                            <p style="color:#C5C2BA;font-size:0.9rem;line-height:1.8;">
+                                Czech Republic Investment, a.s.<br/>
+                                Belgická 681/5<br/>
+                                120 00 Praha 2<br/>
+                                IČ: 27917690<br/>
+                                DIČ: CZ27917690<br/>
+                                Spisová značka: B 12028 u Městského soudu v Praze
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Form -->
+                    <div class="col-lg-7">
+                        <form id="ha-contact-form" class="ha-contact-form"
+                              action="/hotel-arena/contact" method="post">
+                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="ha-name">Jméno *</label>
+                                        <input type="text" id="ha-name" name="name"
+                                               placeholder="Vaše jméno" required="required"/>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="ha-email">E-mail *</label>
+                                        <input type="email" id="ha-email" name="email"
+                                               placeholder="Váš e-mail" required="required"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="ha-phone">Telefon</label>
+                                        <input type="tel" id="ha-phone" name="phone"
+                                               placeholder="Váš telefon"/>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="ha-subject">Předmět *</label>
+                                        <input type="text" id="ha-subject" name="subject"
+                                               placeholder="Předmět zprávy" required="required"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="ha-message">Zpráva *</label>
+                                <textarea id="ha-message" name="message"
+                                          placeholder="Vaše zpráva (doporučený počet znaků 80–300)" required="required"></textarea>
+                            </div>
+                            <button type="submit" class="ha-btn-submit">Odeslat</button>
+                            <div id="ha-form-result" class="ha-form-message"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- Contact Info Block (standalone for homepage) -->
+    <template id="s_contact_info" name="Kontaktní informace">
+        <section class="s_ha_contact_info o_cc o_cc2 pt104 pb104 o_colored_level"
+                 data-snippet="s_contact_info"
+                 data-name="Kontaktní informace">
+            <div class="container">
+                <div class="location-grid">
+                    <div class="reveal">
+                        <div class="section-tag">Kontakt</div>
+                        <h2 class="section-title">Kde nás <em>najdete</em></h2>
+                        <p style="font-size:1.2rem;line-height:1.7;color:#C5C2BA;margin-bottom:2rem;">
+                            Hotel Arena se nachází v bezprostřední blízkosti Kamencového jezera,
+                            ve sportovně-relaxačním centru Chomutova.</p>
+                        <div class="location-highlights">
+                            <div class="highlight">
+                                <strong>Kamencové jezero</strong>
+                                <span>5 min pěšky</span>
+                            </div>
+                            <div class="highlight">
+                                <strong>Zimní stadion</strong>
+                                <span>2 min pěšky</span>
+                            </div>
+                            <div class="highlight">
+                                <strong>Centrum města</strong>
+                                <span>10 min autem</span>
+                            </div>
+                            <div class="highlight">
+                                <strong>Dálnice D7</strong>
+                                <span>15 min autem</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map-container reveal">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2528.8!2d13.427579!3d50.468502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsDI4JzA3LjAiTiAxM8KwMjUnMzkuMyJF!5e0!3m2!1scs!2scz!4v1"
+                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                                allowfullscreen="">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- Google Map Section (standalone) -->
+    <template id="s_google_map" name="Mapa">
+        <section class="s_ha_google_map o_cc o_cc1 pt104 pb104 o_colored_level"
+                 data-snippet="s_google_map"
+                 data-name="Mapa">
+            <div class="map-container" style="aspect-ratio:21/9;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2528.8!2d13.427579!3d50.468502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsDI4JzA3LjAiTiAxM8KwMjUnMzkuMyJF!5e0!3m2!1scs!2scz!4v1"
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        allowfullscreen="">
+                </iframe>
+            </div>
+        </section>
+    </template>
+
+</odoo>

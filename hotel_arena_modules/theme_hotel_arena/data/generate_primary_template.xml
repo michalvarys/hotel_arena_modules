@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data>
+    <!-- Generate Primary Template: Auto-generates snippet primary templates.
+         This must be loaded FIRST in the data sequence. -->
+    <record id="generate_primary_template" model="theme.ir.ui.view">
+        <field name="key">theme_hotel_arena.generate_primary_template</field>
+        <field name="name">Generate Primary: Hotel Arena</field>
+        <field name="type">qweb</field>
+        <field name="arch" type="xml">
+            <t t-name="theme_hotel_arena.generate_primary_template">
+                <t t-call="website.generate_primary_snippet">
+                    <t t-set="palette_name" t-value="'hotel-arena-1'"/>
+                </t>
+            </t>
+        </field>
+    </record>
+</data>
+</odoo>

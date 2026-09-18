@@ -1,0 +1,143 @@
+// =============================================================================
+// Hotel Arena - Additional Responsive Styles (Dark Theme)
+// =============================================================================
+// Most responsive styles are inline in their respective component SCSS files.
+// This file handles cross-component responsive adjustments.
+
+@media (max-width: 1024px) {
+    .rooms-header { flex-direction: column; align-items: flex-start; }
+}
+
+@media (max-width: 768px) {
+    // Mobile: single column for most grids
+    .ha-gallery { grid-template-columns: repeat(2, 1fr); }
+
+    .ha-contact-info .ha-contact-info-item {
+        margin-bottom: 20px;
+    }
+
+    .ha-price-table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .ha-room-item .ha-room-item-content h3 {
+        font-size: 1.5rem;
+    }
+
+    // Hero: full viewport height on tablet
+    .s_ha_hero_slider {
+        height: 100vh !important;
+        height: 100dvh !important; // modern mobile browsers: accounts for browser chrome
+        min-height: 100vh !important;
+        min-height: 100dvh !important;
+
+        .container, .container-fluid {
+            padding-bottom: 3rem !important;
+        }
+
+        // EV badge: reposition for smaller screens
+        .ev-badge {
+            right: 1.5rem !important;
+            bottom: 1.5rem !important;
+            font-size: 0.8rem;
+        }
+    }
+
+    // Brasileira restaurant: ensure button wrapper stacks
+    .s_ha_brasileira {
+        .ha-btn-brasileira,
+        .ha-btn-outline-brasileira {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .ha-gallery { grid-template-columns: 1fr; }
+
+    .ha-gallery-item img { aspect-ratio: 16/9; }
+
+    .concierge-item {
+        padding: 1.5rem 1rem;
+
+        h4 { font-size: 0.95rem; }
+    }
+
+    .ha-contact-form { padding: 0; }
+
+    // Hero: full viewport height on mobile
+    .s_ha_hero_slider {
+        height: 100vh !important;
+        height: 100dvh !important;
+        min-height: 100vh !important;
+        min-height: 100dvh !important;
+
+        .container, .container-fluid {
+            padding-bottom: 2rem !important;
+        }
+
+        h1 {
+            font-size: clamp(2rem, 8vw, 3rem) !important;
+            margin-bottom: 1rem !important;
+        }
+
+        p {
+            font-size: 1rem !important;
+            margin-bottom: 1.5rem !important;
+        }
+
+        // Stack buttons vertically
+        div[style*="display:flex"] {
+            flex-direction: column !important;
+            gap: 0.8rem !important;
+        }
+
+        .btn-reserve,
+        .btn-outline,
+        .ha-btn-reserve,
+        .ha-btn-outline,
+        .ha-btn-outline-white {
+            width: 100%;
+            text-align: center;
+            padding: 0.8rem 1.2rem;
+            font-size: 0.85rem;
+        }
+
+        // Hide EV badge on small phones
+        .ev-badge {
+            display: none !important;
+        }
+    }
+
+    // Section desc
+    .section-desc {
+        font-size: 1rem;
+    }
+
+    // Room item content
+    .ha-room-item .ha-room-item-content {
+        padding: 1.5rem;
+
+        p { font-size: 0.95rem; }
+    }
+
+    // Contact info
+    .ha-contact-info .ha-contact-info-item {
+        .ha-contact-info-icon {
+            width: 40px;
+            height: 40px;
+            font-size: 15px;
+        }
+    }
+
+    // Footer
+    .ha-footer-brand p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .concierge-item { padding: 1.5rem 1rem; }
+}

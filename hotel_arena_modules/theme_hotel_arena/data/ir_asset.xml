@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data>
+    <!-- Primary Variables: Color palette, fonts, CC system -->
+    <record id="primary_variables_scss" model="theme.ir.asset">
+        <field name="key">theme_hotel_arena.primary_variables_scss</field>
+        <field name="name">Primary Variables SCSS</field>
+        <field name="bundle">web._assets_primary_variables</field>
+        <field name="path">theme_hotel_arena/static/src/scss/primary_variables.scss</field>
+    </record>
+
+    <!-- Bootstrap Overrides: Square corners, no shadows -->
+    <record id="bootstrap_overridden_scss" model="theme.ir.asset">
+        <field name="key">theme_hotel_arena.bootstrap_overridden_scss</field>
+        <field name="name">Bootstrap Overridden SCSS</field>
+        <field name="bundle">web._assets_frontend_helpers</field>
+        <field name="directive">prepend</field>
+        <field name="path">theme_hotel_arena/static/src/scss/bootstrap_overridden.scss</field>
+    </record>
+</data>
+</odoo>

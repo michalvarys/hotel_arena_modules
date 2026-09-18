@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- ===================================================================
+         HEADER - Hotel Arena Dark Theme (Fixed Transparent Nav)
+         =================================================================== -->
+    <template id="ha_header" name="Hotel Arena Header" inherit_id="website.layout"
+              active="False" customize_show="True">
+        <xpath expr="//header[@id='top']" position="attributes">
+            <attribute name="class" add="ha-header o_cc o_cc5" separator=" "/>
+        </xpath>
+        <xpath expr="//header[@id='top']/*" position="replace">
+
+            <!-- Main Navbar -->
+            <div class="ha-navbar">
+                <!-- Logo -->
+                <a class="ha-logo" t-attf-href="/">
+                    <span class="nav-logo-text">Hotel <span class="nav-logo-accent">Arena</span></span>
+                    <small class="nav-logo-sub">Chomutov</small>
+                </a>
+
+                <!-- Desktop Nav -->
+                <ul class="ha-nav-desktop" id="top_menu" role="menu">
+                    <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                        <t t-call="website.submenu">
+                            <t t-set="item_class" t-valuef="ha-menu-item"/>
+                            <t t-set="link_class" t-valuef="ha-menu-link"/>
+                        </t>
+                    </t>
+                    <li class="ha-menu-item">
+                        <a href="https://www.secure-hotel-booking.com/Hotel-Arena/JJZW/cs?hotelId=24506"
+                           class="ha-nav-reserve" target="_blank" rel="noopener">Rezervovat</a>
+                    </li>
+                </ul>
+
+                <!-- Mobile Toggle -->
+                <button class="ha-mobile-toggle d-lg-none"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#ha_mobile_menu"
+                        aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+
+            <!-- Mobile Offcanvas -->
+            <div class="offcanvas offcanvas-end ha-offcanvas" tabindex="-1" id="ha_mobile_menu">
+                <div class="ha-offcanvas-header">
+                    <button type="button" class="ha-offcanvas-close"
+                            data-bs-dismiss="offcanvas" aria-label="Zavřít"></button>
+                </div>
+                <div class="offcanvas-body p-0 d-flex flex-column align-items-center justify-content-center">
+                    <ul class="ha-offcanvas-nav" role="menu">
+                        <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                            <t t-call="website.submenu">
+                                <t t-set="item_class" t-valuef=""/>
+                                <t t-set="link_class" t-valuef=""/>
+                            </t>
+                        </t>
+                        <li>
+                            <a href="https://www.secure-hotel-booking.com/Hotel-Arena/JJZW/cs?hotelId=24506"
+                               class="btn-reserve" target="_blank" rel="noopener"
+                               style="margin-top:0.5rem;padding:0.8rem 2rem;display:inline-block;">Rezervovat</a>
+                        </li>
+                    </ul>
+                    <div class="ha-offcanvas-footer">
+                        <p><i class="fa fa-map-marker"/> Beethovenova 5275, 430 01 Chomutov</p>
+                        <p><i class="fa fa-phone"/> <a href="tel:+420474721290">+420 474 721 290</a></p>
+                        <p><i class="fa fa-envelope"/> <a href="mailto:recepce@arenahotel.cz">recepce@arenahotel.cz</a></p>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+
+    <!-- ===================================================================
+         FOOTER - Hotel Arena Dark Theme (4-column grid)
+         =================================================================== -->
+    <template id="ha_footer" name="Hotel Arena Footer" inherit_id="website.layout"
+              active="True" customize_show="True">
+        <xpath expr="//div[@id='footer']" position="replace">
+            <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">
+                <section class="ha-footer" data-snippet="s_text_block" data-name="Footer Content"
+                         style="padding: 5rem 4rem 2rem;">
+                    <div class="container">
+                        <div class="ha-footer-top">
+                            <!-- Brand -->
+                            <div class="ha-footer-brand">
+                                <span class="footer-logo-text">Hotel <span>Arena</span></span>
+                                <p>Moderní hotel v srdci sportovně-relaxačního centra
+                                   u Kamencového jezera. Ideální pro obchodní cesty
+                                   i aktivní dovolenou.</p>
+                            </div>
+
+                            <!-- Navigace -->
+                            <div class="ha-footer-col">
+                                <h5>Navigace</h5>
+                                <a href="/ubytovani">Pokoje</a>
+                                <a href="/o-hotelu">O hotelu</a>
+                                <a href="/restaurace-a-bar">Restaurace</a>
+                                <a href="/galerie">Galerie</a>
+                                <a href="/cenik">Ceník</a>
+                            </div>
+
+                            <!-- Kontakt -->
+                            <div class="ha-footer-col">
+                                <h5>Kontakt</h5>
+                                <p>Beethovenova 5275</p>
+                                <p>430 01 Chomutov</p>
+                                <a href="tel:+420474721290">+420 474 721 290</a>
+                                <a href="tel:+420602495576">+420 602 495 576</a>
+                                <a href="mailto:recepce@arenahotel.cz">recepce@arenahotel.cz</a>
+                            </div>
+
+                            <!-- Restaurace -->
+                            <div class="ha-footer-col">
+                                <h5>Restaurace</h5>
+                                <a href="https://brasileiraarena.cz" target="_blank" rel="noopener">brasileiraarena.cz</a>
+                                <a href="tel:+420474721293">+420 474 721 293</a>
+                                <a href="mailto:restaurace@arenahotel.cz">restaurace@arenahotel.cz</a>
+                                <p style="margin-top:0.8rem;">Po—Čt 15:00—23:00</p>
+                                <p>Pá—So 15:00—00:00</p>
+                                <p>Ne 15:00—23:00</p>
+                            </div>
+                        </div>
+
+                        <!-- Bottom -->
+                        <div class="ha-footer-bottom">
+                            <span>© <t t-esc="datetime.date.today().year"/> Hotel Arena Chomutov.
+                                  Provozovatel: Czech Republic Investment, a.s.</span>
+                            <div class="ha-lang-switcher">
+                                <t t-call="website.language_selector"/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </xpath>
+
+        <!-- Replace default copyright -->
+        <xpath expr="//div[hasclass('o_footer_copyright')]" position="replace">
+            <div class="o_footer_copyright ha-copyright" style="display:none;"></div>
+        </xpath>
+    </template>
+
+
+</odoo>

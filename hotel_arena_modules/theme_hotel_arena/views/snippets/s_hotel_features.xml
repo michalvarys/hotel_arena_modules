@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Features — Numbered list with image (dark card bg) -->
+    <template id="s_hotel_features" name="Vybavení hotelu">
+        <section class="s_ha_hotel_features o_cc o_cc2 pt104 pb104 o_colored_level"
+                 data-snippet="s_hotel_features"
+                 data-name="Vybavení hotelu">
+            <div class="container">
+                <div class="features-layout">
+                    <div class="features-img reveal">
+                        <img src="/theme_hotel_arena/static/src/img/homepage/o-nas2.webp"
+                             alt="Vybavení hotelu Arena" loading="lazy"/>
+                    </div>
+                    <div class="features-list reveal">
+                        <div class="section-tag">Vybavení</div>
+                        <h2 class="section-title">Komfort v každém <em>detailu</em></h2>
+                        <div class="feature-item">
+                            <div class="feature-num">01</div>
+                            <div class="feature-text">
+                                <h3>Klimatizace &amp; trezor</h3>
+                                <p>Každý pokoj vybavený individuálně ovládanou klimatizací
+                                   a bezpečnostním trezorem.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-num">02</div>
+                            <div class="feature-text">
+                                <h3>Satelitní TV &amp; Wi-Fi</h3>
+                                <p>LCD televizor se satelitním příjmem a bezplatné
+                                   bezdrátové připojení v celém hotelu.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-num">03</div>
+                            <div class="feature-text">
+                                <h3>Non-stop recepce</h3>
+                                <p>Recepce k dispozici 24 hodin denně. Check-in kdykoliv,
+                                   concierge služby na přání.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-num">04</div>
+                            <div class="feature-text">
+                                <h3>Hlídané parkoviště</h3>
+                                <p>Vlastní parkoviště pod dozorem kamerového systému
+                                   zdarma pro všechny hosty.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

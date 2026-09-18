@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Parallax Section — Dark overlay with crimson glow -->
+    <template id="s_parallax_section" name="Parallax sekce">
+        <section class="s_ha_parallax o_cc o_cc5 pt0 pb0 o_colored_level"
+                 data-snippet="s_parallax_section"
+                 data-name="Parallax sekce">
+            <div class="ha-header-inner"
+                 style="position:relative;height:400px;display:flex;align-items:center;justify-content:center;
+                        background-image:url('/theme_hotel_arena/static/src/img/parallax/paralax-hotel.webp');
+                        background-size:cover;background-position:center;background-attachment:fixed;">
+                <div style="position:absolute;inset:0;
+                     background:linear-gradient(180deg,rgba(26,26,34,0.6) 0%,rgba(26,26,34,0.8) 100%);
+                     pointer-events:none;"></div>
+                <div style="position:relative;z-index:1;text-align:center;">
+                    <div class="section-tag" style="justify-content:center;color:#F07070;">
+                        Hotel Arena
+                    </div>
+                    <h2 style="font-family:'Playfair Display',serif;color:#FAFAF8;font-weight:400;">
+                        Název stránky</h2>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- Sub-Banner for subpages -->
+    <template id="s_sub_banner" name="Banner podstránky">
+        <section class="s_ha_sub_banner o_cc o_cc5 pt0 pb0 o_colored_level"
+                 data-snippet="s_sub_banner"
+                 data-name="Banner podstránky">
+            <div style="position:relative;height:350px;display:flex;align-items:center;justify-content:center;
+                        background-image:url('/theme_hotel_arena/static/src/img/parallax/paralax-hotel.webp');
+                        background-size:cover;background-position:center;">
+                <div style="position:absolute;inset:0;
+                     background:linear-gradient(180deg,rgba(26,26,34,0.5) 0%,rgba(26,26,34,0.85) 100%);"></div>
+                <!-- Crimson glow -->
+                <div style="position:absolute;bottom:0;left:0;width:50%;height:60%;
+                     background:radial-gradient(ellipse at bottom left,rgba(139,26,43,0.2) 0%,transparent 65%);"></div>
+                <div style="position:relative;z-index:1;text-align:center;">
+                    <h2 style="font-family:'Playfair Display',serif;color:#FAFAF8;
+                        font-weight:400;font-size:clamp(2rem,4vw,3.5rem);text-transform:none;">
+                        Název stránky</h2>
+                </div>
+            </div>
+            <div class="brand-stripe"></div>
+        </section>
+    </template>
+
+</odoo>

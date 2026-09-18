@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="176" viewBox="0 0 256 176">
+  <rect width="256" height="176" fill="#1A1A22" rx="4"/>
+  <rect x="2" y="2" width="252" height="172" fill="none" stroke="#F07070" stroke-width="1" stroke-opacity="0.3" rx="3"/>
+  <text x="128" y="88" text-anchor="middle" dominant-baseline="middle"
+        fill="#F07070" font-family="sans-serif" font-size="13" font-weight="600">
+    Hotel Features
+  </text>
+</svg>

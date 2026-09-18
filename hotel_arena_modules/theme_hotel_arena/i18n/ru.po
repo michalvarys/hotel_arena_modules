@@ -1,0 +1,880 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* theme_hotel_arena
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-12 00:00+0000\n"
+"PO-Revision-Date: 2026-03-12 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.ha_header
+msgid "Mostecká 5900, 430 01 Chomutov"
+msgstr "Mostecká 5900, 430 01 Chomutov"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_hero_slider
+msgid "Hotel Arena"
+msgstr "Hotel Arena"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_hero_slider
+msgid "CHOMUTOV"
+msgstr "CHOMUTOV"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_hero_slider
+msgid "Nově postavený hotel situovaný ve sportovně-relaxačním centru na okraji města Chomutova."
+msgstr "Недавно построенный отель, расположенный в спортивно-оздоровительном центре на окраине города Хомутов."
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_hero_slider
+msgid "Zarezervovat pokoj"
+msgstr "Забронировать номер"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_hero_slider
+msgid "Nově máme také"
+msgstr "У нас теперь есть"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_hero_slider
+msgid "DOBÍJECÍ STANICE ČEZ"
+msgstr "ЗАРЯДНЫЕ СТАНЦИИ ČEZ"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_hero_slider
+msgid "Nově máme také dobíjecí stanice ČEZ pro Vaše elektromobily."
+msgstr "У нас есть новые зарядные станции ČEZ для ваших электромобилей."
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_hero_slider
+msgid "Zobrazit pokoje"
+msgstr "Показать номера"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_home_about
+msgid "Pokoje a apartmá"
+msgstr "Номера и апартаменты"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_home_about
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_rooms_preview
+msgid "UBYTOVÁNÍ"
+msgstr "РАЗМЕЩЕНИЕ"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_home_about
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_rooms_intro
+msgid "Pokoje v hotelu Arena se vyznačují svěžím a moderním designem. Každý pokoj je vybavený vlastním sociálním zařízením, satelitní televizí, trezorem a vlastně ovládanou klimatizací. Bezbariérový přístup do všech pater hotelu zajišťuje výtah."
+msgstr "Номера в отеле Arena оформлены в свежем современном стиле. Каждый номер оснащён собственной ванной комнатой, спутниковым телевидением, сейфом и индивидуально управляемым кондиционером. Безбарьерный доступ на все этажи отеля обеспечивает лифт."
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_home_about
+msgid "WiFi zdarma"
+msgstr "Бесплатный Wi-Fi"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_home_about
+msgid "Parkování zdarma"
+msgstr "Бесплатная парковка"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_home_restaurant
+msgid "Gastronomie"
+msgstr "Gastronomie"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_home_restaurant
+msgid "RESTAURACE"
+msgstr "РЕСТОРАН"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_home_restaurant
+msgid "Hotel Arena poskytuje svým hostům nejen optimální podmínky pro volnočasové aktivity, ale také gastronomické služby na vysoké úrovni v nově otevřené hotelové restauraci."
+msgstr "Отель Arena предоставляет своим гостям не только оптимальные условия для досуга, но и гастрономические услуги на высоком уровне в недавно открытом ресторане отеля."
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_home_restaurant
+msgid "Nápoje"
+msgstr "Напитки"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_home_restaurant
+msgid "BAR"
+msgstr "BAR"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_home_restaurant
+msgid "Najdete u nás také bar, který je vhodný pro soukromá i obchodní setkání. Obsluha baru je připravena splnit Vaše přání a nabídnout Vám nejen alkoholické a nealkoholické nápoje, ale také drobné občerstvení."
+msgstr "У нас также есть бар, подходящий для частных или деловых встреч. Персонал бара готов выполнить ваши пожелания и предложить вам не только алкогольные и безалкогольные напитки, но и лёгкие закуски."
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_rooms_preview
+msgid "Naše pokoje"
+msgstr "Наши номера"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_rooms_preview
+msgid "Dvoulůžkový pokoj Standard"
+msgstr "Стандартный двухместный номер"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_rooms_preview
+msgid "Bezbariérový pokoj"
+msgstr "Безбарьерный номер"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_rooms_preview
+msgid "Rodinný pokoj"
+msgstr "Семейный номер"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_rooms_preview
+msgid "Pokoj Deluxe Queen"
+msgstr "Номер Делюкс Квин"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_rooms_preview
+msgid "Detail"
+msgstr "Подробнее"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_rooms_preview
+msgid "Komfortní dvoulůžkový pokoj s moderním vybavením."
+msgstr "Комфортный двухместный номер с современным оснащением."
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_rooms_preview
+msgid "Dvoulůžkový bezbariérový pokoj s kompletním přístupem."
+msgstr "Безбарьерный двухместный номер с полным доступом."
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_rooms_preview
+msgid "Prostorný pokoj se 4 lůžky pro celou rodinu."
+msgstr "Просторный номер с 4 кроватями для всей семьи."
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_rooms_preview
+msgid "Luxusní pokoj se 2 queen size postelemi."
+msgstr "Роскошный номер с 2 кроватями Queen Size."
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_concierge_services
+msgid "CONCIERGE"
+msgstr "CONCIERGE"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_concierge_services
+msgid "Transfer z letiště"
+msgstr "Трансфер из аэропорта"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_concierge_services
+msgid "Zajistíme Vám pohodlný transfer z letiště přímo k hotelu."
+msgstr "Мы организуем для вас комфортный трансфер из аэропорта прямо в отель."
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_concierge_services
+msgid "Vstupenky"
+msgstr "Билеты"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_concierge_services
+msgid "Zajištění vstupenek do kina, divadla, na koncerty, hokej, fotbal."
+msgstr "Обеспечение билетов в кино, театр, на концерты, хоккей, футбол."
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_concierge_services
+msgid "Rezervace stolku ve vybraných restauracích v okolí."
+msgstr "Бронирование столика в избранных ресторанах в окрестностях."
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_concierge_services
+msgid "Výlety"
+msgstr "Экскурсии"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_concierge_services
+msgid "Zajištění výletů do okolí, turistické materiály zdarma."
+msgstr "Организация экскурсий по окрестностям, бесплатные туристические материалы."
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_hotel_features
+msgid "Proč si vybrat nás"
+msgstr "Почему выбирают нас"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_hotel_features
+msgid "NAŠE SLUŽBY"
+msgstr "НАШИ УСЛУГИ"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_hotel_features
+msgid "Komfortní pokoje"
+msgstr "Комфортные номера"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_hotel_features
+msgid "Moderně vybavené pokoje s klimatizací a Wi-Fi připojením zdarma."
+msgstr "Современные номера с кондиционером и бесплатным Wi-Fi."
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_hotel_features
+msgid "Restaurace s českou i mezinárodní kuchyní a bohatým výběrem nápojů."
+msgstr "Ресторан с чешской и международной кухней и богатым выбором напитков."
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_hotel_features
+msgid "Stylový hotelový bar s širokou nabídkou koktejlů a nápojů."
+msgstr "Стильный отельный бар с широким выбором коктейлей и напитков."
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_hotel_features
+msgid "Konference"
+msgstr "Конференции"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_hotel_features
+msgid "Konferenční prostory pro firemní akce, školení a meetingy."
+msgstr "Конференц-залы для корпоративных мероприятий, тренингов и встреч."
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_about_hotel
+msgid "O hotelu Arena"
+msgstr "Об отеле Arena"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_about_hotel
+msgid "HOTEL ARENA CHOMUTOV"
+msgstr "HOTEL ARENA CHOMUTOV"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_about_hotel
+msgid "Nově postavený hotel Arena je situován ve sportovně-relaxačním centru na Zadních Vinohradech na okraji města Chomutova a umožňuje svým hostům aktivní trávení volného času."
+msgstr "Недавно построенный отель Arena расположен в спортивно-оздоровительном центре в Задних Виноградах на окраине города Хомутов и предоставляет своим гостям возможность активного отдыха."
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_about_hotel
+msgid "Odpočinek a relax"
+msgstr "Отдых и расслабление"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_about_hotel
+msgid "OKOLÍ HOTELU"
+msgstr "ОКРЕСТНОСТИ ОТЕЛЯ"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_about_hotel
+msgid "Nabízíme Vám možnost kombinovat odpočinek a zábavu v bezprostřední blízkosti unikátního Kamencového jezera, bez ohledu na počasí a roční období."
+msgstr "Мы предлагаем вам возможность сочетать отдых и развлечения в непосредственной близости от уникального Каменцового озера, независимо от погоды и времени года."
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_about_hotel
+msgid "Další možnosti trávení volného času v bezprostřední blízkosti hotelu Arena nabízí Zimní stadion, Kino Svět, tréninková hala, atletický a fotbalový stadion, 800 m dlouhá in-line dráha a dětské hřiště. V sezóně je možné využít vodní lyžování ve Wake-Parku u Kamencového jezera."
+msgstr "Другие возможности для проведения свободного времени в непосредственной близости от отеля Arena предлагают Зимний стадион, кинотеатр Свет, тренировочный зал, легкоатлетический и футбольный стадион, 800-метровая дорожка для инлайн-скейтинга и детская площадка. В сезон можно воспользоваться водными лыжами в Wake-Park у Каменцового озера."
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_about_hotel
+msgid "Prostory hotelu"
+msgstr "Помещения отеля"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_about_hotel
+msgid "VYBAVENÍ"
+msgstr "ОБОРУДОВАНИЕ"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_about_hotel
+msgid "Hotel je zařízen v moderním designu s celkovou kapacitou 210 lůžek. Z 96 dvoulůžkových pokojů je několik bezbariérových. Každý pokoj je vybavený vlastním sociálním zařízením, satelitní televizí, trezorem a vlastně ovládanou klimatizací."
+msgstr "Отель оформлен в свежем современном дизайне с общей вместимостью 210 спальных мест. Из 96 двухместных номеров несколько оборудованы для инвалидов. Каждый номер оснащён собственной ванной комнатой, спутниковым телевидением, сейфом и индивидуально управляемым кондиционером."
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_about_hotel
+msgid "Hotel disponuje vlastním parkovištěm pod dozorem kamerového systému. Recepce je k dispozici 24 hodin denně. Hotel má moderní restauraci nabízející mezinárodní gastronomii i české speciality. Kapacita restaurace je 80 míst."
+msgstr "Отель располагает собственной парковкой под наблюдением камер. Ресепшен работает 24 часа в сутки. В отеле есть современный ресторан, предлагающий международную гастрономию и чешские специалитеты. Вместимость ресторана — 80 мест."
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_hotel_services
+msgid "Pro naše hosty"
+msgstr "Для наших гостей"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_hotel_services
+msgid "SLUŽBY PRO NAŠE HOSTY"
+msgstr "УСЛУГИ ДЛЯ НАШИХ ГОСТЕЙ"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_hotel_services
+msgid "Snídaně formou bufetu"
+msgstr "Завтрак в виде буфета"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_hotel_services
+msgid "Hotelová restaurace"
+msgstr "Ресторан отеля"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_hotel_services
+msgid "Hlídané parkoviště"
+msgstr "Охраняемая парковка"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_hotel_services
+msgid "Bezplatný Wi-Fi hotspot"
+msgstr "Бесплатный Wi-Fi хотспот"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_hotel_services
+msgid "Turistické materiály"
+msgstr "Туристические материалы"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_hotel_services
+msgid "Úschova zavazadel"
+msgstr "Хранение багажа"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_hotel_services
+msgid "Praní a žehlení prádla"
+msgstr "Стирка и глажка белья"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_hotel_services
+msgid "Early check-in / Late check-out"
+msgstr "Early check-in / Late check-out"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_rooms_intro
+msgid "Naše ubytování"
+msgstr "Наше размещение"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_rooms_intro
+msgid "POKOJE A APARTMÁ"
+msgstr "НОМЕРА И АПАРТАМЕНТЫ"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_rooms_listing
+msgid "Dvoulůžkový"
+msgstr "Двухместный"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_rooms_listing
+msgid "DVOULŮŽKOVÝ POKOJ STANDARD"
+msgstr "СТАНДАРТНЫЙ ДВУХМЕСТНЫЙ НОМЕР"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_rooms_listing
+msgid "Bezbariérový"
+msgstr "Безбарьерный"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_rooms_listing
+msgid "BEZBARIÉROVÝ DVOULŮŽKOVÝ POKOJ"
+msgstr "БЕЗБАРЬЕРНЫЙ ДВУХМЕСТНЫЙ НОМЕР"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_rooms_listing
+msgid "Čtyřlůžkový"
+msgstr "Четырёхместный"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_rooms_listing
+msgid "RODINNÝ POKOJ"
+msgstr "СЕМЕЙНЫЙ НОМЕР"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_rooms_listing
+msgid "Luxusní"
+msgstr "Люкс"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_rooms_listing
+msgid "POKOJ DELUXE QUEEN"
+msgstr "НОМЕР ДЕЛЮКС КВИН"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_rooms_listing
+msgid "Klimatizace"
+msgstr "Кондиционер"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_rooms_listing
+msgid "Satelitní TV"
+msgstr "Спутниковое ТВ"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_rooms_listing
+msgid "Koupelna"
+msgstr "Ванная комната"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_rooms_listing
+msgid "Trezor"
+msgstr "Сейф"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_rooms_listing
+msgid "Komfortní dvoulůžkový pokoj se dvěma oddělenými postelemi nebo manželskou postelí. Pokoj je vybaven klimatizací, bezplatným Wi-Fi, satelitní televizí a trezorem."
+msgstr "Комфортный двухместный номер с двумя раздельными кроватями или двуспальной кроватью. Номер оснащён кондиционером, бесплатным Wi-Fi, спутниковым ТВ и сейфом."
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_rooms_listing
+msgid "Dvoulůžkový bezbariérový pokoj s kompletním přístupem pro osoby s omezenou pohyblivostí. Bezbariérový přístup do všech pater hotelu zajišťuje výtah."
+msgstr "Безбарьерный двухместный номер с полным доступом для лиц с ограниченной подвижностью. Безбарьерный доступ на все этажи отеля обеспечивает лифт."
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_rooms_listing
+msgid "Prostorný pokoj pro rodiny se 4 lůžky. Vhodný pro rodiny s dětmi nebo skupiny přátel."
+msgstr "Просторный номер для семей с 4 кроватями. Подходит для семей с детьми или компаний друзей."
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_rooms_listing
+msgid "Luxusní pokoj se dvěma queen size postelemi. Nabízí maximální komfort a eleganci pro náročné hosty."
+msgstr "Роскошный номер с двумя кроватями Queen Size. Предлагает максимальный комфорт и элегантность для взыскательных гостей."
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_room_prices
+msgid "Naše ceny"
+msgstr "Наши цены"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_room_prices
+msgid "CENÍK UBYTOVÁNÍ"
+msgstr "ПРЕЙСКУРАНТ ПРОЖИВАНИЯ"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_room_prices
+msgid "Typ pokoje"
+msgstr "Тип номера"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_room_prices
+msgid "Lůžka"
+msgstr "Кровати"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_room_prices
+msgid "1 osoba"
+msgstr "1 гость"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_room_prices
+msgid "2 osoby"
+msgstr "2 гостя"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_room_prices
+msgid "3 osoby"
+msgstr "3 гостя"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_room_prices
+msgid "4 osoby"
+msgstr "4 гостя"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_room_prices
+msgid "Standard (2 oddělené postele)"
+msgstr "Стандарт (2 раздельные кровати)"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_room_prices
+msgid "Standard (manželská postel)"
+msgstr "Стандарт (двуспальная кровать)"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_room_prices
+msgid "Deluxe Queen (2 queen postele)"
+msgstr "Делюкс Квин (2 кровати Queen)"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_room_prices
+msgid "V ceně ubytování je zahrnuto:"
+msgstr "В стоимость проживания включено:"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_room_prices
+msgid "Snídaně formou bufetových stolů"
+msgstr "Завтрак в виде буфета"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_room_prices
+msgid "Satelitní televize a trezor na pokoji"
+msgstr "Спутниковое ТВ и сейф в номере"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_room_prices
+msgid "Bezdrátové připojení k internetu v celém hotelu"
+msgstr "Беспроводной доступ в Интернет по всему отелю"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_room_prices
+msgid "DPH a městský poplatek"
+msgstr "НДС и городской сбор"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_room_prices
+msgid "Non-stop recepce"
+msgstr "Круглосуточная стойка регистрации"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_room_prices
+msgid "Možnost parkování na hotelovém parkovišti pod dozorem kamerového systému bez poplatku"
+msgstr "Бесплатная парковка на охраняемой камерами парковке отеля"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_room_prices
+msgid "Doplňkové služby:"
+msgstr "Дополнительные услуги:"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_room_prices
+msgid "Ubytování dětí do 3 let — zdarma"
+msgstr "Проживание детей до 3 лет — бесплатно"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_room_prices
+msgid "Pro vybrané pokoje možnost přistýlky pro dítě"
+msgstr "Дополнительная кровать для ребёнка в выбранных номерах"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_room_prices
+msgid "Polopenze, případně plná penze (skupinové pobyty, za příplatek)"
+msgstr "Полупансион или полный пансион (групповые заезды, за доплату)"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_room_prices
+msgid "Vysokorychlostní připojení k internetu (za příplatek)"
+msgstr "Высокоскоростной доступ в Интернет (за доплату)"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_room_prices
+msgid "Praní a žehlení prádla (za příplatek)"
+msgstr "Стирка и глажка белья (за доплату)"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_room_prices
+msgid "Zajištění vstupenek"
+msgstr "Обеспечение билетов"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_room_prices
+msgid "Domácí zvířata nejsou povolena."
+msgstr "Домашние животные не допускаются."
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_breakfast_info
+msgid "SNÍDANĚ"
+msgstr "ЗАВТРАК"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_breakfast_info
+msgid "Každé ráno pro vás připravujeme bohaté snídaňové buffet s výběrem čerstvého pečiva, sýrů, uzenin, ovoce a dalších pochutin."
+msgstr "Каждое утро мы готовим для вас богатый завтрак-буфет с выбором свежей выпечки, сыров, колбасных изделий, фруктов и других лакомств."
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_breakfast_info
+msgid "Čas snídaní"
+msgstr "Время завтрака"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_breakfast_info
+msgid "Pracovní dny:"
+msgstr "Будни:"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_breakfast_info
+msgid "Víkendy:"
+msgstr "Выходные:"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_breakfast_info
+msgid "Pro hotelové hosty"
+msgstr "Для гостей отеля"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_breakfast_info
+msgid "zdarma"
+msgstr "бесплатно"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_breakfast_info
+msgid "Pro ostatní hosty:"
+msgstr "Для остальных гостей:"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_restaurant_info
+msgid "Restaurante Brasileiro"
+msgstr "Restaurante Brasileiro"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_restaurant_info
+msgid "Brazilská kuchyně"
+msgstr "Бразильская кухня"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_restaurant_info
+msgid "přímo v hotelu"
+msgstr "прямо в отеле"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_restaurant_info
+msgid "Autentické chutě Brazílie od šéfkuchaře Rafaela"
+msgstr "Аутентичные вкусы Бразилии от шеф-повара Рафаэля"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_restaurant_info
+msgid "Restaurante Brasileiro — to je brazilská kuchyně s mezinárodním přesahem přímo v srdci Hotel Arena. Šéfkuchař Rafael přináší autentické recepty z Brazílie, doplněné o české a mezinárodní speciality."
+msgstr "Restaurante Brasileiro — это бразильская кухня с международным размахом в самом сердце отеля Arena. Шеф-повар Рафаэль привносит аутентичные рецепты из Бразилии, дополненные чешскими и международными специалитетами."
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_restaurant_info
+msgid "Kapacita 110 míst včetně 2 salonků a letní zahrádky s 60 místy. Součástí je bar ideální pro setkání i obchodní jednání."
+msgstr "Вместимость 110 мест, включая 2 салона и летнюю террасу на 60 мест. Бар идеально подходит для встреч и деловых переговоров."
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_restaurant_info
+msgid "Jídelní lístek"
+msgstr "Меню"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_restaurant_info
+msgid "Rezervovat stůl"
+msgstr "Забронировать столик"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_restaurant_info
+msgid "Restaurace"
+msgstr "Ресторан"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_restaurant_info
+msgid "Snídaně"
+msgstr "Завтрак"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_parallax_bar
+msgid "Hotelový Bar"
+msgstr "Бар отеля"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_parallax_bar
+msgid "Stylový bar s širokou nabídkou koktejlů, vín a dalších nápojů. Ideální místo pro relaxaci po náročném dni."
+msgstr "Стильный бар с широким выбором коктейлей, вин и других напитков. Идеальное место для отдыха после насыщенного дня."
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_parallax_bar
+msgid "Více informací"
+msgstr "Подробнее"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_contact_form
+msgid "Napište nám"
+msgstr "Напишите нам"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_contact_form
+msgid "KONTAKTY"
+msgstr "КОНТАКТЫ"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_contact_form
+msgid "Rádi zodpovíme každý dotaz."
+msgstr "С радостью ответим на любые вопросы."
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_contact_form
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_contact_info
+msgid "Adresa"
+msgstr "Адрес"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_contact_form
+msgid "Recepce"
+msgstr "Ресепшен"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_contact_form
+msgid "Manažer hotelu"
+msgstr "Менеджер отеля"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_contact_form
+msgid "Provozovatel"
+msgstr "Оператор"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_contact_form
+msgid "Jméno *"
+msgstr "Имя *"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_contact_form
+msgid "Vaše jméno"
+msgstr "Ваше имя"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_contact_form
+msgid "Váš e-mail"
+msgstr "Ваш e-mail"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_contact_form
+msgid "Telefon"
+msgstr "Телефон"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_contact_form
+msgid "Váš telefon"
+msgstr "Ваш телефон"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_contact_form
+msgid "Předmět *"
+msgstr "Тема *"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_contact_form
+msgid "Předmět zprávy"
+msgstr "Тема сообщения"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_contact_form
+msgid "Zpráva *"
+msgstr "Сообщение *"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_contact_form
+msgid "Vaše zpráva (doporučený počet znaků 80–300)"
+msgstr "Ваше сообщение (рекомендуемое количество символов 80–300)"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_contact_form
+msgid "Odeslat"
+msgstr "Отправить"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_contact_info
+msgid "Telefon"
+msgstr "Телефон"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_hotel_gallery
+msgid "Naše fotografie"
+msgstr "Наши фотографии"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_hotel_gallery
+msgid "GALERIE"
+msgstr "ГАЛЕРЕЯ"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.s_hotel_gallery
+msgid "Zobrazit celou galerii"
+msgstr "Показать всю галерею"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.ha_page_gallery
+msgid "Jak to u nás vypadá"
+msgstr "Как выглядит наш отель"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.ha_page_gallery
+msgid "Prohlédněte si prostory hotelu"
+msgstr "Осмотрите помещения отеля"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.ha_page_gallery
+msgid "Fotografie hotelu"
+msgstr "Фотографии отеля"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.ha_page_ubytovani
+msgid "Ubytování"
+msgstr "Размещение"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.ha_page_about
+msgid "O hotelu"
+msgstr "Об отеле"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.ha_page_about
+msgid "Hotel Arena Chomutov"
+msgstr "Отель Arena Хомутов"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.ha_page_restaurant
+msgid "Restaurace a bar"
+msgstr "Ресторан и бар"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.ha_page_gallery
+msgid "Galerie"
+msgstr "Галерея"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.ha_page_contact
+msgid "Kontakt"
+msgstr "Контакт"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.ha_page_pricelist
+msgid "Ceník"
+msgstr "Прейскурант"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.ha_page_pricelist
+msgid "Ceny ubytování"
+msgstr "Цены на проживание"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.ha_footer
+msgid "Kontakty"
+msgstr "Контакты"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.ha_footer
+msgid "Recepce:"
+msgstr "Ресепшен:"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.ha_footer
+msgid "Restaurace:"
+msgstr "Ресторан:"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.ha_footer
+msgid "Manažer hotelu:"
+msgstr "Менеджер отеля:"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.ha_footer
+msgid "Rychlé odkazy"
+msgstr "Быстрый доступ"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.ha_footer
+msgid "O hotelu"
+msgstr "Об отеле"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.ha_footer
+msgid "Restaurace a bar"
+msgstr "Ресторан и бар"
+
+#. module: theme_hotel_arena
+#: model:ir.ui.view,arch_db:theme_hotel_arena.ha_footer
+msgid "Všechna práva vyhrazena."
+msgstr "Все права защищены."

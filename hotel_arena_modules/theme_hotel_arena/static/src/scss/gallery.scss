@@ -1,0 +1,114 @@
+// =============================================================================
+// Hotel Arena - Gallery Styles (Dark Theme)
+// =============================================================================
+
+$ha-red: #F07070;
+$ha-dark: #1A1A22;
+$ha-white: #FAFAF8;
+$ha-text-muted: #C5C2BA;
+$ha-transition: all 0.3s ease;
+
+// Gallery Grid
+.ha-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+
+    @media (max-width: 1200px) { grid-template-columns: repeat(3, 1fr); }
+    @media (max-width: 768px) { grid-template-columns: repeat(2, 1fr); }
+    @media (max-width: 480px) { grid-template-columns: 1fr; }
+}
+
+.ha-gallery-item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        aspect-ratio: 4/3;
+        transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .ha-gallery-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, transparent 40%, rgba($ha-dark, 0.8) 100%);
+        opacity: 0;
+        transition: $ha-transition;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        i {
+            color: $ha-white;
+            font-size: 24px;
+        }
+    }
+
+    &:hover {
+        img { transform: scale(1.08); }
+        .ha-gallery-overlay { opacity: 1; }
+    }
+}
+
+// Lightbox
+.ha-lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba($ha-dark, 0.97);
+    z-index: 100000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    &.active { display: flex; }
+
+    .ha-lightbox-close {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        color: $ha-white;
+        font-size: 30px;
+        cursor: pointer;
+        z-index: 100001;
+        transition: $ha-transition;
+        background: none;
+        border: none;
+
+        &:hover { color: $ha-red; }
+    }
+
+    .ha-lightbox-img {
+        max-width: 90vw;
+        max-height: 85vh;
+        object-fit: contain;
+    }
+
+    .ha-lightbox-nav {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: $ha-white;
+        font-size: 40px;
+        cursor: pointer;
+        padding: 20px;
+        transition: $ha-transition;
+
+        &:hover { color: $ha-red; }
+        &.prev { left: 10px; }
+        &.next { right: 10px; }
+    }
+
+    .ha-lightbox-counter {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: $ha-text-muted;
+        font-size: 0.9rem;
+        letter-spacing: 0.1em;
+    }
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Breakfast / Snídaně Section -->
+    <template id="s_breakfast_info" name="Snídaně">
+        <section class="s_ha_breakfast o_cc o_cc1 pt104 pb104 o_colored_level"
+                 data-snippet="s_breakfast_info"
+                 data-name="Snídaně">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="ha-sub-title">Gastronomie</div>
+                        <h2 style="text-transform: uppercase; margin-bottom: 20px;">SNÍDANĚ</h2>
+                        <p style="line-height: 1.8; color:#C5C2BA;">
+                            Každé ráno pro vás připravujeme bohaté snídaňové buffet
+                            s výběrem čerstvého pečiva, sýrů, uzenin, ovoce a dalších pochutin.
+                        </p>
+                        <div class="mt-3" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.04); padding: 20px;">
+                            <h5 style="text-transform: uppercase; margin-bottom: 15px;">Čas snídaní</h5>
+                            <p style="color:#C5C2BA; margin-bottom: 5px;">
+                                <strong>Pracovní dny:</strong> 6:30 — 9:30</p>
+                            <p style="color:#C5C2BA; margin-bottom: 15px;">
+                                <strong>Víkendy:</strong> 7:00 — 10:00</p>
+                            <p style="color:#C5C2BA; margin-bottom: 0;">
+                                <i class="fa fa-check" style="color:#F07070; margin-right: 8px;"/>
+                                Pro hotelové hosty <strong>zdarma</strong></p>
+                            <p style="color:#C5C2BA; margin-bottom: 0;">
+                                <i class="fa fa-info-circle" style="color:#F07070; margin-right: 8px;"/>
+                                Pro ostatní hosty: <strong>200 Kč / osoba</strong></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-4 mt-lg-0">
+                        <div class="ha-img-hover-zoom" style="overflow: hidden;">
+                            <img src="/theme_hotel_arena/static/src/img/homepage/snidane.webp"
+                                 alt="Snídaně" class="img-fluid" loading="lazy"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

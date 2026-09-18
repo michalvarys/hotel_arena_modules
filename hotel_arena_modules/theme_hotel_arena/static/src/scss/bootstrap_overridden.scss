@@ -1,0 +1,80 @@
+// Hotel Arena - Bootstrap Overrides (Dark Theme)
+// Loaded via web._assets_frontend_helpers (prepend).
+
+$border-radius: 0;
+$border-radius-sm: 0;
+$border-radius-lg: 0;
+$border-radius-pill: 0;
+
+$btn-border-radius: 0;
+$btn-border-radius-sm: 0;
+$btn-border-radius-lg: 0;
+
+$body-bg: #1A1A22;
+$body-color: #E8E6E1;
+
+$font-weight-normal: 400;
+$font-weight-light: 300;
+
+$headings-font-weight: 400;
+$headings-line-height: 1.15;
+
+$box-shadow: none;
+$box-shadow-sm: none;
+$btn-box-shadow: none;
+$btn-active-box-shadow: none;
+$input-box-shadow: none;
+$input-focus-box-shadow: none;
+
+$link-color: #F07070;
+$link-hover-color: #F89090;
+$link-decoration: none;
+$link-hover-decoration: none;
+
+// Force dark theme on Bootstrap components
+$primary: #F07070;
+$secondary: #22222C;
+$success: #4CAF50;
+$info: #F07070;
+$warning: #D4A843;
+$danger: #F07070;
+$light: #2A2A36;
+$dark: #1A1A22;
+
+$component-active-bg: #F07070;
+$component-active-color: #FAFAF8;
+
+// Form controls dark theme
+$input-bg: #2A2A36;
+$input-color: #E8E6E1;
+$input-border-color: rgba(255, 255, 255, 0.08);
+$input-focus-border-color: #F07070;
+$input-placeholder-color: rgba(197, 194, 186, 0.5);
+
+// Dropdown dark
+$dropdown-bg: #22222C;
+$dropdown-border-color: rgba(194, 59, 59, 0.1);
+$dropdown-link-color: #E8E6E1;
+$dropdown-link-hover-color: #F07070;
+$dropdown-link-hover-bg: rgba(194, 59, 59, 0.08);
+
+// Card dark
+$card-bg: #22222C;
+$card-border-color: rgba(255, 255, 255, 0.04);
+$card-color: #E8E6E1;
+
+// Table dark
+$table-color: #E8E6E1;
+$table-bg: transparent;
+$table-border-color: rgba(255, 255, 255, 0.04);
+$table-striped-bg: rgba(255, 255, 255, 0.02);
+$table-hover-bg: rgba(240, 112, 112, 0.03);
+
+// Nav dark
+$nav-link-color: #C5C2BA;
+$nav-link-hover-color: #F07070;
+
+// Heading colors
+$headings-color: #FAFAF8;
+
+$btn-font-weight: 600;

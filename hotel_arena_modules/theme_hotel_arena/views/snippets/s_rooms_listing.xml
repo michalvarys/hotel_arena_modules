@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Rooms Full Listing (Alternating Layout) -->
+    <template id="s_rooms_listing" name="Pokoje - seznam">
+        <section class="s_ha_rooms_listing o_cc o_cc1 pt104 pb104 o_colored_level"
+                 data-snippet="s_rooms_listing"
+                 data-name="Pokoje - seznam">
+            <div class="container">
+                <div class="ha-room-listing">
+                    <!-- Standard Double (twin beds) -->
+                    <div class="ha-room-item">
+                        <div class="ha-room-item-img">
+                            <img src="/theme_hotel_arena/static/src/img/rooms/pokoj-standard.webp"
+                                 alt="Dvoulůžkový pokoj Standard" loading="lazy"/>
+                        </div>
+                        <div class="ha-room-item-content">
+                            <div class="ha-sub-title">Dvoulůžkový</div>
+                            <h3>DVOULŮŽKOVÝ POKOJ STANDARD</h3>
+                            <div class="ha-room-item-price">od 1 350 Kč <small>/ noc</small></div>
+                            <p>Komfortní dvoulůžkový pokoj se dvěma oddělenými postelemi nebo
+                               manželskou postelí. Pokoj je vybaven klimatizací, bezplatným Wi-Fi,
+                               satelitní televizí a trezorem.</p>
+                            <ul class="ha-room-amenities">
+                                <li><i class="fa fa-wifi"/> WiFi</li>
+                                <li><i class="fa fa-snowflake-o"/> Klimatizace</li>
+                                <li><i class="fa fa-tv"/> Satelitní TV</li>
+                                <li><i class="fa fa-bath"/> Koupelna</li>
+                                <li><i class="fa fa-lock"/> Trezor</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Barrier-free -->
+                    <div class="ha-room-item">
+                        <div class="ha-room-item-img">
+                            <img src="/theme_hotel_arena/static/src/img/rooms/bezbarierovy-pokoj.webp"
+                                 alt="Bezbariérový dvoulůžkový pokoj" loading="lazy"/>
+                        </div>
+                        <div class="ha-room-item-content">
+                            <div class="ha-sub-title">Bezbariérový</div>
+                            <h3>BEZBARIÉROVÝ DVOULŮŽKOVÝ POKOJ</h3>
+                            <div class="ha-room-item-price">od 1 935 Kč <small>/ noc</small></div>
+                            <p>Dvoulůžkový bezbariérový pokoj s kompletním přístupem pro osoby
+                               s omezenou pohyblivostí. Bezbariérový přístup do všech pater
+                               hotelu zajišťuje výtah.</p>
+                            <ul class="ha-room-amenities">
+                                <li><i class="fa fa-wifi"/> WiFi</li>
+                                <li><i class="fa fa-snowflake-o"/> Klimatizace</li>
+                                <li><i class="fa fa-tv"/> Satelitní TV</li>
+                                <li><i class="fa fa-wheelchair"/> Bezbariérový</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Family Room -->
+                    <div class="ha-room-item">
+                        <div class="ha-room-item-img">
+                            <img src="/theme_hotel_arena/static/src/img/rooms/rodinny-pokoj.webp"
+                                 alt="Rodinný pokoj" loading="lazy"/>
+                        </div>
+                        <div class="ha-room-item-content">
+                            <div class="ha-sub-title">Čtyřlůžkový</div>
+                            <h3>RODINNÝ POKOJ</h3>
+                            <div class="ha-room-item-price">od 2 115 Kč <small>/ noc</small></div>
+                            <p>Prostorný pokoj pro rodiny se 4 lůžky.
+                               Vhodný pro rodiny s dětmi nebo skupiny přátel.</p>
+                            <ul class="ha-room-amenities">
+                                <li><i class="fa fa-wifi"/> WiFi</li>
+                                <li><i class="fa fa-snowflake-o"/> Klimatizace</li>
+                                <li><i class="fa fa-tv"/> Satelitní TV</li>
+                                <li><i class="fa fa-bath"/> Koupelna</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Deluxe Queen -->
+                    <div class="ha-room-item">
+                        <div class="ha-room-item-img">
+                            <img src="/theme_hotel_arena/static/src/img/rooms/pokoj-deluxe-queen.webp"
+                                 alt="Pokoj Deluxe Queen" loading="lazy"/>
+                        </div>
+                        <div class="ha-room-item-content">
+                            <div class="ha-sub-title">Luxusní</div>
+                            <h3>POKOJ DELUXE QUEEN</h3>
+                            <div class="ha-room-item-price">od 3 150 Kč <small>/ noc</small></div>
+                            <p>Luxusní pokoj se dvěma queen size postelemi.
+                               Nabízí maximální komfort a eleganci pro náročné hosty.</p>
+                            <ul class="ha-room-amenities">
+                                <li><i class="fa fa-wifi"/> WiFi</li>
+                                <li><i class="fa fa-snowflake-o"/> Klimatizace</li>
+                                <li><i class="fa fa-tv"/> Satelitní TV</li>
+                                <li><i class="fa fa-bath"/> Koupelna</li>
+                                <li><i class="fa fa-lock"/> Trezor</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- Rooms Intro Text -->
+    <template id="s_rooms_intro" name="Pokoje - úvod">
+        <section class="s_ha_rooms_intro o_cc o_cc1 pt104 pb104 o_colored_level"
+                 data-snippet="s_rooms_intro"
+                 data-name="Pokoje - úvod">
+            <div class="container text-center">
+                <div class="section-tag" style="justify-content:center;">Naše ubytování</div>
+                <h2 class="section-title">Pokoje &amp; Apartmá</h2>
+                <p style="max-width:700px;margin:0 auto;color:#C5C2BA;line-height:1.8;font-size:1.25rem;">
+                    Pokoje v hotelu Arena se vyznačují svěžím a moderním designem.
+                    Každý pokoj je vybavený vlastním sociálním zařízením, satelitní
+                    televizí, trezorem a vlastně ovládanou klimatizací.
+                    Bezbariérový přístup do všech pater hotelu zajišťuje výtah.</p>
+            </div>
+        </section>
+    </template>
+
+</odoo>

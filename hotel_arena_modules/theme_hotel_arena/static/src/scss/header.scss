@@ -1,0 +1,331 @@
+// =============================================================================
+// Hotel Arena - Header Styles (Dark Theme with Red Accent)
+// =============================================================================
+// Fixed transparent nav that becomes blurred dark on scroll.
+
+$ha-red: #F07070;
+$ha-red-light: #F89090;
+$ha-crimson: #8B1A2B;
+$ha-dark: #1A1A22;
+$ha-dark-card: #22222C;
+$ha-text: #E8E6E1;
+$ha-text-muted: #C5C2BA;
+$ha-white: #FAFAF8;
+$ha-font-body: 'DM Sans', sans-serif;
+$ha-font-heading: 'Playfair Display', serif;
+$ha-transition: all 0.3s ease;
+
+// -----------------------------------------------------------------------------
+// Header Override
+// -----------------------------------------------------------------------------
+header#top {
+    background-color: transparent !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    transition: all 0.5s ease;
+}
+
+header#top.o_header_standard {
+    background-color: transparent !important;
+}
+
+// Scrolled state
+header#top.o_header_is_scrolled,
+header#top.scrolled {
+    background: rgba(26, 26, 34, 0.92) !important;
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(194, 59, 59, 0.1) !important;
+}
+
+// -----------------------------------------------------------------------------
+// Nav Layout
+// -----------------------------------------------------------------------------
+.ha-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 4rem;
+    transition: all 0.5s ease;
+
+    @media (max-width: 768px) { padding: 1rem 1.25rem; }
+    @media (max-width: 480px) { padding: 0.8rem 1rem; }
+}
+
+header#top.o_header_is_scrolled .ha-navbar {
+    padding: 1rem 4rem;
+
+    @media (max-width: 768px) { padding: 0.8rem 1.25rem; }
+}
+
+// Logo (text-based)
+.ha-logo {
+    text-decoration: none;
+
+    .nav-logo-text {
+        font-family: $ha-font-heading;
+        font-size: 1.8rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        color: $ha-white;
+        line-height: 1;
+    }
+
+    .nav-logo-accent { color: $ha-red; font-weight: 400; }
+
+    .nav-logo-sub {
+        display: block;
+        font-family: $ha-font-body;
+        font-size: 0.65rem;
+        font-weight: 500;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        color: $ha-text-muted;
+        margin-top: -2px;
+    }
+
+    img {
+        max-height: 48px;
+        width: auto;
+    }
+
+    @media (max-width: 480px) {
+        .nav-logo-text { font-size: 1.3rem; }
+    }
+}
+
+// -----------------------------------------------------------------------------
+// Desktop Navigation Links
+// -----------------------------------------------------------------------------
+.ha-nav-desktop {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    @media (max-width: 768px) { display: none; }
+}
+
+.ha-menu-item {
+    position: relative;
+}
+
+.ha-menu-link {
+    color: $ha-text-muted;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: color 0.3s;
+    position: relative;
+    padding: 0.5rem 0;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background: $ha-red;
+        transition: width 0.3s ease;
+    }
+
+    &:hover {
+        color: $ha-red;
+        text-decoration: none;
+    }
+
+    &:hover::after { width: 100%; }
+
+    &.active {
+        color: $ha-red;
+        &::after { width: 100%; }
+    }
+}
+
+// Reserve button in nav
+.ha-nav-reserve {
+    background: linear-gradient(135deg, $ha-red 0%, $ha-crimson 100%);
+    color: $ha-white !important;
+    padding: 1rem 2.5rem;
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: $ha-transition;
+
+    &:hover {
+        background: linear-gradient(135deg, $ha-red-light 0%, $ha-red 100%);
+        color: $ha-white !important;
+        transform: translateY(-1px);
+        box-shadow: 0 8px 30px rgba(194, 59, 59, 0.3);
+        text-decoration: none;
+    }
+
+    @media (max-width: 480px) {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+// Submenu (dropdowns)
+.ha-submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    background: rgba($ha-dark, 0.95);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(194, 59, 59, 0.1);
+    z-index: 1000;
+    padding: 10px 0;
+
+    .ha-submenu-link {
+        display: block;
+        padding: 8px 20px;
+        font-size: 0.95rem;
+        color: $ha-text-muted;
+        text-decoration: none;
+        transition: $ha-transition;
+
+        &:hover {
+            color: $ha-red;
+            padding-left: 25px;
+        }
+    }
+}
+
+.ha-menu-item:hover .ha-submenu { display: block; }
+
+// -----------------------------------------------------------------------------
+// Mobile Toggle
+// -----------------------------------------------------------------------------
+.ha-mobile-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    z-index: 110;
+
+    span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: $ha-white;
+        transition: $ha-transition;
+        position: absolute;
+        left: 0;
+
+        &:nth-child(1) { top: 0; }
+        &:nth-child(2) { top: 9px; }
+        &:nth-child(3) { top: 18px; }
+    }
+
+    @media (max-width: 768px) { display: block; }
+}
+
+// -----------------------------------------------------------------------------
+// Mobile Menu (Offcanvas)
+// -----------------------------------------------------------------------------
+.ha-offcanvas {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(26, 26, 34, 0.97);
+    backdrop-filter: blur(20px);
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    transform: translateX(100%);
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+    &.show { transform: translateX(0); }
+}
+
+.ha-offcanvas-header {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+}
+
+.ha-offcanvas-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    position: relative;
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 24px;
+        height: 2px;
+        background: $ha-white;
+        transition: background 0.3s;
+    }
+
+    &::before { transform: translate(-50%, -50%) rotate(45deg); }
+    &::after { transform: translate(-50%, -50%) rotate(-45deg); }
+    &:hover::before, &:hover::after { background: $ha-red; }
+}
+
+.ha-offcanvas-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+    li { margin-bottom: 0.2rem; }
+
+    a {
+        color: $ha-text;
+        text-decoration: none;
+        font-size: 1.1rem;
+        font-weight: 500;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        transition: color 0.3s;
+        padding: 0.3rem 0;
+        display: block;
+
+        &:hover { color: $ha-red; }
+    }
+}
+
+.ha-offcanvas-footer {
+    padding: 10px 20px;
+    color: $ha-text-muted;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 0.5rem;
+
+    p { margin-bottom: 6px; }
+    i { color: $ha-red; margin-right: 8px; }
+    a {
+        color: $ha-text-muted;
+        &:hover { color: $ha-red; }
+    }
+}

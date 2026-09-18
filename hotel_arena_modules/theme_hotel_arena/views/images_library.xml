@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data>
+    <!-- ===== Logos ===== -->
+    <record id="ha_library_logo" model="theme.ir.attachment">
+        <field name="key">theme_hotel_arena.ha_library_logo</field>
+        <field name="name">theme_hotel_arena.logo-regular.png</field>
+        <field name="url">/theme_hotel_arena/static/src/img/logos/logo-regular.png</field>
+    </record>
+    <record id="ha_library_logo_black" model="theme.ir.attachment">
+        <field name="key">theme_hotel_arena.ha_library_logo_black</field>
+        <field name="name">theme_hotel_arena.logo-regular-black.png</field>
+        <field name="url">/theme_hotel_arena/static/src/img/logos/logo-regular-black.png</field>
+    </record>
+    <record id="ha_library_logo_small" model="theme.ir.attachment">
+        <field name="key">theme_hotel_arena.ha_library_logo_small</field>
+        <field name="name">theme_hotel_arena.logo-small.png</field>
+        <field name="url">/theme_hotel_arena/static/src/img/logos/logo-small.png</field>
+    </record>
+
+    <!-- ===== Banners ===== -->
+    <record id="ha_library_slider1" model="theme.ir.attachment">
+        <field name="key">theme_hotel_arena.ha_library_slider1</field>
+        <field name="name">theme_hotel_arena.slider1.webp</field>
+        <field name="url">/theme_hotel_arena/static/src/img/banners/slider1.webp</field>
+    </record>
+    <record id="ha_library_slider2" model="theme.ir.attachment">
+        <field name="key">theme_hotel_arena.ha_library_slider2</field>
+        <field name="name">theme_hotel_arena.slider2.webp</field>
+        <field name="url">/theme_hotel_arena/static/src/img/banners/slider2.webp</field>
+    </record>
+
+    <!-- ===== Parallax / Backgrounds ===== -->
+    <record id="ha_library_paralax_hotel" model="theme.ir.attachment">
+        <field name="key">theme_hotel_arena.ha_library_paralax_hotel</field>
+        <field name="name">theme_hotel_arena.paralax-hotel.webp</field>
+        <field name="url">/theme_hotel_arena/static/src/img/parallax/paralax-hotel.webp</field>
+    </record>
+    <record id="ha_library_paralax_pokoj" model="theme.ir.attachment">
+        <field name="key">theme_hotel_arena.ha_library_paralax_pokoj</field>
+        <field name="name">theme_hotel_arena.paralax-pokoj.webp</field>
+        <field name="url">/theme_hotel_arena/static/src/img/parallax/paralax-pokoj.webp</field>
+    </record>
+    <record id="ha_library_paralax_bar" model="theme.ir.attachment">
+        <field name="key">theme_hotel_arena.ha_library_paralax_bar</field>
+        <field name="name">theme_hotel_arena.paralax-bar.webp</field>
+        <field name="url">/theme_hotel_arena/static/src/img/parallax/paralax-bar.webp</field>
+    </record>
+    <record id="ha_library_paralax1" model="theme.ir.attachment">
+        <field name="key">theme_hotel_arena.ha_library_paralax1</field>
+        <field name="name">theme_hotel_arena.paralax1.webp</field>
+        <field name="url">/theme_hotel_arena/static/src/img/parallax/paralax1.webp</field>
+    </record>
+    <record id="ha_library_recepce_paralax" model="theme.ir.attachment">
+        <field name="key">theme_hotel_arena.ha_library_recepce_paralax</field>
+        <field name="name">theme_hotel_arena.recepce-paralax.webp</field>
+        <field name="url">/theme_hotel_arena/static/src/img/parallax/recepce-paralax.webp</field>
+    </record>
+
+    <!-- ===== Room Images ===== -->
+    <record id="ha_library_room_standard" model="theme.ir.attachment">
+        <field name="key">theme_hotel_arena.ha_library_room_standard</field>
+        <field name="name">theme_hotel_arena.pokoj-standard.webp</field>
+        <field name="url">/theme_hotel_arena/static/src/img/rooms/pokoj-standard.webp</field>
+    </record>
+    <record id="ha_library_room_deluxe" model="theme.ir.attachment">
+        <field name="key">theme_hotel_arena.ha_library_room_deluxe</field>
+        <field name="name">theme_hotel_arena.pokoj-deluxe-queen.webp</field>
+        <field name="url">/theme_hotel_arena/static/src/img/rooms/pokoj-deluxe-queen.webp</field>
+    </record>
+    <record id="ha_library_room_family" model="theme.ir.attachment">
+        <field name="key">theme_hotel_arena.ha_library_room_family</field>
+        <field name="name">theme_hotel_arena.rodinny-pokoj.webp</field>
+        <field name="url">/theme_hotel_arena/static/src/img/rooms/rodinny-pokoj.webp</field>
+    </record>
+    <record id="ha_library_room_barrier_free" model="theme.ir.attachment">
+        <field name="key">theme_hotel_arena.ha_library_room_barrier_free</field>
+        <field name="name">theme_hotel_arena.bezbarierovy-pokoj.webp</field>
+        <field name="url">/theme_hotel_arena/static/src/img/rooms/bezbarierovy-pokoj.webp</field>
+    </record>
+
+    <!-- ===== Homepage Feature Images ===== -->
+    <record id="ha_library_hp_pokoje" model="theme.ir.attachment">
+        <field name="key">theme_hotel_arena.ha_library_hp_pokoje</field>
+        <field name="name">theme_hotel_arena.uvodni-stranka-pokoje.webp</field>
+        <field name="url">/theme_hotel_arena/static/src/img/homepage/uvodni-stranka-pokoje.webp</field>
+    </record>
+    <record id="ha_library_hp_bar" model="theme.ir.attachment">
+        <field name="key">theme_hotel_arena.ha_library_hp_bar</field>
+        <field name="name">theme_hotel_arena.uvodni-stranka-bar.webp</field>
+        <field name="url">/theme_hotel_arena/static/src/img/homepage/uvodni-stranka-bar.webp</field>
+    </record>
+    <record id="ha_library_hp_restaurace" model="theme.ir.attachment">
+        <field name="key">theme_hotel_arena.ha_library_hp_restaurace</field>
+        <field name="name">theme_hotel_arena.uvodni-stranka-restaurace.webp</field>
+        <field name="url">/theme_hotel_arena/static/src/img/homepage/uvodni-stranka-restaurace.webp</field>
+    </record>
+
+    <!-- ===== About Images ===== -->
+    <record id="ha_library_onas1" model="theme.ir.attachment">
+        <field name="key">theme_hotel_arena.ha_library_onas1</field>
+        <field name="name">theme_hotel_arena.o-nas.webp</field>
+        <field name="url">/theme_hotel_arena/static/src/img/homepage/o-nas.webp</field>
+    </record>
+    <record id="ha_library_onas2" model="theme.ir.attachment">
+        <field name="key">theme_hotel_arena.ha_library_onas2</field>
+        <field name="name">theme_hotel_arena.o-nas2.webp</field>
+        <field name="url">/theme_hotel_arena/static/src/img/homepage/o-nas2.webp</field>
+    </record>
+    <record id="ha_library_onas3" model="theme.ir.attachment">
+        <field name="key">theme_hotel_arena.ha_library_onas3</field>
+        <field name="name">theme_hotel_arena.o-nas3.webp</field>
+        <field name="url">/theme_hotel_arena/static/src/img/homepage/o-nas3.webp</field>
+    </record>
+    <record id="ha_library_snidane" model="theme.ir.attachment">
+        <field name="key">theme_hotel_arena.ha_library_snidane</field>
+        <field name="name">theme_hotel_arena.snidane.webp</field>
+        <field name="url">/theme_hotel_arena/static/src/img/homepage/snidane.webp</field>
+    </record>
+
+    <!-- ===== Gallery Images (selection) ===== -->
+    <record id="ha_library_gallery_004" model="theme.ir.attachment">
+        <field name="key">theme_hotel_arena.ha_library_gallery_004</field>
+        <field name="name">theme_hotel_arena.dl_hotelarena_004_2048px.jpg</field>
+        <field name="url">/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_004_2048px.jpg</field>
+    </record>
+    <record id="ha_library_gallery_005" model="theme.ir.attachment">
+        <field name="key">theme_hotel_arena.ha_library_gallery_005</field>
+        <field name="name">theme_hotel_arena.dl_hotelarena_005_2048px.jpg</field>
+        <field name="url">/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_005_2048px.jpg</field>
+    </record>
+    <record id="ha_library_gallery_006" model="theme.ir.attachment">
+        <field name="key">theme_hotel_arena.ha_library_gallery_006</field>
+        <field name="name">theme_hotel_arena.dl_hotelarena_006_2048px.jpg</field>
+        <field name="url">/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_006_2048px.jpg</field>
+    </record>
+    <record id="ha_library_gallery_007" model="theme.ir.attachment">
+        <field name="key">theme_hotel_arena.ha_library_gallery_007</field>
+        <field name="name">theme_hotel_arena.dl_hotelarena_007_2048px.jpg</field>
+        <field name="url">/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_007_2048px.jpg</field>
+    </record>
+    <record id="ha_library_gallery_008" model="theme.ir.attachment">
+        <field name="key">theme_hotel_arena.ha_library_gallery_008</field>
+        <field name="name">theme_hotel_arena.dl_hotelarena_008_2048px.jpg</field>
+        <field name="url">/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_008_2048px.jpg</field>
+    </record>
+    <record id="ha_library_gallery_009" model="theme.ir.attachment">
+        <field name="key">theme_hotel_arena.ha_library_gallery_009</field>
+        <field name="name">theme_hotel_arena.dl_hotelarena_009_2048px.jpg</field>
+        <field name="url">/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_009_2048px.jpg</field>
+    </record>
+    <record id="ha_library_gallery_010" model="theme.ir.attachment">
+        <field name="key">theme_hotel_arena.ha_library_gallery_010</field>
+        <field name="name">theme_hotel_arena.dl_hotelarena_010_2048px.jpg</field>
+        <field name="url">/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_010_2048px.jpg</field>
+    </record>
+    <record id="ha_library_gallery_011" model="theme.ir.attachment">
+        <field name="key">theme_hotel_arena.ha_library_gallery_011</field>
+        <field name="name">theme_hotel_arena.dl_hotelarena_011_2048px.jpg</field>
+        <field name="url">/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_011_2048px.jpg</field>
+    </record>
+    <record id="ha_library_gallery_012" model="theme.ir.attachment">
+        <field name="key">theme_hotel_arena.ha_library_gallery_012</field>
+        <field name="name">theme_hotel_arena.dl_hotelarena_012_2048px.jpg</field>
+        <field name="url">/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_012_2048px.jpg</field>
+    </record>
+    <record id="ha_library_gallery_013" model="theme.ir.attachment">
+        <field name="key">theme_hotel_arena.ha_library_gallery_013</field>
+        <field name="name">theme_hotel_arena.dl_hotelarena_013_2048px.jpg</field>
+        <field name="url">/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_013_2048px.jpg</field>
+    </record>
+    <record id="ha_library_gallery_014" model="theme.ir.attachment">
+        <field name="key">theme_hotel_arena.ha_library_gallery_014</field>
+        <field name="name">theme_hotel_arena.dl_hotelarena_014_2048px.jpg</field>
+        <field name="url">/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_014_2048px.jpg</field>
+    </record>
+    <record id="ha_library_gallery_015" model="theme.ir.attachment">
+        <field name="key">theme_hotel_arena.ha_library_gallery_015</field>
+        <field name="name">theme_hotel_arena.dl_hotelarena_015_2048px.jpg</field>
+        <field name="url">/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_015_2048px.jpg</field>
+    </record>
+</data>
+</odoo>
