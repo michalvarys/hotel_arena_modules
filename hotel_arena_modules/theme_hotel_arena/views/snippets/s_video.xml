@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+
+    <!-- Hotel video (the one the old arenahotel.cz ran on /o-hotelu) -->
+    <template id="s_hotel_video" name="Hotel video">
+        <section class="s_hotel_video s_ha_video o_cc o_cc2 pt104 pb104 o_colored_level" data-snippet="s_hotel_video" data-name="Hotel video">
+            <div class="container">
+                <div class="section-tag" style="justify-content:center;">Take a look</div>
+                <h2 class="section-title" style="text-align:center;margin-bottom:3rem;">
+                    Hotel Arena <em>on video</em>
+                </h2>
+                <div class="ha-video-frame">
+                    <iframe src="https://www.youtube-nocookie.com/embed/lVeMAzv1IgE" title="Hotel ARENA Chomutov" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- Restaurant video (old site ran this one on /restaurace-a-bar) -->
+    <template id="s_restaurant_video" name="Restaurant video">
+        <section class="s_restaurant_video s_ha_video o_cc o_cc2 pt104 pb104 o_colored_level" data-snippet="s_restaurant_video" data-name="Restaurant video">
+            <div class="container">
+                <div class="section-tag" style="justify-content:center;">Take a look</div>
+                <h2 class="section-title" style="text-align:center;margin-bottom:3rem;">
+                    Hotel Arena <em>on video</em>
+                </h2>
+                <div class="ha-video-frame">
+                    <iframe src="https://www.youtube-nocookie.com/embed/GMJvSV6myU4" title="Hotel ARENA Chomutov" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- Google Street View walk-through of the hotel (the old arenahotel.cz
+         embedded this on /o-hotelu). The pb= blob carries the panorama id
+         plus the heading and pitch, so it opens facing the right way. -->
+    <template id="s_hotel_tour" name="Virtual tour">
+        <section class="s_hotel_tour s_ha_video o_cc o_cc1 pt104 pb104 o_colored_level" data-snippet="s_hotel_tour" data-name="Virtual tour">
+            <div class="container">
+                <div class="section-tag">Virtual tour</div>
+                <h2 class="section-title" style="margin-bottom:3rem;">
+                    Walk through a hotel room <em>online</em>
+                </h2>
+                <!-- allow= lists the motion sensors Street View asks for, so the
+                     panorama can follow the phone instead of logging a
+                     permissions-policy violation on every drag. -->
+                <div class="ha-video-frame ha-tour-frame">
+                    <iframe src="https://www.google.com/maps/embed?pb=!4v1698134987145!6m8!1m7!1sCAoSLEFGMVFpcE1OWUFmbVlWUFd2N2FQN0hmUHktSHRsTzJQMGNGTTN2MmVXLVps!2m2!1d50.468502275065!2d13.427579771539!3f47.473989769606135!4f-8.629489835425957!5f0.42406826570419986" title="Virtual tour of Hotel Arena" loading="lazy" allow="accelerometer; gyroscope; magnetometer; fullscreen" referrerpolicy="no-referrer-when-downgrade" allowfullscreen="">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

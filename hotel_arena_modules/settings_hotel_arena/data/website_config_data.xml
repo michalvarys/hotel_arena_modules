@@ -13,8 +13,24 @@
             <field name="active" eval="True"/>
         </record>
 
-        <!-- Website: default language cs_CZ, all 4 languages assigned -->
+        <!-- Company: real contact details (Odoo reuses these in the default
+             footer block, contact forms and outgoing mail) -->
+        <record id="base.main_company" model="res.company">
+            <field name="name">Hotel Arena Chomutov</field>
+            <field name="street">Mostecká 5900</field>
+            <field name="city">Chomutov</field>
+            <field name="zip">430 01</field>
+            <field name="country_id" ref="base.cz"/>
+            <field name="phone">+420 474 721 290</field>
+            <field name="email">recepce@arenahotel.cz</field>
+            <field name="website">https://arenahotel.cz</field>
+            <field name="vat">CZ27917690</field>
+            <field name="company_registry">27917690</field>
+        </record>
+
+        <!-- Website: name + default language cs_CZ, all 4 languages assigned -->
         <record id="website.default_website" model="website">
+            <field name="name">Hotel Arena</field>
             <field name="default_lang_id" ref="base.lang_cs_CZ"/>
             <field name="language_ids" eval="[(6, 0, [
                 ref('base.lang_cs_CZ'),

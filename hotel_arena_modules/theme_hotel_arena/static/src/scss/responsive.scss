@@ -33,7 +33,7 @@
         min-height: 100dvh !important;
 
         .container, .container-fluid {
-            padding-bottom: 3rem !important;
+            padding-bottom: 7.5rem !important;
         }
 
         // EV badge: reposition for smaller screens
@@ -75,7 +75,7 @@
         min-height: 100dvh !important;
 
         .container, .container-fluid {
-            padding-bottom: 2rem !important;
+            padding-bottom: 8rem !important;
         }
 
         h1 {
@@ -140,4 +140,722 @@
 
 @media (max-width: 320px) {
     .concierge-item { padding: 1.5rem 1rem; }
+}
+
+// =============================================================================
+// Hero on phones
+// =============================================================================
+// Everything fitted, but only just: the location tag ran 339px wide inside
+// 360px of usable width, the headline ended 30px from the edge and the four
+// figures were crammed against both margins. Loosen it up.
+@media (max-width: 575px) {
+    .s_hero_slider {
+        .section-tag {
+            font-size: 0.66rem !important;
+            letter-spacing: 0.13em !important;
+            gap: 0.55rem !important;
+            margin-bottom: 0.9rem !important;
+
+            &::before { width: 18px !important; }
+        }
+    }
+
+    .ha-hero-title {
+        font-size: clamp(1.8rem, 8vw, 2.3rem) !important;
+        line-height: 1.12 !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .ha-hero-lead {
+        font-size: 0.92rem !important;
+        line-height: 1.6 !important;
+        margin-bottom: 0 !important;
+    }
+
+    // Push the buttons clear of the paragraph.
+    .ha-hero-actions {
+        margin-top: 2.2rem;
+        gap: 0.7rem;
+
+        .btn-reserve,
+        .btn-outline {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    // Four figures on one row, spread evenly instead of jammed to the edges.
+    .ha-hero-facts {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        justify-content: space-between !important;
+        gap: 0.4rem !important;
+        margin-top: 2rem !important;
+        padding-top: 1.2rem !important;
+
+        .ha-hero-fact { text-align: center; }
+
+        strong {
+            font-size: 1.1rem !important;
+            white-space: nowrap;
+        }
+
+        span {
+            font-size: 0.55rem !important;
+            letter-spacing: 0.08em !important;
+            white-space: nowrap;
+        }
+    }
+}
+
+// =============================================================================
+// Card rows on phones: swipe sideways instead of stacking
+// =============================================================================
+// Stacked full-width cards made the room list scroll for several screens.
+// A snapping horizontal rail keeps the whole offer within one thumb reach.
+@media (max-width: 767px) {
+    .rooms-grid,
+    .ha-gallery-grid {
+        display: flex !important;
+        grid-template-columns: none !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        gap: 0.85rem !important;
+        // Bleed to the screen edges so a peeking card hints at the scroll.
+        margin-left: -1rem;
+        margin-right: -1rem;
+        padding: 0 1rem 0.5rem;
+
+        &::-webkit-scrollbar { display: none; }
+
+        > * {
+            flex: 0 0 76%;
+            scroll-snap-align: start;
+        }
+    }
+}
+
+// =============================================================================
+// Tighter blocks on phones
+// =============================================================================
+// Single-column cards with generous padding turned short labels into
+// screen-high blocks. Two per row reads the same and costs a quarter of
+// the scrolling.
+@media (max-width: 575px) {
+    .concierge-grid {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 0.7rem !important;
+    }
+
+    .concierge-item {
+        padding: 1.4rem 0.75rem 1.2rem !important;
+
+        .concierge-icon {
+            width: 46px !important;
+            height: 46px !important;
+            font-size: 1.15rem !important;
+            margin-bottom: 0.8rem !important;
+        }
+
+        h4 { font-size: 0.82rem !important; }
+        p { font-size: 0.75rem !important; line-height: 1.5 !important; }
+    }
+
+    // location-grid is the section layout (copy | map), NOT the tile list —
+    // splitting it in two squeezed the paragraph into a half-width column.
+    .location-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    // The tiles themselves live in .location-highlights; two per row.
+    .location-highlights {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 0.7rem !important;
+
+        .highlight {
+            padding: 0.9rem 0.8rem !important;
+
+            h4, strong { font-size: 0.8rem !important; }
+            p, span { font-size: 0.72rem !important; }
+        }
+    }
+}
+
+// Gallery: swipe sideways rather than a tall stack of full-width photos.
+@media (max-width: 767px) {
+    .s_hotel_gallery .row {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        gap: 0.6rem;
+        margin-left: -1rem;
+        margin-right: -1rem;
+        padding: 0 1rem 0.5rem;
+
+        &::-webkit-scrollbar { display: none; }
+
+        > * {
+            flex: 0 0 78% !important;
+            max-width: 78% !important;
+            width: 78% !important;
+            scroll-snap-align: start;
+        }
+
+        img {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+        }
+    }
+}
+
+// Stacked two-column blocks: copy first, photo underneath. Some blocks have
+// the image markup first (it sits left on desktop), which on a phone pushed
+// the picture above the heading it belongs to.
+@media (max-width: 767px) {
+    .features-layout {
+        display: flex;
+        flex-direction: column;
+
+        .features-img { order: 2; }
+    }
+}
+
+// =============================================================================
+// Hero layout on phones: tag at the top, logo in the middle, actions at the
+// bottom. The headline and lead paragraph are dropped — at this width they
+// squeezed everything else against the edges and the logo says it better.
+// Desktop is untouched.
+// =============================================================================
+@media (max-width: 575px) {
+    .s_hero_slider {
+        align-items: stretch !important;
+    }
+
+    .s_hero_slider .ha-hero-content {
+        display: flex;
+        flex-direction: column;
+        align-self: stretch;
+        // Clear of the fixed bar, but close to it as asked.
+        padding-top: 5.5rem !important;
+        padding-bottom: 3.2rem !important;
+    }
+
+    .s_hero_slider .section-tag {
+        flex: 0 0 auto;
+        margin-bottom: 0 !important;
+    }
+
+    // Centred horizontally as well, not tucked against the left margin.
+    .ha-hero-logo {
+        width: 82%;
+        max-width: 260px;
+        margin: 0 auto;
+    }
+
+    .ha-hero-plus {
+        font-size: 1.25rem;
+        margin: 0.5rem 0 0.7rem;
+    }
+
+    .ha-hero-restaurant img {
+        width: 304px;
+        max-width: 88%;
+    }
+
+
+    .s_hero_slider .ha-hero-actions {
+        flex: 0 0 auto;
+        margin-top: 0 !important;
+    }
+
+    .s_hero_slider .ha-hero-facts {
+        flex: 0 0 auto;
+        margin-top: 1.5rem !important;
+    }
+}
+
+// Three intro cards: swipe sideways on phones rather than stacking.
+@media (max-width: 767px) {
+    .ha-trio {
+        display: flex !important;
+        grid-template-columns: none !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        gap: 0.85rem !important;
+        margin-left: -1rem;
+        margin-right: -1rem;
+        padding: 0 1rem 0.5rem;
+
+        &::-webkit-scrollbar { display: none; }
+
+        > * {
+            flex: 0 0 82%;
+            scroll-snap-align: start;
+        }
+    }
+}
+
+// Four perks in one row do not fit a phone — the last one was cut off at the
+// screen edge. Two by two instead.
+@media (max-width: 575px) {
+    .s_hero_slider .ha-hero-facts.ha-perks {
+        display: grid !important;
+        // Columns sized to their content and centred as a pair. With 1fr
+        // columns the icons hugged the left of each cell and the whole strip
+        // read as off-centre, with dead space down the right-hand side.
+        grid-template-columns: auto auto !important;
+        gap: 0.85rem 1.6rem !important;
+        justify-content: center !important;
+        margin-top: 1.6rem !important;
+        padding-top: 1.1rem !important;
+    }
+
+    .s_hero_slider .ha-perk-ico { font-size: 1.05rem; }
+    .s_hero_slider .ha-perk-name { font-size: 0.8rem; }
+    .s_hero_slider .ha-perk-note { font-size: 0.58rem; }
+}
+
+// =============================================================================
+// Hero photos on phones
+// =============================================================================
+// The slides are 16:9 but a phone hero is about 9:19 — `cover` therefore showed
+// a narrow vertical sliver out of the middle of each photo. These are real
+// portrait crops of the same scenes. !important because the slide carries its
+// desktop image in an inline style.
+@media (max-width: 767px) {
+    .ha-hero-slide:nth-of-type(1) {
+        background-image: url('/theme_hotel_arena/static/src/img/hero/hero-m-budova.webp') !important;
+    }
+    .ha-hero-slide:nth-of-type(2) {
+        background-image: url('/theme_hotel_arena/static/src/img/hero/hero-m-pokoj.webp') !important;
+    }
+    .ha-hero-slide:nth-of-type(3) {
+        background-image: url('/theme_hotel_arena/static/src/img/hero/hero-m-bar.webp') !important;
+    }
+    .ha-hero-slide:nth-of-type(4) {
+        background-image: url('/theme_hotel_arena/static/src/img/hero/hero-m-recepce.webp') !important;
+    }
+}
+
+// =============================================================================
+// Density on phones
+// =============================================================================
+// Every page scrolled like a roll of toilet paper: the desktop rhythm (104px of
+// air above and below each section, 4rem gaps, one item per row) was kept at
+// 390px wide, so a handful of short blocks stretched over seven screens. The
+// content stays exactly the same — only the air around it shrinks.
+
+@media (max-width: 767px) {
+
+    // -- Section rhythm ------------------------------------------------------
+    // 104px top AND bottom on a phone is 208px of nothing between two blocks.
+    // The id in the selector is what beats Odoo's own `!important` utility.
+    #wrap section.pt104 { padding-top: 3.25rem !important; }
+    #wrap section.pb104 { padding-bottom: 3.25rem !important; }
+    #wrap section.pt64  { padding-top: 2.25rem !important; }
+    #wrap section.pb64  { padding-bottom: 2.25rem !important; }
+
+    // Heading block above each section.
+    .section-title {
+        margin-bottom: 1.4rem !important;
+        line-height: 1.2;
+    }
+
+    .section-tag { margin-bottom: 0.7rem; }
+
+    .section-desc {
+        line-height: 1.55 !important;
+        margin-bottom: 1.6rem !important;
+    }
+
+    // -- Page banner ---------------------------------------------------------
+    // 350px of photo to carry one word. The height is inline on the element,
+    // hence !important.
+    .s_ha_sub_banner > div:first-child { height: 210px !important; }
+
+    // -- Room list -----------------------------------------------------------
+    .ha-room-item {
+        .ha-room-item-content {
+            padding: 1.5rem 1.25rem !important;
+
+            h3 { font-size: 1.35rem !important; margin-bottom: 0.5rem !important; }
+
+            .ha-room-item-price {
+                font-size: 1.1rem;
+                margin-bottom: 0.7rem;
+            }
+
+            p {
+                font-size: 0.95rem !important;
+                line-height: 1.55 !important;
+                margin-bottom: 0.9rem !important;
+            }
+        }
+    }
+
+    .ha-room-amenities {
+        gap: 6px 14px;
+        li { font-size: 0.82rem; }
+    }
+
+    // -- Numbered service list ("Další služby") ------------------------------
+    .ha-features-list .feature-item { margin-bottom: 1.1rem !important; }
+
+    .ha-features-list {
+        .feature-num { font-size: 1.4rem !important; }
+
+        .feature-text {
+            h4, h3 { font-size: 1rem !important; margin-bottom: 0.25rem !important; }
+            p { font-size: 0.9rem !important; line-height: 1.5 !important; margin-bottom: 0 !important; }
+        }
+    }
+
+    // -- Contact column ------------------------------------------------------
+    .ha-contact-info .ha-contact-info-item {
+        margin-bottom: 1.1rem !important;
+
+        h4 { font-size: 0.8rem !important; margin-bottom: 0.3rem !important; }
+        p, a { font-size: 0.92rem !important; line-height: 1.5 !important; margin-bottom: 0.15rem !important; }
+    }
+}
+
+// -- Footer ------------------------------------------------------------------
+// The tallest single block on the site: four stacked panels ran 1412px, which
+// is an extra screen and a half of scrolling on every page. Two columns plus
+// tighter link spacing halves it without dropping a single link.
+@media (max-width: 768px) {
+    // The section carries `padding: 5rem 4rem 2rem` inline, so 64px went to
+    // each margin — of 390px only 217px were left for content and every link
+    // wrapped onto two or three lines. Hence !important.
+    .ha-footer { padding: 2.25rem 0 1rem !important; }
+
+    .ha-footer-top {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 1.6rem 1.2rem !important;
+        margin-bottom: 1.5rem !important;
+        align-items: start;
+    }
+
+    // The intro paragraph needs the full width; the link lists do not.
+    .ha-footer-brand { grid-column: 1 / -1; }
+
+    .ha-footer-brand p {
+        font-size: 0.9rem !important;
+        line-height: 1.5;
+        max-width: none;
+        margin-bottom: 0;
+    }
+
+    .ha-footer-logo-img { height: 42px; margin-bottom: 0.7rem; }
+
+    .ha-footer-col {
+        h5 { font-size: 0.72rem; margin-bottom: 0.6rem; }
+
+        a, p {
+            font-size: 0.85rem;
+            line-height: 1.4;
+            margin-bottom: 0.3rem;
+        }
+    }
+
+    .ha-footer-bottom {
+        padding-top: 1.1rem;
+        gap: 0.6rem;
+        font-size: 0.75rem;
+    }
+}
+
+// -- Body copy and cards -----------------------------------------------------
+// Second pass. The paragraphs carry `font-size:1.25rem;line-height:1.7;
+// margin-bottom:2rem` inline, which is desktop copy shown at phone width: 20px
+// text on a 345px column is roughly five words per line. The tile grids were
+// already two-per-row but each tile still spent ~70px on its icon alone.
+@media (max-width: 767px) {
+
+    #wrap .exterior-layout p,
+    #wrap .features-layout p,
+    #wrap .restaurant-layout p,
+    #wrap .location-grid > div > p,
+    #wrap .section-desc {
+        font-size: 0.95rem !important;
+        line-height: 1.6 !important;
+        margin-bottom: 1rem !important;
+    }
+
+    // The wrapper's own bottom margin is inline too (4rem).
+    #wrap .container > .section-desc,
+    #wrap div[style*="margin:0 auto 4rem"] { margin-bottom: 1.6rem !important; }
+
+    .exterior-layout,
+    .features-layout,
+    .restaurant-layout { gap: 1.5rem !important; }
+
+    .exterior-badge {
+        bottom: 0.8rem;
+        left: 0.8rem;
+        padding: 0.55rem 0.8rem;
+        font-size: 0.8rem;
+        gap: 0.4rem;
+    }
+
+    .exterior-stats {
+        margin-top: 1.5rem !important;
+        padding-top: 1.2rem !important;
+        gap: 0.8rem !important;
+    }
+
+    // Icon tiles: services, "cena zahrnuje", surroundings, concierge.
+    .concierge-item {
+        padding: 1rem 0.6rem 0.9rem !important;
+
+        .concierge-icon {
+            width: 38px !important;
+            height: 38px !important;
+            font-size: 0.95rem !important;
+            margin-bottom: 0.55rem !important;
+        }
+
+        h4 { font-size: 0.78rem !important; margin-bottom: 0.3rem !important; }
+        p  { font-size: 0.72rem !important; line-height: 1.45 !important; margin-bottom: 0 !important; }
+    }
+
+    .concierge-grid,
+    .concierge-grid-3 { gap: 0.6rem !important; }
+
+    // Surroundings uses a Bootstrap row of col-6 rather than the tile grid.
+    .s_surroundings .row.g-3 { --bs-gutter-y: 0.6rem; --bs-gutter-x: 0.6rem; }
+}
+
+// -- Restaurant, breakfast and the contact form ------------------------------
+// Third pass: these three blocks name their own classes rather than the shared
+// layout ones, so the copy rules above missed them. Same treatment.
+@media (max-width: 767px) {
+
+    .brasileira-text {
+        font-size: 0.95rem !important;
+        line-height: 1.6 !important;
+        margin-bottom: 0.9rem !important;
+    }
+
+    // The breakfast block is a list of one-line facts, several of which set
+    // their own spacing inline — only the type is resized, so a blanket
+    // margin does not push the single lines apart.
+    .s_ha_breakfast p {
+        font-size: 0.95rem !important;
+        line-height: 1.6 !important;
+    }
+
+    .brasileira-title { font-size: 1.5rem !important; margin-bottom: 0.6rem !important; }
+    .brasileira-heading { margin-bottom: 1rem !important; }
+
+    .brasileira-hours {
+        margin-top: 1.2rem !important;
+        padding-top: 1.2rem !important;
+
+        .brasileira-hours-label { font-size: 0.72rem; margin-bottom: 0.3rem; }
+        .brasileira-hours-text  { font-size: 0.85rem; line-height: 1.55; }
+    }
+
+    // Three full-width stacked buttons ate a third of a screen on their own.
+    .s_ha_brasileira {
+        .ha-btn-brasileira,
+        .ha-btn-outline-brasileira {
+            padding: 0.7rem 1rem !important;
+            font-size: 0.8rem !important;
+            margin-bottom: 0.5rem !important;
+        }
+    }
+
+    .s_ha_brasileira .row.align-items-center { margin-top: 1.5rem !important; }
+
+    // Contact form: label + field + gap repeated eight times.
+    .ha-contact-form {
+        .form-group { margin-bottom: 0.85rem !important; }
+
+        label {
+            font-size: 0.72rem !important;
+            margin-bottom: 0.25rem !important;
+        }
+
+        input, select {
+            padding: 0.6rem 0.8rem !important;
+            font-size: 0.9rem !important;
+        }
+
+        textarea {
+            padding: 0.6rem 0.8rem !important;
+            font-size: 0.9rem !important;
+            min-height: 110px !important;
+        }
+    }
+
+    .ha-btn-submit { padding: 0.75rem 1.4rem !important; font-size: 0.82rem !important; }
+
+    // Standalone map blocks were as tall as they are on a desktop.
+    .map-container iframe,
+    .ha-map-standalone iframe { height: 260px !important; }
+}
+
+// -- Price table -------------------------------------------------------------
+// Four columns on a 345px table: the room name wrapped onto three lines, so
+// five rooms filled most of a screen, and the last price column was cut off
+// behind the sideways scroll. Tighter type and padding fit it in one line
+// each and bring the fourth column into view.
+@media (max-width: 767px) {
+    .ha-price-table {
+        font-size: 0.78rem !important;
+
+        thead th,
+        tbody td { padding: 0.55rem 0.4rem !important; }
+
+        thead th {
+            font-size: 0.6rem !important;
+            letter-spacing: 0.04em !important;
+        }
+
+        tbody td:first-child { line-height: 1.35; }
+
+        // The prices never need to wrap; the room name may.
+        tbody td.ha-price-cell { font-size: 0.78rem !important; }
+    }
+}
+
+// Six columns (room, beds, and a price for one through four guests) genuinely
+// do not fit 390px at a readable size, so the table keeps its sideways scroll.
+// Tighter type puts five of the six on screen, which is enough for the scroll
+// to read as a rail rather than a surprise. Bleeding it past the container's
+// gutters was tried and reverted: the table is its own scroll box, so negative
+// margins pushed its first column off the left edge and produced a second
+// scrollbar.
+@media (max-width: 767px) {
+    .ha-price-table {
+        font-size: 0.72rem !important;
+
+        thead th,
+        tbody td { padding: 0.45rem 0.3rem !important; }
+
+        thead th:first-child,
+        tbody td:first-child { padding-left: 0.6rem !important; }
+
+        tbody td.ha-price-cell { font-size: 0.72rem !important; }
+
+        tbody td:first-child { line-height: 1.35; }
+    }
+}
+
+// -- Intro cards on the homepage ---------------------------------------------
+// The three cards already swipe sideways, but each still carried desktop copy
+// at 1.75 line-height, so a card ran 521px and its text alone filled most of
+// the screen below the photo.
+@media (max-width: 767px) {
+    .ha-trio-card {
+        .ha-trio-title { font-size: 1.15rem !important; }
+
+        .ha-trio-head { margin-bottom: 0.5rem !important; }
+
+        .ha-trio-body { padding: 1rem 1.1rem 1.2rem !important; }
+
+        .ha-trio-text p {
+            font-size: 0.88rem !important;
+            line-height: 1.55 !important;
+            margin-bottom: 0 !important;
+        }
+    }
+
+    .ha-trio-img img { height: 165px !important; object-fit: cover; }
+}
+
+// =============================================================================
+// Stop the page rocking sideways on a phone
+// =============================================================================
+// Four blocks scroll horizontally on purpose (room cards, the intro trio, the
+// gallery strip, the price table) and they bleed to both screen edges, so most
+// of the page area is a horizontal scroller. A vertical swipe with any sideways
+// component grabbed one of them and the scroll chained out to the document,
+// which reads as the whole page wobbling left and right under the finger.
+//
+// `overscroll-behavior-x: contain` keeps a rail's scroll inside the rail, and
+// `overflow-x: clip` on the wrapper removes the last pixel the document could
+// move. Deliberately `clip`, not `hidden`: `hidden` makes the wrapper a scroll
+// container, which breaks position:sticky and makes scrolling jump.
+.rooms-grid,
+.ha-trio,
+.ha-gallery-grid,
+.ha-price-table,
+.s_hotel_gallery .row {
+    overscroll-behavior-x: contain;
+}
+
+@media (max-width: 767px) {
+    #wrapwrap {
+        overflow-x: clip;
+        max-width: 100%;
+    }
+
+    // The hero photo is scaled for the Ken Burns drift, so it is wider than the
+    // screen by design; keep that inside the section.
+    .s_hero_slider,
+    .s_ha_hero_slider { overflow: hidden; }
+}
+
+// =============================================================================
+// Hero strip and location tag
+// =============================================================================
+// The four perks sat flush left inside a centred box, so the row read as
+// off-centre with a gap on the right — visible on both phone and desktop.
+.ha-perks {
+    justify-content: center;
+}
+
+// The location tag above the logo is dropped on desktop: the address is in the
+// header, the footer and on the contact page, and the hero reads cleaner
+// without it. It stays on phones, where it is the only line of context above
+// the mark.
+@media (min-width: 576px) {
+    .s_hero_slider > .container > .section-tag,
+    .s_ha_hero_slider .ha-hero-content > .section-tag {
+        display: none;
+    }
+}
+
+// =============================================================================
+// Swipe rails must move sideways only
+// =============================================================================
+// The cards inside the rails carry .reveal, which parks them 40px lower until
+// they animate in. Inside a horizontal scroller that extra height makes the
+// rail scrollable VERTICALLY too, so a sideways swipe dragged the photos up
+// and down. On .rooms-grid, which already had overflow-y: hidden, the same
+// 32px was simply clipped off the bottom of the cards instead.
+//
+// Keeping the fade and dropping the slide removes the overflow at the source:
+// nothing to scroll, nothing to clip.
+.rooms-grid > .reveal,
+.ha-trio > .reveal,
+.ha-gallery-grid > .reveal,
+.s_hotel_gallery .row > .reveal {
+    transform: none !important;
+}
+
+// Belt and braces: neither rail should ever be a vertical scroller. Declaring
+// overflow-x alone computes overflow-y to auto, which is how .ha-trio and the
+// price table became draggable upwards in the first place.
+.ha-trio,
+.ha-price-table,
+.rooms-grid,
+.ha-gallery-grid,
+.s_hotel_gallery .row {
+    overflow-y: hidden;
 }

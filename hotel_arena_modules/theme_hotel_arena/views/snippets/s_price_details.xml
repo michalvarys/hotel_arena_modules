@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+
+    <!-- What the room rate covers (source: arenahotel.cz/cenik) -->
+    <template id="s_price_includes" name="What the price includes">
+        <section class="s_price_includes s_ha_price_includes o_cc o_cc2 pt104 pb104 o_colored_level" data-snippet="s_price_includes" data-name="What the price includes">
+            <div class="container">
+                <div class="section-tag">Included in the room rate</div>
+                <h2 class="section-title" style="margin-bottom:3rem;">What the price <em>includes</em></h2>
+                <div class="concierge-grid concierge-grid-3">
+                    <div class="concierge-item reveal">
+                        <div class="concierge-icon"><i class="fa fa-coffee"/></div>
+                        <h4>Breakfast</h4>
+                        <p>Buffet-style breakfast.</p>
+                    </div>
+                    <div class="concierge-item reveal">
+                        <div class="concierge-icon"><i class="fa fa-television"/></div>
+                        <h4>Satellite TV and safe</h4>
+                        <p>Satellite TV and a safe in every room.</p>
+                    </div>
+                    <div class="concierge-item reveal">
+                        <div class="concierge-icon"><i class="fa fa-wifi"/></div>
+                        <h4>Wi-Fi throughout the hotel</h4>
+                        <p>Wireless internet throughout the hotel.</p>
+                    </div>
+                    <div class="concierge-item reveal">
+                        <div class="concierge-icon"><i class="fa fa-file-text-o"/></div>
+                        <h4>VAT and fees</h4>
+                        <p>VAT and city tax.</p>
+                    </div>
+                    <div class="concierge-item reveal">
+                        <div class="concierge-icon"><i class="fa fa-clock-o"/></div>
+                        <h4>24/7 reception</h4>
+                        <p>Reception available 24 hours a day.</p>
+                    </div>
+                    <div class="concierge-item reveal">
+                        <div class="concierge-icon"><i class="fa fa-car"/></div>
+                        <h4>Free parking</h4>
+                        <p>Free parking in the hotel car park, monitored by CCTV.</p>
+                    </div>
+                </div>
+                <p class="section-desc" style="margin-top:2.5rem;">
+                    Pets are not allowed.</p>
+            </div>
+        </section>
+    </template>
+
+    <!-- Paid extras and on-request services (source: arenahotel.cz/cenik) -->
+    <template id="s_extra_services" name="Additional services">
+        <section class="s_extra_services s_ha_extra_services o_cc o_cc1 pt104 pb104 o_colored_level" data-snippet="s_extra_services" data-name="Additional services">
+            <div class="container">
+                <div class="section-tag">On request</div>
+                <h2 class="section-title" style="margin-bottom:3rem;">Additional <em>services</em></h2>
+                <div class="ha-features-list">
+                    <div class="feature-item reveal">
+                        <div class="feature-num">01</div>
+                        <div class="feature-text">
+                            <h3>Children under 3 stay free</h3>
+                            <p>A child under 3 stays free of charge.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item reveal">
+                        <div class="feature-num">02</div>
+                        <div class="feature-text">
+                            <h3>Cot</h3>
+                            <p>A cot can be added in selected rooms.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item reveal">
+                        <div class="feature-num">03</div>
+                        <div class="feature-text">
+                            <h3>Half board and full board</h3>
+                            <p>The hotel also offers half board or full board for group bookings — for an extra charge.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item reveal">
+                        <div class="feature-num">04</div>
+                        <div class="feature-text">
+                            <h3>High-speed internet</h3>
+                            <p>High-speed internet access is available for purchase.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item reveal">
+                        <div class="feature-num">05</div>
+                        <div class="feature-text">
+                            <h3>Laundry and ironing</h3>
+                            <p>Laundry and ironing — for an extra charge.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item reveal">
+                        <div class="feature-num">06</div>
+                        <div class="feature-text">
+                            <h3>Ticket booking</h3>
+                            <p>Our concierge will book tickets for the cinema, the theatre, concerts and matches.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

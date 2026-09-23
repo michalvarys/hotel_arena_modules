@@ -1,55 +1,82 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <odoo>
 
-    <!-- Hero Slider — Full-screen dark theme with parallax zoom -->
+    <!-- Hero — full-screen crossfading slide show with Ken Burns zoom -->
     <template id="s_hero_slider" name="Hotel Arena Slider">
-        <section class="s_ha_hero_slider o_cc o_cc5 pt0 pb0 o_colored_level"
-                 data-snippet="s_hero_slider"
-                 data-name="Hotel Arena Slider"
-                 style="position:relative; height:100vh; min-height:700px; display:flex; align-items:flex-end; overflow:hidden;">
-            <!-- Slide backgrounds -->
-            <div style="position:absolute;inset:0;overflow:hidden;">
-                <div style="position:absolute;inset:0;
-                     background-image:url('/theme_hotel_arena/static/src/img/parallax/paralax-hotel.webp');
-                     background-size:cover;background-position:center;"></div>
-                <div style="position:absolute;inset:0;
-                     background:linear-gradient(180deg,rgba(26,26,34,0.45) 0%,rgba(26,26,34,0.25) 30%,rgba(26,26,34,0.55) 60%,rgba(26,26,34,0.97) 100%),
-                     linear-gradient(135deg,rgba(26,26,34,0.6) 0%,transparent 50%);
-                     pointer-events:none;z-index:1;"></div>
-                <!-- Crimson glow bottom-left -->
-                <div style="position:absolute;bottom:0;left:0;width:60%;height:70%;
-                     background:radial-gradient(ellipse at bottom left,rgba(139,26,43,0.25) 0%,transparent 65%);
-                     pointer-events:none;z-index:1;"></div>
+        <section class="s_hero_slider s_ha_hero_slider o_cc o_cc5 pt0 pb0 o_colored_level" data-snippet="s_hero_slider" data-name="Hotel Arena Slider">
+
+            <!-- Slides -->
+            <div class="ha-hero-slides">
+                <div class="ha-hero-slide is-active" style="background-image:url('/theme_hotel_arena/static/src/img/parallax/paralax-hotel.webp');"/>
+                <div class="ha-hero-slide" style="background-image:url('/theme_hotel_arena/static/src/img/hero/hero-pokoj.webp');"/>
+                <div class="ha-hero-slide" style="background-image:url('/theme_hotel_arena/static/src/img/hero/hero-bar.webp');"/>
+                <div class="ha-hero-slide" style="background-image:url('/theme_hotel_arena/static/src/img/hero/hero-recepce.webp');"/>
             </div>
 
-            <!-- Brand Stripe -->
-            <div class="brand-stripe" style="position:absolute;bottom:0;left:0;right:0;z-index:10;"></div>
+            <!-- Readability scrim -->
+            <div class="ha-hero-scrim"/>
+            <div class="ha-hero-glow"/>
+            <div class="brand-stripe"/>
 
             <!-- Content -->
-            <div class="container" style="position:relative;z-index:2;padding-bottom:6rem;max-width:800px;">
-                <div class="section-tag" style="color:#F07070;margin-bottom:1.5rem;">
-                    Chomutov, Česká republika
+            <div class="container ha-hero-content">
+                <div class="section-tag">Chomutov, Czech Republic</div>
+
+                <!-- The mark is the hero headline. It stays inside the h1 so
+                     the page keeps a real heading; the wording lives on in the
+                     alt text and in the visually hidden span, which screen
+                     readers and crawlers still read. -->
+                <div class="ha-hero-marks">
+                    <h1 class="ha-hero-title">
+                        <img src="/theme_hotel_arena/static/src/img/logos/logo-hero.png" alt="Hotel Arena Chomutov — accommodation by Kamencové Lake" class="ha-hero-logo" width="708" height="338"/>
+                        <span class="ha-hero-sr">Where sport meets elegance</span>
+                    </h1>
                 </div>
-                <h1 style="font-family:'Playfair Display',serif;font-size:clamp(3rem,6vw,5.5rem);
-                    font-weight:400;line-height:1.1;letter-spacing:-0.02em;color:#FAFAF8;margin-bottom:1.5rem;">
-                    Kde sport potkává <em style="font-style:italic;color:#F07070;">eleganci</em>
-                </h1>
-                <p style="font-size:1.3rem;line-height:1.7;color:rgba(255,255,255,0.9);
-                   max-width:500px;margin-bottom:2.5rem;">
-                    Moderní hotel v srdci sportovně-relaxačního centra u Kamencového jezera.
-                    96 pokojů, restaurace, concierge — vše pro váš dokonalý pobyt.
+
+                <p class="ha-hero-lead ha-hero-sr">
+                    A modern hotel at the heart of the sports and relaxation centre by Kamencové Lake. 96 rooms, a restaurant and a concierge — everything for a perfect stay.
                 </p>
-                <div style="display:flex;gap:1.5rem;align-items:center;flex-wrap:wrap;">
-                    <a href="https://www.secure-hotel-booking.com/Hotel-Arena/JJZW/cs?hotelId=24506"
-                       class="btn-reserve" target="_blank" rel="noopener">Rezervovat pobyt</a>
-                    <a href="/ubytovani" class="btn-outline">Prohlédnout pokoje</a>
+                <!-- No button here on purpose: "Rezervovat" already sits in the
+                     fixed nav on every screen, so the hero stays clean. -->
+
+                <!-- What a guest actually wants to know at a glance, with the
+                     icons in their own colours. Replaced the numbers strip. -->
+                <div class="ha-hero-facts ha-perks">
+                    <div class="ha-perk">
+                        <i class="fa fa-wifi ha-perk-ico ha-perk-wifi"/>
+                        <span class="ha-perk-name">WiFi</span>
+                        <span class="ha-perk-note">free</span>
+                    </div>
+                    <div class="ha-perk">
+                        <i class="fa fa-car ha-perk-ico ha-perk-car"/>
+                        <span class="ha-perk-name">Parking</span>
+                        <span class="ha-perk-note">free</span>
+                    </div>
+                    <div class="ha-perk">
+                        <i class="fa fa-snowflake-o ha-perk-ico ha-perk-ac"/>
+                        <span class="ha-perk-name">Air conditioning</span>
+                        <span class="ha-perk-note">in the room</span>
+                    </div>
+                    <div class="ha-perk">
+                        <i class="fa fa-clock-o ha-perk-ico ha-perk-recepce"/>
+                        <span class="ha-perk-name">Reception</span>
+                        <span class="ha-perk-note">24/7</span>
+                    </div>
                 </div>
             </div>
 
-            <!-- EV Badge -->
-            <div class="ev-badge" style="position:absolute;bottom:2rem;right:10rem;z-index:10;">
-                <i class="fa fa-bolt" style="color:#F07070;"/>
-                Nabíjecí stanice ČEZ pro elektromobily
+            <!-- Dots -->
+            <div class="ha-hero-dots" role="tablist" aria-label="Hotel photographs">
+                <button type="button" class="ha-hero-dot is-active" role="tab" aria-selected="true" aria-label="Hotel Arena"/>
+                <button type="button" class="ha-hero-dot" role="tab" aria-selected="false" aria-label="Hotel room"/>
+                <button type="button" class="ha-hero-dot" role="tab" aria-selected="false" aria-label="Bar"/>
+                <button type="button" class="ha-hero-dot" role="tab" aria-selected="false" aria-label="Reception"/>
+            </div>
+
+            <!-- EV badge -->
+            <div class="ev-badge">
+                <i class="fa fa-bolt"/>
+                ČEZ charging station for electric vehicles
             </div>
         </section>
     </template>

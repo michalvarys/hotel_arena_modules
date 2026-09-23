@@ -1,49 +1,54 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <odoo>
 
     <!-- Parallax Section — Dark overlay with crimson glow -->
-    <template id="s_parallax_section" name="Parallax sekce">
-        <section class="s_ha_parallax o_cc o_cc5 pt0 pb0 o_colored_level"
-                 data-snippet="s_parallax_section"
-                 data-name="Parallax sekce">
-            <div class="ha-header-inner"
-                 style="position:relative;height:400px;display:flex;align-items:center;justify-content:center;
-                        background-image:url('/theme_hotel_arena/static/src/img/parallax/paralax-hotel.webp');
-                        background-size:cover;background-position:center;background-attachment:fixed;">
-                <div style="position:absolute;inset:0;
-                     background:linear-gradient(180deg,rgba(26,26,34,0.6) 0%,rgba(26,26,34,0.8) 100%);
-                     pointer-events:none;"></div>
+    <template id="s_parallax_section" name="Parallax section">
+        <section class="s_parallax_section s_ha_parallax o_cc o_cc5 pt0 pb0 o_colored_level" data-snippet="s_parallax_section" data-name="Parallax section">
+            <div class="ha-header-inner" style="position:relative;height:400px;display:flex;align-items:center;justify-content:center;                         background-image:url('/theme_hotel_arena/static/src/img/parallax/paralax-hotel.webp');                         background-size:cover;background-position:center;background-attachment:fixed;">
+                <div style="position:absolute;inset:0;                      background:linear-gradient(180deg,rgba(26,26,34,0.6) 0%,rgba(26,26,34,0.8) 100%);                      pointer-events:none;"/>
                 <div style="position:relative;z-index:1;text-align:center;">
                     <div class="section-tag" style="justify-content:center;color:#F07070;">
                         Hotel Arena
                     </div>
                     <h2 style="font-family:'Playfair Display',serif;color:#FAFAF8;font-weight:400;">
-                        Název stránky</h2>
+                        Page title</h2>
                 </div>
             </div>
         </section>
     </template>
 
-    <!-- Sub-Banner for subpages -->
-    <template id="s_sub_banner" name="Banner podstránky">
-        <section class="s_ha_sub_banner o_cc o_cc5 pt0 pb0 o_colored_level"
-                 data-snippet="s_sub_banner"
-                 data-name="Banner podstránky">
-            <div style="position:relative;height:350px;display:flex;align-items:center;justify-content:center;
-                        background-image:url('/theme_hotel_arena/static/src/img/parallax/paralax-hotel.webp');
-                        background-size:cover;background-position:center;">
-                <div style="position:absolute;inset:0;
-                     background:linear-gradient(180deg,rgba(26,26,34,0.5) 0%,rgba(26,26,34,0.85) 100%);"></div>
+    <!-- Sub-Banner for subpages.
+
+         Every subpage opens with this same banner and differs only in the
+         photo, the small tag and the heading, so it is one snippet taking
+         three parameters rather than six near-identical copies:
+
+             <t t-call="theme_hotel_arena.s_sub_banner">
+                 <t t-set="banner_image" t-valuef="/theme_hotel_arena/static/src/img/parallax/paralax-pokoj.webp"/>
+                 <t t-set="banner_tag" t-valuef="Pokoje a apartmá"/>
+                 <t t-set="banner_title" t-valuef="Ubytování"/>
+             </t>
+
+         The defaults below matter: without them the snippet would render
+         blank when someone drags it onto a page in the editor, where no
+         caller supplies the values. -->
+    <template id="s_sub_banner" name="Subpage banner">
+        <t t-set="banner_image" t-value="banner_image or '/theme_hotel_arena/static/src/img/parallax/paralax-hotel.webp'"/>
+        <t t-set="banner_tag" t-value="banner_tag or 'Hotel Arena'"/>
+        <t t-set="banner_title" t-value="banner_title or 'Název stránky'"/>
+        <section class="s_sub_banner s_ha_sub_banner o_cc o_cc5 pt0 pb0 o_colored_level" data-snippet="s_sub_banner" data-name="Subpage banner">
+            <div t-attf-style="position:relative;height:350px;display:flex;align-items:center;justify-content:center;                         background-image:url('{{ banner_image }}');                         background-size:cover;background-position:center;">
+                <div style="position:absolute;inset:0;                      background:linear-gradient(180deg,rgba(26,26,34,0.5) 0%,rgba(26,26,34,0.85) 100%);"/>
                 <!-- Crimson glow -->
-                <div style="position:absolute;bottom:0;left:0;width:50%;height:60%;
-                     background:radial-gradient(ellipse at bottom left,rgba(139,26,43,0.2) 0%,transparent 65%);"></div>
+                <div style="position:absolute;bottom:0;left:0;width:50%;height:60%;                      background:radial-gradient(ellipse at bottom left,rgba(0,0,0,0.4) 0%,transparent 65%);"/>
                 <div style="position:relative;z-index:1;text-align:center;">
-                    <h2 style="font-family:'Playfair Display',serif;color:#FAFAF8;
-                        font-weight:400;font-size:clamp(2rem,4vw,3.5rem);text-transform:none;">
-                        Název stránky</h2>
+                    <div class="section-tag" style="justify-content:center;color:#F07070;">
+                        <t t-esc="banner_tag"/></div>
+                    <h2 style="font-family:'Playfair Display',serif;color:#FAFAF8;font-weight:400;                         font-size:clamp(2rem,4vw,3.5rem);text-transform:none;">
+                        <t t-esc="banner_title"/></h2>
                 </div>
             </div>
-            <div class="brand-stripe"></div>
+            <div class="brand-stripe"/>
         </section>
     </template>
 

@@ -43,10 +43,19 @@ publicWidget.registry.HAContactForm = publicWidget.Widget.extend({
         btn.textContent = 'Odesílám...';
         btn.disabled = true;
 
+        // The token is added here rather than as a hidden input in the template.
+        // A `t-att-value="request.csrf_token()"` inside #wrap costs the whole
+        // container its editor branding, which in turn greys out every snippet
+        // in the editor on this page. Odoo's own website form does the same.
+        const body = new URLSearchParams(new FormData(form));
+        if (odoo.csrf_token) {
+            body.set('csrf_token', odoo.csrf_token);
+        }
+
         fetch('/hotel-arena/contact', {
             method: 'POST',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            body: new URLSearchParams(new FormData(form)).toString(),
+            body: body.toString(),
         })
             .then((response) => response.json())
             .then((data) => {

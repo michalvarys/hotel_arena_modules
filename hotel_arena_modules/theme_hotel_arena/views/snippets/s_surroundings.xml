@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+
+    <!-- Leisure options around the hotel (source: arenahotel.cz/o-hotelu) -->
+    <template id="s_surroundings" name="Hotel surroundings">
+        <section class="s_surroundings s_ha_surroundings o_cc o_cc2 pt104 pb104 o_colored_level" data-snippet="s_surroundings" data-name="The hotel surroundings">
+            <div class="container">
+                <div class="features-layout">
+                    <div class="reveal">
+                        <div class="section-tag">Rest and relax</div>
+                        <h2 class="section-title">What is <em>around us</em></h2>
+                        <p style="font-size:1.25rem;line-height:1.7;color:#C5C2BA;margin-bottom:2rem;">
+                            We offer you the chance to combine rest and entertainment right beside the remarkable Kamencové Lake, whatever the weather or season.</p>
+                        <div class="row g-3">
+                            <div class="col-6 col-md-4">
+                                <div class="concierge-item" style="padding:1.5rem;text-align:center;">
+                                    <div class="concierge-icon"><i class="fa fa-snowflake-o"/></div>
+                                    <h4 style="font-size:1rem;">Ice rink</h4>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="concierge-item" style="padding:1.5rem;text-align:center;">
+                                    <div class="concierge-icon"><i class="fa fa-film"/></div>
+                                    <h4 style="font-size:1rem;">Svět cinema</h4>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="concierge-item" style="padding:1.5rem;text-align:center;">
+                                    <div class="concierge-icon"><i class="fa fa-futbol-o"/></div>
+                                    <h4 style="font-size:1rem;">Football stadium</h4>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="concierge-item" style="padding:1.5rem;text-align:center;">
+                                    <div class="concierge-icon"><i class="fa fa-flag-checkered"/></div>
+                                    <h4 style="font-size:1rem;">Athletics stadium</h4>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="concierge-item" style="padding:1.5rem;text-align:center;">
+                                    <div class="concierge-icon"><i class="fa fa-road"/></div>
+                                    <h4 style="font-size:1rem;">800 m inline track</h4>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="concierge-item" style="padding:1.5rem;text-align:center;">
+                                    <div class="concierge-icon"><i class="fa fa-ship"/></div>
+                                    <h4 style="font-size:1rem;">Wake-Park</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <p style="font-size:1rem;line-height:1.7;color:#C5C2BA;margin-top:2rem;">
+                            Other options include a training hall and a children's playground. In season, water skiing is available at the Wake Park next to Kamencové Lake.</p>
+                    </div>
+                    <div class="features-img reveal">
+                        <img src="/theme_hotel_arena/static/src/img/homepage/proc-si-vybrat-nas2.webp" alt="Hotel Arena surroundings — Kamencové Lake" loading="lazy"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

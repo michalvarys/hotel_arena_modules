@@ -99,7 +99,7 @@ $ha-transition-cubic: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         color: $ha-text;
     }
 
-    a:not(.btn):not(.btn-reserve):not(.btn-outline):not(.ha-btn-brasileira):not(.ha-btn-outline-brasileira):not(.ha-nav-reserve):not(.ha-menu-link) {
+    a:not(.btn):not(.btn-reserve):not(.btn-outline):not(.ha-btn-brasileira):not(.ha-btn-outline-brasileira):not(.ha-nav-reserve):not(.ha-menu-link):not(.ha-trio-title) {
         color: $ha-red !important;
 
         &:hover, &:focus {
@@ -490,7 +490,7 @@ section {
 .concierge-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
+    gap: 1.25rem;
     max-width: 1100px;
     margin: 0 auto;
 
@@ -498,24 +498,63 @@ section {
     @media (max-width: 480px) { grid-template-columns: 1fr; }
 }
 
+// Six-item sections (pricing) need three columns so the last row stays full.
+.concierge-grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+
+    @media (max-width: 1024px) { grid-template-columns: 1fr 1fr; }
+    @media (max-width: 480px) { grid-template-columns: 1fr; }
+}
+
 .concierge-item {
-    padding: 2.5rem 1.5rem;
-    border: 1px solid rgba(194, 59, 59, 0.1);
-    background: $ha-dark-card;
+    position: relative;
+    padding: 2.75rem 1.75rem 2.25rem;
+    border: 1px solid rgba(194, 59, 59, 0.12);
+    border-radius: 4px;
+    background: linear-gradient(160deg, $ha-dark-surface 0%, $ha-dark-card 60%);
     transition: all 0.4s ease;
     text-align: center;
+    overflow: hidden;
+
+    // Accent hairline that grows across the top edge on hover.
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: linear-gradient(90deg, $ha-crimson 0%, $ha-red 100%);
+        transition: all 0.45s ease;
+    }
 
     &:hover {
-        border-color: rgba(194, 59, 59, 0.35);
-        transform: translateY(-4px);
-        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3), 0 0 40px rgba(139, 26, 43, 0.08);
+        border-color: rgba(240, 112, 112, 0.4);
+        transform: translateY(-6px);
+        // Single layer only: Odoo's editor crashes on comma-separated shadows.
+        box-shadow: 0 24px 55px rgba(0, 0, 0, 0.45);
+
+        &::before { width: 100%; }
+
+        .concierge-icon {
+            opacity: 1;
+            border-color: rgba(240, 112, 112, 0.45);
+        }
     }
 
     .concierge-icon {
-        font-size: 2.5rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 62px;
+        height: 62px;
+        margin-bottom: 1.4rem;
+        border: 1px solid rgba(240, 112, 112, 0.22);
+        border-radius: 50%;
+        font-size: 1.6rem;
         color: $ha-red;
-        margin-bottom: 1.2rem;
-        opacity: 0.85;
+        opacity: 0.9;
+        transition: all 0.4s ease;
     }
 
     h4 {
@@ -586,12 +625,12 @@ section {
         width: 100%;
         height: 100%;
         border: 0;
-        filter: grayscale(0.8) brightness(0.7) contrast(1.1);
+        filter: grayscale(0.85);
         transition: filter 0.5s;
     }
 
     &:hover iframe {
-        filter: grayscale(0.3) brightness(0.8) contrast(1.05);
+        filter: grayscale(0.25);
     }
 
     @media (max-width: 1024px) { aspect-ratio: 16/9; }
@@ -879,4 +918,808 @@ $brasileira-gold-light: #E8C060;
     h1 { font-size: clamp(2rem, 8vw, 3rem); }
     .section-title { font-size: clamp(1.6rem, 6vw, 2.5rem); }
     .section-desc { font-size: 0.95rem; }
+}
+
+// -----------------------------------------------------------------------------
+// Odoo integration fixes (static-to-odoo-theme checklist)
+// -----------------------------------------------------------------------------
+// Theme styles must not un-hide the honeypot field Odoo's form snippet uses.
+.s_website_form_dnone {
+    display: none !important;
+}
+
+// A transform or clipped overflow on the header creates a stacking context
+// that traps the offcanvas drawer inside the header box on mobile.
+#wrapwrap header {
+    transform: none !important;
+    overflow: visible !important;
+}
+
+// =============================================================================
+// Hero slide show
+// =============================================================================
+.s_ha_hero_slider {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    background: $ha-dark;
+}
+
+.ha-hero-slides {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+}
+
+.ha-hero-slide {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    // Slow drift keeps a still photo from looking like a dead backdrop.
+    transform: scale(1.06);
+    transition: all 1.4s ease;
+
+    &.is-active {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.ha-hero-scrim {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    // Two passes: vertical for the nav and the fade into the next section,
+    // horizontal so the copy stays legible on bright slides (the room photo
+    // is nearly white behind the headline).
+    // Roughly 30% lighter than the first pass, which buried the photo.
+    // The bottom stop stays dark so the hero blends into the section below.
+    background:
+        linear-gradient(180deg,
+            rgba(26, 26, 34, 0.50) 0%,
+            rgba(26, 26, 34, 0.27) 30%,
+            rgba(26, 26, 34, 0.48) 62%,
+            rgba(26, 26, 34, 0.92) 100%),
+        linear-gradient(90deg,
+            rgba(26, 26, 34, 0.57) 0%,
+            rgba(26, 26, 34, 0.35) 45%,
+            rgba(26, 26, 34, 0.07) 75%,
+            transparent 100%);
+}
+
+// Neutral vignette, not a coloured wash: a crimson glow here tinted the whole
+// photo red and made the hotel facade look like a different building.
+.ha-hero-glow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 65%;
+    height: 72%;
+    z-index: 1;
+    pointer-events: none;
+    background: radial-gradient(ellipse at bottom left,
+        rgba(0, 0, 0, 0.32) 0%, transparent 70%);
+}
+
+.s_ha_hero_slider .brand-stripe {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.ha-hero-content {
+    position: relative;
+    z-index: 2;
+    padding-bottom: 5.5rem;
+    max-width: 860px;
+}
+
+.ha-hero-title {
+    font-family: $ha-font-heading;
+    font-size: clamp(2.6rem, 6vw, 5.5rem);
+    font-weight: 400;
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+    color: $ha-white;
+    margin-bottom: 1.4rem;
+
+    em { font-style: italic; color: $ha-red; }
+}
+
+.ha-hero-lead {
+    font-size: clamp(1rem, 1.5vw, 1.3rem);
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 520px;
+    margin-bottom: 2.4rem;
+}
+
+.ha-hero-actions {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+// Numbers carry more weight than another paragraph of prose.
+.ha-hero-facts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.75rem;
+    margin-top: 3rem;
+    padding-top: 1.75rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+
+    strong {
+        display: block;
+        font-family: $ha-font-heading;
+        font-size: 1.9rem;
+        font-weight: 400;
+        line-height: 1;
+        color: $ha-white;
+    }
+
+    span {
+        display: block;
+        margin-top: 0.3rem;
+        font-size: 0.72rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+.ha-hero-dots {
+    position: absolute;
+    bottom: 2.4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 11;
+    display: flex;
+    gap: 0.7rem;
+}
+
+.ha-hero-dot {
+    width: 9px;
+    height: 9px;
+    padding: 0;
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.35s ease;
+
+    &:hover { border-color: $ha-red; }
+
+    &.is-active {
+        background: $ha-red;
+        border-color: $ha-red;
+        transform: scale(1.35);
+    }
+}
+
+@media (max-width: 991px) {
+    // The hero's bottom padding is owned by responsive.scss (it carries
+    // !important there); this block only tunes the pieces inside it.
+    .ha-hero-facts {
+        gap: 1.75rem;
+        margin-top: 2.25rem;
+
+        strong { font-size: 1.45rem; }
+    }
+
+    .ha-hero-dots { bottom: 1.5rem; }
+}
+
+@media (max-width: 575px) {
+    .ha-hero-facts {
+        gap: 1.25rem 2rem;
+
+        strong { font-size: 1.25rem; }
+        span { font-size: 0.65rem; }
+    }
+
+    .ha-hero-actions { gap: 0.8rem; }
+}
+
+// The badge is absolutely placed inside the hero; keep it clear of the dots
+// and off the very edge on small screens.
+.s_ha_hero_slider .ev-badge {
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    z-index: 11;
+    background: rgba(34, 34, 44, 0.85);
+}
+
+// Smaller screens are handled in responsive.scss, which repositions the badge
+// on tablets and hides it entirely below 480px.
+
+// -----------------------------------------------------------------------------
+// Inline perks (WiFi / parking / AC)
+// -----------------------------------------------------------------------------
+// These used to be big bordered cards that ate a third of the section for two
+// words. Now they are compact markers, and each icon keeps the colour people
+// already associate with it rather than the theme's pink.
+.ha-perks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.25rem;
+    margin-top: 1.75rem;
+}
+
+.ha-perk {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 0.7rem;
+    align-items: center;
+}
+
+.ha-perk-ico {
+    grid-row: 1 / 3;
+    font-size: 1.35rem;
+    line-height: 1;
+}
+
+.ha-perk-wifi { color: #5BA7F7; }
+.ha-perk-car  { color: #FAFAF8; }
+.ha-perk-ac   { color: #8FD3E8; }
+
+.ha-perk-name {
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: $ha-white;
+    line-height: 1.2;
+}
+
+.ha-perk-note {
+    font-size: 0.66rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: $ha-text-muted;
+    line-height: 1.2;
+}
+
+@media (max-width: 575px) {
+    .ha-perks { gap: 1.4rem; }
+    .ha-perk-ico { font-size: 1.15rem; }
+    .ha-perk-name { font-size: 0.82rem; }
+    .ha-perk-note { font-size: 0.6rem; }
+}
+
+// -----------------------------------------------------------------------------
+// Facebook mark keeps its own brand colour
+// -----------------------------------------------------------------------------
+// The theme paints every link salmon, which turned the Facebook icon into an
+// unrecognisable pink square. !important is needed because .o_cc sets link
+// colour with !important too.
+.ha-fb-ico {
+    color: #1877F2 !important;
+    margin-right: 0.35rem;
+}
+
+a:hover .ha-fb-ico {
+    color: #4A9BFF !important;
+}
+
+
+// -----------------------------------------------------------------------------
+// Hero: mark in the middle, tag at the top, actions at the bottom
+// -----------------------------------------------------------------------------
+// The headline and lead paragraph are no longer painted — the logo carries the
+// hero. They stay in the markup (visually hidden) so the page keeps a real h1
+// and crawlers still read the copy.
+.ha-hero-sr {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.s_ha_hero_slider {
+    align-items: stretch;
+}
+
+.s_ha_hero_slider .ha-hero-content {
+    display: flex;
+    flex-direction: column;
+    // No height:100% — the hero only has min-height, so a percentage height
+    // resolves to auto AND cancels the stretch it would otherwise inherit.
+    align-self: stretch;
+    padding-top: 9.5rem;
+    padding-bottom: 5.5rem;
+}
+
+.s_ha_hero_slider .section-tag {
+    flex: 0 0 auto;
+}
+
+// Hotel mark, plus sign and restaurant mark travel together, centred in the
+// space between the location tag and the buttons.
+.ha-hero-marks {
+    flex: 0 0 auto;
+    margin: auto 0;
+    text-align: center;
+}
+
+.ha-hero-title {
+    margin: 0;
+}
+
+.ha-hero-logo {
+    display: block;
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.ha-hero-plus {
+    font-family: $ha-font-body;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.55);
+    margin: 0.9rem 0 1.1rem;
+}
+
+// display:block, not inline-block: an inline-block shrinks to its content, so
+// a percentage max-width on the image resolved against a box the image itself
+// was sizing — it collapsed to 78px on a phone.
+.ha-hero-restaurant {
+    display: block;
+    transition: all 0.35s ease;
+
+    img {
+        display: block;
+        // 60% larger than the first pass, as asked. The source is upscaled
+        // to 756px, so even this still has a 2x reserve for retina.
+        width: 368px;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        opacity: 0.92;
+    }
+
+    &:hover img { opacity: 1; }
+}
+
+.s_ha_hero_slider .ha-hero-actions,
+.s_ha_hero_slider .ha-hero-facts {
+    flex: 0 0 auto;
+}
+
+// -----------------------------------------------------------------------------
+// Rooms / restaurant / bar — three cards side by side
+// -----------------------------------------------------------------------------
+// Mirrors how the old arenahotel.cz introduced the house: a photo, a heading
+// and a short paragraph, three abreast, instead of three stacked full-width
+// blocks that pushed everything else below the fold.
+.s_ha_home_trio {
+    background: $ha-dark;
+}
+
+.ha-trio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.75rem;
+    align-items: stretch;
+}
+
+.ha-trio-card {
+    display: flex;
+    flex-direction: column;
+    // The whole card is the link, so the cursor and colour must not look
+    // like body text.
+    text-decoration: none;
+    cursor: pointer;
+    background: $ha-dark-card;
+    border: 1px solid rgba(194, 59, 59, 0.1);
+    overflow: hidden;
+    transition: all 0.4s ease;
+
+    &:hover {
+        border-color: rgba(240, 112, 112, 0.35);
+        transform: translateY(-5px);
+        box-shadow: 0 22px 50px rgba(0, 0, 0, 0.4);
+
+        .ha-trio-img img { transform: scale(1.05); }
+    }
+}
+
+.ha-trio-img {
+    overflow: hidden;
+    aspect-ratio: 3 / 2;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.7s ease;
+    }
+}
+
+.ha-trio-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    padding: 2rem 1.75rem 1.75rem;
+
+    h3 {
+        font-family: $ha-font-heading;
+        font-size: 1.7rem;
+        color: $ha-white;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 0.98rem;
+        line-height: 1.75;
+        color: $ha-text-muted;
+        // Pushes the link to the bottom so the three buttons line up even
+        // when the paragraphs differ in length.
+        flex: 1 1 auto;
+        margin-bottom: 1.5rem;
+    }
+
+    .btn-outline { align-self: flex-start; }
+}
+
+.s_ha_home_trio .ha-perks {
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+@media (max-width: 991px) {
+    .ha-trio { grid-template-columns: 1fr 1fr; gap: 1.2rem; }
+    .ha-trio-body { padding: 1.5rem 1.25rem 1.25rem; }
+    .ha-trio-body h3 { font-size: 1.35rem; }
+    .ha-trio-body p { font-size: 0.9rem; }
+}
+
+// A span styled as a button inside the card link — a nested <a> is invalid.
+.ha-trio-card .btn-outline {
+    pointer-events: none;
+}
+
+.ha-trio-card:hover .btn-outline {
+    background: rgba(240, 112, 112, 0.1);
+    border-color: $ha-red;
+    color: $ha-red;
+}
+
+.ha-perk-recepce { color: #F0C674; }
+
+// -----------------------------------------------------------------------------
+// Standalone map section
+// -----------------------------------------------------------------------------
+// A full-bleed 21:9 map came out 1905x816 on a desktop — a wall of Google.
+// Match the homepage map instead: same height, kept within the text column.
+.ha-map-standalone {
+    aspect-ratio: 16 / 9;
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+    .ha-map-standalone {
+        aspect-ratio: 4 / 3;
+        max-width: 100%;
+    }
+}
+
+// Map tucked under the contact form, filling the right column.
+.ha-map-inline {
+    aspect-ratio: 4 / 3;
+    margin-top: 2rem;
+}
+
+@media (max-width: 991px) {
+    .ha-map-inline {
+        aspect-ratio: 16 / 9;
+        margin-top: 1.5rem;
+    }
+}
+
+// =============================================================================
+// Pill buttons
+// =============================================================================
+// Every button is a pill, and its label never wraps — "Restaurante Brasileiro →"
+// was breaking onto a second line and leaving the arrow stranded underneath.
+.btn-reserve,
+.ha-btn-reserve,
+.btn-outline,
+.ha-btn,
+.ha-nav-reserve,
+.ha-btn-brasileira,
+.ha-btn-outline-brasileira,
+.ha-btn-submit,
+.ha-btn-outline-white,
+.btn,
+.btn-primary,
+.btn-secondary,
+.btn-outline-primary {
+    border-radius: 999px !important;
+    white-space: nowrap;
+}
+
+// Long labels get a touch less tracking and padding so they still fit inside
+// a card column without shrinking the type.
+.ha-trio-card .btn-outline {
+    padding: 0.85rem 1.6rem;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+}
+
+// Inputs and cards keep a soft radius too — no hard corners anywhere.
+.ha-contact-form input,
+.ha-contact-form textarea,
+.ha-contact-form select {
+    border-radius: 14px !important;
+}
+
+.concierge-item,
+.ha-trio-card,
+.room-card,
+.ev-badge,
+.map-container,
+.ha-trio-img,
+.feature-item {
+    border-radius: 14px;
+}
+
+.ha-trio-card { overflow: hidden; }
+
+// =============================================================================
+// Trio cards: photo, title and description
+// =============================================================================
+// No buttons and no toggle — the card shows everything it has.
+
+
+.ha-trio-img {
+    display: block;
+    overflow: hidden;
+    aspect-ratio: 3 / 2;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.7s ease;
+    }
+}
+
+.ha-trio-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+
+    h3 { margin: 0; }
+}
+
+// Always visible — the description is short enough to carry its own weight.
+.ha-trio-text {
+    > p {
+        margin: 1rem 0 0;
+        font-size: 0.95rem;
+        line-height: 1.75;
+        color: $ha-text-muted;
+    }
+}
+
+
+.ha-trio-body {
+    display: block;
+    padding: 1.6rem 1.5rem;
+}
+
+// Card headings stay white. Excluded from the theme's blanket link rule above,
+// whose seven :not() clauses outweighed anything reasonable here.
+.ha-trio-title {
+    // !important because Odoo derives a link colour of its own (#F6ACAC here)
+    // from the colour palette, which wins over a plain class rule.
+    color: $ha-white !important;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        color: $ha-red !important;
+        text-decoration: none;
+    }
+}
+
+// -----------------------------------------------------------------------------
+// Video embed
+// -----------------------------------------------------------------------------
+.s_ha_video { background: $ha-dark-card; }
+
+.ha-video-frame {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 14px;
+    border: 1px solid rgba(194, 59, 59, 0.12);
+    background: #000;
+
+    iframe {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+}
+
+// .section-tag is inline-flex, so justify-content does nothing to centre it —
+// the parent has to do it.
+.s_ha_video .container {
+    text-align: center;
+}
+
+// Street View tour: taller than a video so there is room to look around.
+.ha-tour-frame {
+    aspect-ratio: 16 / 10;
+    max-width: 1000px;
+}
+
+@media (max-width: 767px) {
+    .ha-tour-frame { aspect-ratio: 4 / 3; }
+}
+
+// =============================================================================
+// Reveal hidden copy while translating
+// =============================================================================
+// Odoo's translate mode only lists text it can actually see on the page, so
+// anything hidden by CSS is skipped without a word and stays in the source
+// language. Two blocks here are invisible by design: the hero's screen-reader
+// headline and lead, and the dash that separates the concierge heading. They
+// are shipped translated in the PO files, but whoever edits a translation by
+// hand needs to be able to reach them too.
+body.editor_enable,
+body.editor_has_snippets,
+body.o_translate_mode {
+    .ha-hero-sr {
+        position: static !important;
+        width: auto !important;
+        height: auto !important;
+        clip: auto !important;
+        clip-path: none !important;
+        overflow: visible !important;
+        opacity: 0.85 !important;
+        outline: 1px dashed rgba(240, 112, 112, 0.5);
+    }
+
+    [style*="display:none"] { display: inline !important; }
+}
+
+// =============================================================================
+// Restaurant Guru award badge
+// =============================================================================
+// Rebuilt from Restaurant Guru's own widget so the page carries no third-party
+// stylesheet and no onclick. Gold on near-black, matching the badge the hotel
+// displays on the old site.
+$ha-award-gold: #D9A648;
+
+.ha-award {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 1.15rem 1.6rem 1rem;
+    border: 2px solid $ha-award-gold;
+    border-radius: 12px;
+    background: #0E0E13;
+    text-decoration: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+    transition: all 0.3s ease;
+
+    &:hover {
+        border-color: lighten($ha-award-gold, 12%);
+        transform: translateY(-3px);
+        text-decoration: none;
+    }
+}
+
+.ha-award-name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    letter-spacing: 0.01em;
+}
+
+.ha-award-mark {
+    width: 116px;
+    height: 36px;
+    fill: none;
+    stroke: $ha-award-gold;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    opacity: 0.95;
+}
+
+// The rules either side of the word are drawn rather than typed, so they keep
+// their length whatever the translation does to the label.
+.ha-award-rec {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    width: 100%;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: $ha-award-gold;
+
+    &::before,
+    &::after {
+        content: '';
+        flex: 1 1 auto;
+        height: 1px;
+        background: rgba(217, 166, 72, 0.55);
+    }
+}
+
+.ha-award-src {
+    font-size: 0.82rem;
+    color: #E8E6E1;
+    letter-spacing: 0.02em;
+}
+
+.ha-award-year {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: $ha-award-gold;
+    letter-spacing: 0.05em;
+}
+
+@media (max-width: 575px) {
+    .ha-award { padding: 1rem 1.3rem 0.9rem; }
+    .ha-award-name { font-size: 0.9rem; }
+    .ha-award-mark { width: 100px; height: 31px; }
+    .ha-award-rec { font-size: 0.85rem; }
+}
+
+// =============================================================================
+// Show everything while editing
+// =============================================================================
+// Seventy elements carry .reveal, which starts them at opacity 0 and waits for
+// an IntersectionObserver to scroll them into view. Open the editor without
+// scrolling and the page is simply blank - the blocks are there, they are just
+// invisible, so there is nothing to click. The hero slides have the same
+// problem: only the active one is opaque and the crossfade script does not run
+// in the editor.
+body.editor_enable,
+body.editor_has_snippets,
+body.o_translate_mode {
+    .reveal {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+
+    // Show the first slide; the rest stay stacked underneath it.
+    .ha-hero-slide {
+        transition: none !important;
+
+        &:first-child { opacity: 1 !important; }
+    }
 }

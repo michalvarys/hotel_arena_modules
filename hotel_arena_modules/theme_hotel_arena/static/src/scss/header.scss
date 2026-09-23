@@ -20,7 +20,9 @@ $ha-transition: all 0.3s ease;
 // -----------------------------------------------------------------------------
 header#top {
     background-color: transparent !important;
-    border-bottom: none !important;
+    // Reserve the hairline from the start (transparent) — adding a 1px border
+    // only in the scrolled state grows the header by 1px and nudges the page.
+    border-bottom: 1px solid transparent !important;
     box-shadow: none !important;
     position: fixed !important;
     top: 0;
@@ -34,11 +36,14 @@ header#top.o_header_standard {
     background-color: transparent !important;
 }
 
-// Scrolled state
+// Scrolled state.
+// No backdrop-filter here: on a position:fixed bar Chrome repaints the blur
+// layer a frame behind the scroll and flashes a light band across the header.
+// The background is 0.96 opaque anyway, so the blur bought almost nothing.
 header#top.o_header_is_scrolled,
+header#top.o_header_affixed,
 header#top.scrolled {
-    background: rgba(26, 26, 34, 0.92) !important;
-    backdrop-filter: blur(20px);
+    background: rgba(26, 26, 34, 0.96) !important;
     border-bottom: 1px solid rgba(194, 59, 59, 0.1) !important;
 }
 
@@ -56,10 +61,17 @@ header#top.scrolled {
     @media (max-width: 480px) { padding: 0.8rem 1rem; }
 }
 
-header#top.o_header_is_scrolled .ha-navbar {
-    padding: 1rem 4rem;
+// Deliberately NOT shrinking the padding on scroll. Odoo sizes the spacer it
+// puts under the affixed header from the header's own height, so a header that
+// changes height makes the whole page jump by that difference (measured: 96px
+// -> 81px, a 15px jolt on every page). Keep the height fixed; the background
+// change is enough of a scrolled cue.
+header#top.o_header_is_scrolled .ha-navbar,
+header#top.o_header_affixed .ha-navbar {
+    padding: 1.5rem 4rem;
 
-    @media (max-width: 768px) { padding: 0.8rem 1.25rem; }
+    @media (max-width: 768px) { padding: 1rem 1.25rem; }
+    @media (max-width: 480px) { padding: 0.8rem 1rem; }
 }
 
 // Logo (text-based)
@@ -327,5 +339,223 @@ header#top.o_header_is_scrolled .ha-navbar {
     a {
         color: $ha-text-muted;
         &:hover { color: $ha-red; }
+    }
+}
+
+// -----------------------------------------------------------------------------
+// Nav fit
+// -----------------------------------------------------------------------------
+// Seven Czech menu items plus the reserve button overflow a 1440px viewport and
+// wrap onto a second line. Keep every label on one line and let the spacing
+// shrink with the viewport instead.
+.ha-menu-link,
+.ha-nav-reserve {
+    white-space: nowrap;
+}
+
+.ha-nav-desktop {
+    gap: clamp(1rem, 1.9vw, 2.5rem);
+}
+
+@media (max-width: 1300px) {
+    .ha-menu-link {
+        font-size: 0.88rem;
+        letter-spacing: 0.05em;
+    }
+}
+
+@media (max-width: 1100px) {
+    .ha-menu-link {
+        font-size: 0.8rem;
+        letter-spacing: 0.03em;
+    }
+}
+
+// The wordmark must stay on one line; the nav now competes for the same row.
+.nav-logo-text {
+    white-space: nowrap;
+}
+
+.ha-logo {
+    flex: 0 0 auto;
+}
+
+// space-between alone leaves no breathing room once the nav fills the row.
+.ha-navbar {
+    gap: clamp(1.5rem, 3vw, 3.5rem);
+}
+
+// -----------------------------------------------------------------------------
+// Brand logo (real mark, replaces the text wordmark)
+// -----------------------------------------------------------------------------
+.ha-logo-img {
+    display: block;
+    // Matches the existing max-height on .ha-logo img so the two agree.
+    height: 48px;
+    max-height: 48px;
+    width: auto;
+    // The source PNG is white artwork on transparent, made for the dark bar.
+    transition: all 0.4s ease;
+}
+
+// No shrink-on-scroll for the logo either — it would change the header height
+// and bring the page jump straight back.
+
+@media (max-width: 991px) {
+    .ha-logo-img { height: 44px; }
+}
+
+@media (max-width: 480px) {
+    .ha-logo-img { height: 38px; }
+}
+
+// -----------------------------------------------------------------------------
+// First-scroll jump
+// -----------------------------------------------------------------------------
+// When the header becomes affixed, Odoo pads <main> by the header height so a
+// header that used to sit in the flow does not cover the content. Ours is
+// position:fixed from the very first paint, so the content was never under it
+// — that padding appears out of nowhere on the first scroll and shoves the
+// whole page down by 97px. Measured: main padding-top 0px -> 97px, document
+// height 6889 -> 6986. Keep it at zero in both states.
+#wrapwrap > main {
+    padding-top: 0 !important;
+}
+
+// =============================================================================
+// Language switcher
+// =============================================================================
+// <details> rather than a dropdown widget: the header ships no JavaScript of
+// its own, and this keeps it that way.
+.ha-lang {
+    position: relative;
+
+    summary {
+        list-style: none;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        padding: 0.45rem 0.7rem;
+        border: 1px solid rgba(240, 112, 112, 0.28);
+        border-radius: 999px;
+        font-size: 0.78rem;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        color: #E8E6E1;
+        background: rgba(255, 255, 255, 0.03);
+        transition: all 0.25s ease;
+
+        &::-webkit-details-marker { display: none; }
+        &::marker { content: ""; }
+
+        &:hover {
+            color: #F07070;
+            border-color: #F07070;
+        }
+    }
+
+    .ha-lang-caret {
+        opacity: 0.65;
+        transition: transform 0.25s ease;
+    }
+
+    &[open] summary .ha-lang-caret { transform: rotate(180deg); }
+}
+
+.ha-lang-panel {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    min-width: 136px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 6px;
+    background: #1A1A22;
+    border: 1px solid rgba(240, 112, 112, 0.22);
+    border-radius: 12px;
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.5);
+    z-index: 1200;
+}
+
+.ha-lang-opt {
+    display: block;
+    padding: 0.55rem 0.8rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #C5C2BA;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+
+    &:hover { background: rgba(240, 112, 112, 0.1); color: #F07070; }
+    &.is-active { background: rgba(240, 112, 112, 0.14); color: #F07070; }
+}
+
+// Footer and mobile drawer: a plain row of codes, no dropdown needed.
+.ha-lang-link {
+    display: inline-block;
+    padding: 0.25rem 0.55rem;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    color: #C5C2BA;
+    text-decoration: none;
+    transition: all 0.2s ease;
+
+    &:hover { color: #F07070; }
+    &.is-active { background: rgba(240, 112, 112, 0.14); color: #F07070; }
+}
+
+.ha-offcanvas-langs {
+    display: flex;
+    justify-content: center;
+    gap: 0.3rem;
+    margin-top: 1.2rem;
+}
+
+// =============================================================================
+// Nav width
+// =============================================================================
+// Seven menu items plus the language switcher plus the booking button do not
+// fit a narrow desktop, and German and Russian are the longest: "RESTAURANT
+// UND BAR" and "РЕСТОРАН И БАР" pushed the button 240px past the right edge at
+// 1100px. Two changes: hand over to the burger earlier, and tighten what is
+// left between 1200 and 1700 (Russian still overflowed 51px at 1600).
+//
+// The two halves also used to disagree — the desktop list hid below 768px
+// while the burger appeared below 992px, so both showed at 800px. They now
+// switch at the same width.
+@media (max-width: 1199.98px) {
+    .ha-nav-desktop { display: none !important; }
+    .ha-mobile-toggle.d-lg-none { display: flex !important; }
+}
+
+@media (min-width: 1200px) {
+    .ha-mobile-toggle.d-lg-none { display: none !important; }
+}
+
+@media (min-width: 1200px) and (max-width: 1700px) {
+    .ha-navbar { padding-left: 2rem; padding-right: 2rem; }
+
+    .ha-nav-desktop { gap: clamp(0.7rem, 1.25vw, 1.5rem); }
+
+    .ha-menu-link {
+        font-size: 0.8rem;
+        letter-spacing: 0.02em;
+    }
+
+    .ha-nav-reserve {
+        padding: 0.6rem 1.1rem;
+        font-size: 0.75rem;
+    }
+
+    .ha-lang summary {
+        padding: 0.4rem 0.55rem;
+        font-size: 0.72rem;
+        gap: 5px;
     }
 }

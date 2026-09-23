@@ -1,62 +1,59 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <odoo>
 
     <template id="ha_snippets_registry" name="Hotel Arena Snippets" inherit_id="website.snippets">
         <xpath expr="//snippets[@id='snippet_structure']" position="after">
             <snippets id="ha_snippets" string="Hotel Arena">
                 <!-- Hero / Banners -->
-                <t t-snippet="theme_hotel_arena.s_hero_slider"
-                   t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_hero_slider.svg"/>
-                <t t-snippet="theme_hotel_arena.s_parallax_section"
-                   t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_parallax_section.svg"/>
-                <t t-snippet="theme_hotel_arena.s_sub_banner"
-                   t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_sub_banner.svg"/>
-                <t t-snippet="theme_hotel_arena.s_parallax_bar"
-                   t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_parallax_bar.svg"/>
+                <t t-snippet="theme_hotel_arena.s_hero_slider" t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_hero_slider.svg"/>
+                <t t-snippet="theme_hotel_arena.s_parallax_section" t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_parallax_section.svg"/>
+                <t t-snippet="theme_hotel_arena.s_sub_banner" t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_sub_banner.svg"/>
+                <t t-snippet="theme_hotel_arena.s_parallax_bar" t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_parallax_bar.svg"/>
 
                 <!-- About -->
-                <t t-snippet="theme_hotel_arena.s_about_hotel"
-                   t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_about_hotel.svg"/>
-                <t t-snippet="theme_hotel_arena.s_hotel_services"
-                   t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_hotel_services.svg"/>
-                <t t-snippet="theme_hotel_arena.s_home_about"
-                   t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_home_about.svg"/>
-                <t t-snippet="theme_hotel_arena.s_home_restaurant"
-                   t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_home_restaurant.svg"/>
-                <t t-snippet="theme_hotel_arena.s_concierge_services"
-                   t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_concierge_services.svg"/>
+                <t t-snippet="theme_hotel_arena.s_about_hotel" t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_about_hotel.svg"/>
+                <t t-snippet="theme_hotel_arena.s_hotel_services" t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_hotel_services.svg"/>
+                <t t-snippet="theme_hotel_arena.s_home_about" t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_home_about.svg"/>
+                <t t-snippet="theme_hotel_arena.s_home_restaurant" t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_home_restaurant.svg"/>
+                <t t-snippet="theme_hotel_arena.s_concierge_services" t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_concierge_services.svg"/>
+                <t t-snippet="theme_hotel_arena.s_home_trio" t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_rooms_preview.svg"/>
 
                 <!-- Rooms -->
-                <t t-snippet="theme_hotel_arena.s_rooms_preview"
-                   t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_rooms_preview.svg"/>
-                <t t-snippet="theme_hotel_arena.s_rooms_listing"
-                   t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_rooms_listing.svg"/>
-                <t t-snippet="theme_hotel_arena.s_rooms_intro"
-                   t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_rooms_intro.svg"/>
-                <t t-snippet="theme_hotel_arena.s_room_prices"
-                   t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_room_prices.svg"/>
+                <t t-snippet="theme_hotel_arena.s_rooms_preview" t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_rooms_preview.svg"/>
+                <t t-snippet="theme_hotel_arena.s_rooms_listing" t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_rooms_listing.svg"/>
+                <t t-snippet="theme_hotel_arena.s_rooms_intro" t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_rooms_intro.svg"/>
+                <t t-snippet="theme_hotel_arena.s_room_prices" t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_room_prices.svg"/>
 
                 <!-- Features / Services -->
-                <t t-snippet="theme_hotel_arena.s_hotel_features"
-                   t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_hotel_features.svg"/>
+                <t t-snippet="theme_hotel_arena.s_hotel_features" t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_hotel_features.svg"/>
 
                 <!-- Gallery -->
-                <t t-snippet="theme_hotel_arena.s_hotel_gallery"
-                   t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_hotel_gallery.svg"/>
+                <t t-snippet="theme_hotel_arena.s_hotel_gallery" t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_hotel_gallery.svg"/>
+                <t t-snippet="theme_hotel_arena.s_gallery_preview" t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_hotel_gallery.svg"/>
+                <t t-snippet="theme_hotel_arena.s_gallery_intro" t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_hotel_gallery.svg"/>
 
                 <!-- Restaurant -->
-                <t t-snippet="theme_hotel_arena.s_restaurant_info"
-                   t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_restaurant_info.svg"/>
-                <t t-snippet="theme_hotel_arena.s_breakfast_info"
-                   t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_breakfast_info.svg"/>
+                <t t-snippet="theme_hotel_arena.s_restaurant_info" t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_restaurant_info.svg"/>
+                <t t-snippet="theme_hotel_arena.s_breakfast_info" t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_breakfast_info.svg"/>
 
                 <!-- Contact -->
-                <t t-snippet="theme_hotel_arena.s_contact_form"
-                   t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_contact_form.svg"/>
-                <t t-snippet="theme_hotel_arena.s_contact_info"
-                   t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_contact_info.svg"/>
-                <t t-snippet="theme_hotel_arena.s_google_map"
-                   t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_google_map.svg"/>
+                <t t-snippet="theme_hotel_arena.s_contact_form" t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_contact_form.svg"/>
+                <t t-snippet="theme_hotel_arena.s_contact_info" t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_contact_info.svg"/>
+                <t t-snippet="theme_hotel_arena.s_ha_map" t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_google_map.svg"/>
+
+                <!-- Pricing details and surroundings -->
+                <t t-snippet="theme_hotel_arena.s_price_includes" t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_room_prices.svg"/>
+                <t t-snippet="theme_hotel_arena.s_extra_services" t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_hotel_features.svg"/>
+                <t t-snippet="theme_hotel_arena.s_surroundings" t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_about_hotel.svg"/>
+
+                <t t-snippet="theme_hotel_arena.s_award_badge"
+                   t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_hotel_features.svg"/>
+
+
+                <!-- Video -->
+                <t t-snippet="theme_hotel_arena.s_hotel_video" t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_hotel_gallery.svg"/>
+                <t t-snippet="theme_hotel_arena.s_restaurant_video" t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_hotel_gallery.svg"/>
+                <t t-snippet="theme_hotel_arena.s_hotel_tour" t-thumbnail="/theme_hotel_arena/static/src/img/snippets/s_google_map.svg"/>
             </snippets>
         </xpath>
     </template>

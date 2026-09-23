@@ -3,48 +3,48 @@
     <data noupdate="1">
     <!-- Website Navigation Menu Items -->
     <record id="menu_home" model="theme.website.menu">
-        <field name="name">Hlavní stránka</field>
+        <field name="name">Home</field>
         <field name="url">/</field>
         <field name="sequence" type="int">10</field>
     </record>
 
     <record id="menu_ubytovani" model="theme.website.menu">
-        <field name="name">Ubytování</field>
+        <field name="name">Accommodation</field>
         <field name="url">/ubytovani</field>
         <field name="page_id" ref="ha_page_ubytovani_page"/>
         <field name="sequence" type="int">20</field>
     </record>
 
     <record id="menu_about" model="theme.website.menu">
-        <field name="name">O hotelu</field>
+        <field name="name">About us</field>
         <field name="url">/o-hotelu</field>
         <field name="page_id" ref="ha_page_about_page"/>
         <field name="sequence" type="int">30</field>
     </record>
 
     <record id="menu_restaurant" model="theme.website.menu">
-        <field name="name">Restaurace a bar</field>
+        <field name="name">Restaurant and bar</field>
         <field name="url">/restaurace-a-bar</field>
         <field name="page_id" ref="ha_page_restaurant_page"/>
         <field name="sequence" type="int">40</field>
     </record>
 
     <record id="menu_gallery" model="theme.website.menu">
-        <field name="name">Galerie</field>
+        <field name="name">Gallery</field>
         <field name="url">/galerie</field>
         <field name="page_id" ref="ha_page_gallery_page"/>
         <field name="sequence" type="int">50</field>
     </record>
 
     <record id="menu_pricelist" model="theme.website.menu">
-        <field name="name">Ceník</field>
+        <field name="name">Pricelist</field>
         <field name="url">/cenik</field>
         <field name="page_id" ref="ha_page_pricelist_page"/>
         <field name="sequence" type="int">60</field>
     </record>
 
     <record id="menu_contact" model="theme.website.menu">
-        <field name="name">Kontakt</field>
+        <field name="name">Contact</field>
         <field name="url">/kontakt</field>
         <field name="page_id" ref="ha_page_contact_page"/>
         <field name="sequence" type="int">70</field>

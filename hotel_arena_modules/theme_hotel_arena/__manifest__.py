@@ -35,12 +35,15 @@
         'data/ir_asset.xml',
         # 3. Layout (header, footer)
         'views/layout.xml',
+        'views/lang_switcher.xml',
         # 4. Image library
         'views/images_library.xml',
         # 5. Snippets
         'views/snippets/s_hero_slider.xml',
         'views/snippets/s_parallax_section.xml',
         'views/snippets/s_about_hotel.xml',
+        'views/snippets/s_home_trio.xml',
+        'views/snippets/s_award_badge.xml',
         'views/snippets/s_rooms_preview.xml',
         'views/snippets/s_rooms_listing.xml',
         'views/snippets/s_room_prices.xml',
@@ -49,7 +52,11 @@
         'views/snippets/s_restaurant.xml',
         'views/snippets/s_breakfast.xml',
         'views/snippets/s_contact_form.xml',
-        # 6. Snippet registry
+        'views/snippets/s_price_details.xml',
+        'views/snippets/s_surroundings.xml',
+        'views/snippets/s_video.xml',
+        # 6. Snippet registry (must load AFTER every snippet file)
+        'views/snippets/snippet_options.xml',
         'views/snippets/snippets_registry.xml',
         # 7. Pages
         'views/pages.xml',
@@ -68,6 +75,8 @@
             'theme_hotel_arena/static/src/scss/contact.scss',
             'theme_hotel_arena/static/src/scss/responsive.scss',
             'theme_hotel_arena/static/src/js/reveal.js',
+            'theme_hotel_arena/static/src/js/hero_slider.js',
+            'theme_hotel_arena/static/src/js/booking_lang.js',
             'theme_hotel_arena/static/src/js/snippets/s_hotel_gallery.js',
             'theme_hotel_arena/static/src/js/snippets/s_contact_form.js',
         ],

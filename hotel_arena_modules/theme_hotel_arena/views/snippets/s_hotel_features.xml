@@ -1,50 +1,43 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <odoo>
 
     <!-- Features — Numbered list with image (dark card bg) -->
-    <template id="s_hotel_features" name="Vybavení hotelu">
-        <section class="s_ha_hotel_features o_cc o_cc2 pt104 pb104 o_colored_level"
-                 data-snippet="s_hotel_features"
-                 data-name="Vybavení hotelu">
+    <template id="s_hotel_features" name="Hotel facilities">
+        <section class="s_hotel_features s_ha_hotel_features o_cc o_cc2 pt104 pb104 o_colored_level" data-snippet="s_hotel_features" data-name="Hotel facilities">
             <div class="container">
                 <div class="features-layout">
                     <div class="features-img reveal">
-                        <img src="/theme_hotel_arena/static/src/img/homepage/o-nas2.webp"
-                             alt="Vybavení hotelu Arena" loading="lazy"/>
+                        <img src="/theme_hotel_arena/static/src/img/homepage/o-nas2.webp" alt="Hotel Arena facilities" loading="lazy"/>
                     </div>
                     <div class="features-list reveal">
-                        <div class="section-tag">Vybavení</div>
-                        <h2 class="section-title">Komfort v každém <em>detailu</em></h2>
+                        <div class="section-tag">Facilities</div>
+                        <h2 class="section-title">Comfort in every <em>detail</em></h2>
                         <div class="feature-item">
                             <div class="feature-num">01</div>
                             <div class="feature-text">
-                                <h3>Klimatizace &amp; trezor</h3>
-                                <p>Každý pokoj vybavený individuálně ovládanou klimatizací
-                                   a bezpečnostním trezorem.</p>
+                                <h3>Air conditioning &amp; safe</h3>
+                                <p>Every room has individually controlled air conditioning and a security safe.</p>
                             </div>
                         </div>
                         <div class="feature-item">
                             <div class="feature-num">02</div>
                             <div class="feature-text">
-                                <h3>Satelitní TV &amp; Wi-Fi</h3>
-                                <p>LCD televizor se satelitním příjmem a bezplatné
-                                   bezdrátové připojení v celém hotelu.</p>
+                                <h3>Satellite TV &amp; Wi-Fi</h3>
+                                <p>An LCD television with satellite reception and free wireless internet throughout the hotel.</p>
                             </div>
                         </div>
                         <div class="feature-item">
                             <div class="feature-num">03</div>
                             <div class="feature-text">
-                                <h3>Non-stop recepce</h3>
-                                <p>Recepce k dispozici 24 hodin denně. Check-in kdykoliv,
-                                   concierge služby na přání.</p>
+                                <h3>24/7 reception</h3>
+                                <p>Reception available 24 hours a day. Check in at any time, concierge services on request.</p>
                             </div>
                         </div>
                         <div class="feature-item">
                             <div class="feature-num">04</div>
                             <div class="feature-text">
-                                <h3>Hlídané parkoviště</h3>
-                                <p>Vlastní parkoviště pod dozorem kamerového systému
-                                   zdarma pro všechny hosty.</p>
+                                <h3>Guarded parking</h3>
+                                <p>Our own CCTV-monitored car park, free for all guests.</p>
                             </div>
                         </div>
                     </div>

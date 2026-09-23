@@ -1,0 +1,1800 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* theme_hotel_arena
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de_DE\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
+msgid "1 person"
+msgstr "1 Person"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
+msgid "2 people"
+msgstr "2 Personen"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hotel_features
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_price_includes
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
+msgid "24/7 reception"
+msgstr "Rezeption rund um die Uhr"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
+msgid "3 people"
+msgstr "3 Personen"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
+msgid "4 people"
+msgstr "4 Personen"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_footer
+msgid "430 01 Chomutov"
+msgstr "430 01 Komotau"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_surroundings
+msgid "800 m inline track"
+msgstr "800-m-Inline-Bahn"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_contact
+msgid "<br/>\n                                                Jaroslav Šulta<br/>"
+msgstr "<br/>\n                                                Jaroslav Šulta<br/>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_contact_form
+msgid "<br/>\n                                        Jaroslav Šulta<br/>"
+msgstr "<br/>\n                                        Jaroslav Šulta<br/>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_ubytovani
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_listing
+msgid "<i class=\"fa fa-bath\"/> Bathroom"
+msgstr "<i class=\"fa fa-bath\"/> Badezimmer"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+msgid "<i class=\"fa fa-bolt\"/>\n                        ČEZ charging station for electric vehicles"
+msgstr "<i class=\"fa fa-bolt\"/>\n                        ČEZ-Ladestation für Elektroautos"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hero_slider
+msgid "<i class=\"fa fa-bolt\"/>\n                ČEZ charging station for electric vehicles"
+msgstr "<i class=\"fa fa-bolt\"/>\n                ČEZ-Ladestation für Elektroautos"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+msgid "<i class=\"fa fa-car ha-perk-ico ha-perk-car\"/>\n                                <span class=\"ha-perk-name\">Parking</span>\n                                <span class=\"ha-perk-note\">free</span>"
+msgstr "<i class=\"fa fa-car ha-perk-ico ha-perk-car\"/>\n                                <span class=\"ha-perk-name\">Parken</span>\n                                <span class=\"ha-perk-note\">kostenlos</span>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hero_slider
+msgid "<i class=\"fa fa-car ha-perk-ico ha-perk-car\"/>\n                        <span class=\"ha-perk-name\">Parking</span>\n                        <span class=\"ha-perk-note\">free</span>"
+msgstr "<i class=\"fa fa-car ha-perk-ico ha-perk-car\"/>\n                        <span class=\"ha-perk-name\">Parken</span>\n                        <span class=\"ha-perk-note\">kostenlos</span>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_restaurant
+msgid "<i class=\"fa fa-check\" style=\"color:#F07070; margin-right: 8px;\"/>\n                                        For hotel guests <strong>free of charge</strong>"
+msgstr "<i class=\"fa fa-check\" style=\"color:#F07070; margin-right: 8px;\"/>\n                                        Für Hotelgäste <strong>kostenlos</strong>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_breakfast_info
+msgid "<i class=\"fa fa-check\" style=\"color:#F07070; margin-right: 8px;\"/>\n                                For hotel guests <strong>free of charge</strong>"
+msgstr "<i class=\"fa fa-check\" style=\"color:#F07070; margin-right: 8px;\"/>\n                                Für Hotelgäste <strong>kostenlos</strong>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+msgid "<i class=\"fa fa-clock-o ha-perk-ico ha-perk-recepce\"/>\n                                <span class=\"ha-perk-name\">Reception</span>\n                                <span class=\"ha-perk-note\">24/7</span>"
+msgstr "<i class=\"fa fa-clock-o ha-perk-ico ha-perk-recepce\"/>\n                                <span class=\"ha-perk-name\">Rezeption</span>\n                                <span class=\"ha-perk-note\">24/7</span>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hero_slider
+msgid "<i class=\"fa fa-clock-o ha-perk-ico ha-perk-recepce\"/>\n                        <span class=\"ha-perk-name\">Reception</span>\n                        <span class=\"ha-perk-note\">24/7</span>"
+msgstr "<i class=\"fa fa-clock-o ha-perk-ico ha-perk-recepce\"/>\n                        <span class=\"ha-perk-name\">Rezeption</span>\n                        <span class=\"ha-perk-note\">24/7</span>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_footer
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_contact
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_contact_form
+msgid "<i class=\"fa fa-facebook-square ha-fb-ico\"/> Facebook"
+msgstr "<i class=\"fa fa-facebook-square ha-fb-ico\"/> Facebook"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_restaurant
+msgid "<i class=\"fa fa-info-circle\" style=\"color:#F07070; margin-right: 8px;\"/>\n                                        For other guests: <strong>CZK 200 / person</strong>"
+msgstr "<i class=\"fa fa-info-circle\" style=\"color:#F07070; margin-right: 8px;\"/>\n                                        Für andere Gäste: <strong>200 Kč / Person</strong>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_breakfast_info
+msgid "<i class=\"fa fa-info-circle\" style=\"color:#F07070; margin-right: 8px;\"/>\n                                For other guests: <strong>CZK 200 / person</strong>"
+msgstr "<i class=\"fa fa-info-circle\" style=\"color:#F07070; margin-right: 8px;\"/>\n                                Für andere Gäste: <strong>200 Kč / Person</strong>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_ubytovani
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_listing
+msgid "<i class=\"fa fa-lock\"/> Safe"
+msgstr "<i class=\"fa fa-lock\"/> Safe"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_about
+msgid "<i class=\"fa fa-map-marker\" style=\"color:#F07070;\"/>\n                                    <span>Chomutov</span> by Kamencové Lake"
+msgstr "<i class=\"fa fa-map-marker\" style=\"color:#F07070;\"/>\n                                    <span>Komotau</span> am Kamencové-See"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_about_hotel
+msgid "<i class=\"fa fa-map-marker\" style=\"color:#F07070;\"/>\n                            <span>Chomutov</span> by Kamencové Lake"
+msgstr "<i class=\"fa fa-map-marker\" style=\"color:#F07070;\"/>\n                            <span>Komotau</span> am Kamencové-See"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_header
+msgid "<i class=\"fa fa-map-marker\"/> Mostecká 5900, 430 01 Chomutov"
+msgstr "<i class=\"fa fa-map-marker\"/> Mostecká 5900, 430 01 Komotau"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+msgid "<i class=\"fa fa-paw\" style=\"color:#F07070;margin-right:8px;\"/>\n                                Pets are not allowed."
+msgstr "<i class=\"fa fa-paw\" style=\"color:#F07070;margin-right:8px;\"/>\n                                Haustiere sind nicht erlaubt."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
+msgid "<i class=\"fa fa-paw\" style=\"color:#F07070;margin-right:8px;\"/>\n                        Pets are not allowed."
+msgstr "<i class=\"fa fa-paw\" style=\"color:#F07070;margin-right:8px;\"/>\n                        Haustiere sind nicht erlaubt."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+msgid "<i class=\"fa fa-snowflake-o ha-perk-ico ha-perk-ac\"/>\n                                <span class=\"ha-perk-name\">Air conditioning</span>\n                                <span class=\"ha-perk-note\">in the room</span>"
+msgstr "<i class=\"fa fa-snowflake-o ha-perk-ico ha-perk-ac\"/>\n                                <span class=\"ha-perk-name\">Klimaanlage</span>\n                                <span class=\"ha-perk-note\">im Zimmer</span>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hero_slider
+msgid "<i class=\"fa fa-snowflake-o ha-perk-ico ha-perk-ac\"/>\n                        <span class=\"ha-perk-name\">Air conditioning</span>\n                        <span class=\"ha-perk-note\">in the room</span>"
+msgstr "<i class=\"fa fa-snowflake-o ha-perk-ico ha-perk-ac\"/>\n                        <span class=\"ha-perk-name\">Klimaanlage</span>\n                        <span class=\"ha-perk-note\">im Zimmer</span>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_ubytovani
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_listing
+msgid "<i class=\"fa fa-snowflake-o\"/> Air conditioning"
+msgstr "<i class=\"fa fa-snowflake-o\"/> Klimaanlage"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_ubytovani
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_listing
+msgid "<i class=\"fa fa-tv\"/> Satellite TV"
+msgstr "<i class=\"fa fa-tv\"/> Satelliten-TV"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_ubytovani
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_listing
+msgid "<i class=\"fa fa-wheelchair\"/> Barrier-free"
+msgstr "<i class=\"fa fa-wheelchair\"/> Barrierefrei"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+msgid "<i class=\"fa fa-wifi ha-perk-ico ha-perk-wifi\"/>\n                                <span class=\"ha-perk-name\">WiFi</span>\n                                <span class=\"ha-perk-note\">free</span>"
+msgstr "<i class=\"fa fa-wifi ha-perk-ico ha-perk-wifi\"/>\n                                <span class=\"ha-perk-name\">WLAN</span>\n                                <span class=\"ha-perk-note\">kostenlos</span>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hero_slider
+msgid "<i class=\"fa fa-wifi ha-perk-ico ha-perk-wifi\"/>\n                        <span class=\"ha-perk-name\">WiFi</span>\n                        <span class=\"ha-perk-note\">free</span>"
+msgstr "<i class=\"fa fa-wifi ha-perk-ico ha-perk-wifi\"/>\n                        <span class=\"ha-perk-name\">WLAN</span>\n                        <span class=\"ha-perk-note\">kostenlos</span>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_ubytovani
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_listing
+msgid "<i class=\"fa fa-wifi\"/> WiFi"
+msgstr "<i class=\"fa fa-wifi\"/> WLAN"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_footer
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_award_badge
+msgid "<span class=\"ha-award-name\">Hotel Aréna - Chomutov</span>"
+msgstr "<span class=\"ha-award-name\">Hotel Aréna - Chomutov</span>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_footer
+msgid "<span class=\"ha-award-rec\">Recommended</span>\n                                    <span class=\"ha-award-src\">Restaurant Guru</span>\n                                    <span class=\"ha-award-year\">2023</span>"
+msgstr "<span class=\"ha-award-rec\">Recommended</span>\n                                    <span class=\"ha-award-src\">Restaurant Guru</span>\n                                    <span class=\"ha-award-year\">2023</span>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_award_badge
+msgid "<span class=\"ha-award-rec\">Recommended</span>\n                    <span class=\"ha-award-src\">Restaurant Guru</span>\n                    <span class=\"ha-award-year\">2023</span>"
+msgstr "<span class=\"ha-award-rec\">Recommended</span>\n                    <span class=\"ha-award-src\">Restaurant Guru</span>\n                    <span class=\"ha-award-year\">2023</span>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hero_slider
+msgid "<span class=\"ha-hero-sr\">Where sport meets elegance</span>"
+msgstr "<span class=\"ha-hero-sr\">Wo Sport auf Eleganz trifft</span>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hotel_services
+msgid "<span style=\"display:none;\">—</span>For our guests"
+msgstr "<span style=\"display:none;\">—</span>Für unsere Gäste"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_restaurant
+msgid "<strong class=\"brasileira-hours-label\">Breakfast</strong>\n                                            <span class=\"brasileira-hours-text\">\n                                                Mon — Fri · 6:30 — 9:30<br/>\n                                                Sat — Sun · 7:00 — 10:00\n                                            </span>"
+msgstr "<strong class=\"brasileira-hours-label\">Frühstück</strong>\n                                            <span class=\"brasileira-hours-text\">\n                                                Mo — Fr · 6:30 — 9:30<br/>\n                                                Sa — So · 7:00 — 10:00\n                                            </span>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_restaurant_info
+msgid "<strong class=\"brasileira-hours-label\">Breakfast</strong>\n                                    <span class=\"brasileira-hours-text\">\n                                        Mon — Fri · 6:30 — 9:30<br/>\n                                        Sat — Sun · 7:00 — 10:00\n                                    </span>"
+msgstr "<strong class=\"brasileira-hours-label\">Frühstück</strong>\n                                    <span class=\"brasileira-hours-text\">\n                                        Mo — Fr · 6:30 — 9:30<br/>\n                                        Sa — So · 7:00 — 10:00\n                                    </span>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_restaurant
+msgid "<strong class=\"brasileira-hours-label\">Restaurant</strong>\n                                            <span class=\"brasileira-hours-text\">\n                                                Mon — Thu · 15:00 — 23:00<br/>\n                                                Fri — Sat · 15:00 — 00:00<br/>\n                                                Sun · 15:00 — 23:00\n                                            </span>"
+msgstr "<strong class=\"brasileira-hours-label\">Restaurant</strong>\n                                            <span class=\"brasileira-hours-text\">\n                                                Mo — Do · 15:00 — 23:00<br/>\n                                                Fr — Sa · 15:00 — 00:00<br/>\n                                                So · 15:00 — 23:00\n                                            </span>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_restaurant_info
+msgid "<strong class=\"brasileira-hours-label\">Restaurant</strong>\n                                    <span class=\"brasileira-hours-text\">\n                                        Mon — Thu · 15:00 — 23:00<br/>\n                                        Fri — Sat · 15:00 — 00:00<br/>\n                                        Sun · 15:00 — 23:00\n                                    </span>"
+msgstr "<strong class=\"brasileira-hours-label\">Restaurant</strong>\n                                    <span class=\"brasileira-hours-text\">\n                                        Mo — Do · 15:00 — 23:00<br/>\n                                        Fr — Sa · 15:00 — 00:00<br/>\n                                        So · 15:00 — 23:00\n                                    </span>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
+msgid "<strong>Barrier-free room</strong>"
+msgstr "<strong>Barrierefreies Zimmer</strong>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+msgid "<strong>D7 motorway</strong>\n                                        <span>15 min by car</span>"
+msgstr "<strong>Autobahn D7</strong>\n                                        <span>15 Min. mit dem Auto</span>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_contact_info
+msgid "<strong>D7 motorway</strong>\n                                <span>15 min by car</span>"
+msgstr "<strong>Autobahn D7</strong>\n                                <span>15 Min. mit dem Auto</span>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
+msgid "<strong>Deluxe Queen (2 queen beds)</strong>"
+msgstr "<strong>Deluxe Queen (2 Queen-Betten)</strong>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
+msgid "<strong>Family room</strong>"
+msgstr "<strong>Familienzimmer</strong>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+msgid "<strong>Ice rink</strong>\n                                        <span>2 min walk</span>"
+msgstr "<strong>Eisstadion</strong>\n                                        <span>2 Min. zu Fuß</span>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_contact_info
+msgid "<strong>Ice rink</strong>\n                                <span>2 min walk</span>"
+msgstr "<strong>Eisstadion</strong>\n                                <span>2 Min. zu Fuß</span>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+msgid "<strong>Kamencové Lake</strong>\n                                        <span>5 min walk</span>"
+msgstr "<strong>Kamencové-See</strong>\n                                        <span>5 Min. zu Fuß</span>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_contact_info
+msgid "<strong>Kamencové Lake</strong>\n                                <span>5 min walk</span>"
+msgstr "<strong>Kamencové-See</strong>\n                                <span>5 Min. zu Fuß</span>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
+msgid "<strong>Standard (2 separate beds)</strong>"
+msgstr "<strong>Standard (2 getrennte Betten)</strong>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
+msgid "<strong>Standard (double bed)</strong>"
+msgstr "<strong>Standard (Doppelbett)</strong>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+msgid "<strong>Town centre</strong>\n                                        <span>10 min by car</span>"
+msgstr "<strong>Stadtzentrum</strong>\n                                        <span>10 Min. mit dem Auto</span>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_contact_info
+msgid "<strong>Town centre</strong>\n                                <span>10 min by car</span>"
+msgstr "<strong>Stadtzentrum</strong>\n                                <span>10 Min. mit dem Auto</span>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_restaurant
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_breakfast_info
+msgid "<strong>Weekdays:</strong> 6:30 — 9:30"
+msgstr "<strong>Wochentage:</strong> 6:30 — 9:30"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_restaurant
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_breakfast_info
+msgid "<strong>Weekends:</strong> 7:00 — 10:00"
+msgstr "<strong>Wochenenden:</strong> 7:00 — 10:00"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_ubytovani
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_listing
+msgid "A barrier-free double room with full access for guests with reduced mobility. A lift provides step-free access to every floor of the hotel."
+msgstr "Ein barrierefreies Doppelzimmer mit vollständigem Zugang für Gäste mit eingeschränkter Mobilität. Ein Aufzug bietet stufenlosen Zugang zu allen Etagen des Hotels."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_extra_services
+msgid "A child under 3 stays free of charge."
+msgstr "Die Übernachtung für Kinder unter 3 Jahren ist kostenlos."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_ubytovani
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_listing
+msgid "A comfortable double room with either two separate beds or a double bed. The room has air conditioning, free Wi-Fi, satellite television and a safe."
+msgstr "Ein komfortables Doppelzimmer mit zwei Einzelbetten oder einem Doppelbett. Das Zimmer verfügt über Klimaanlage, kostenloses WLAN, Satellitenfernsehen und einen Safe."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_extra_services
+msgid "A cot can be added in selected rooms."
+msgstr "In ausgewählten Zimmern kann ein Kinderbett aufgestellt werden."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hotel_services
+msgid "A generous breakfast buffet every morning."
+msgstr "Jeden Morgen ein reichhaltiges Frühstücksbüffet."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_ubytovani
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_listing
+msgid "A luxury room with two queen size beds. It offers maximum comfort and elegance for discerning guests."
+msgstr "Ein Luxuszimmer mit zwei Queen-Size-Betten. Es bietet höchsten Komfort und Eleganz für anspruchsvolle Gäste."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hero_slider
+msgid "A modern hotel at the heart of the sports and relaxation centre by Kamencové Lake. 96 rooms, a restaurant and a concierge — everything for a perfect stay."
+msgstr "Ein modernes Hotel im Herzen des Sport- und Erholungszentrums am Kamencové-See. 96 Zimmer, ein Restaurant und ein Concierge — alles für Ihren perfekten Aufenthalt."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_footer
+msgid "A modern hotel at the heart of the sports and relaxation centre by Kamencové Lake. Ideal for business trips and active holidays alike."
+msgstr "Ein modernes Hotel im Herzen des Sport- und Erholungszentrums am Kamencové-See. Ideal für Geschäftsreisen und Aktivurlaub."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_ubytovani
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_listing
+msgid "A spacious family room with 4 beds. Suitable for families with children or groups of friends."
+msgstr "Ein geräumiges Familienzimmer mit 4 Betten. Geeignet für Familien mit Kindern oder Freundesgruppen."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_parallax_bar
+msgid "A stylish bar with a wide choice of cocktails, wines and other drinks. The ideal place to unwind after a demanding day."
+msgstr "Eine stilvolle Bar mit einer großen Auswahl an Cocktails, Weinen und anderen Getränken. Der ideale Ort zum Entspannen nach einem anstrengenden Tag."
+
+#. module: theme_hotel_arena
+#: model:theme.website.menu,name:theme_hotel_arena.menu_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_footer
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_about_hotel
+msgid "About us"
+msgstr "Über das Hotel"
+
+#. module: theme_hotel_arena
+#: model:theme.website.menu,name:theme_hotel_arena.menu_ubytovani
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_footer
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_ubytovani
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_home_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_preview
+msgid "Accommodation"
+msgstr "Unterbringung"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
+msgid "Accommodation for children under 3 — free of charge"
+msgstr "Unterbringung von Kindern unter 3 Jahren — kostenlos"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
+msgid "Accommodation pricelist"
+msgstr "Preisliste der Unterkunft"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+msgid "Accommodation prices"
+msgstr "Übernachtungspreise"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_extra_services
+msgid "Additional <em>services</em>"
+msgstr "Weitere <em>Leistungen</em>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
+msgid "Additional services:"
+msgstr "Zusatzleistungen:"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_contact
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_contact_form
+msgid "Address"
+msgstr "Adresse"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hotel_features
+msgid "Air conditioning &amp; safe"
+msgstr "Klimaanlage &amp; Safe"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_concierge_services
+msgid "Airport transfers"
+msgstr "Flughafentransfers"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_preview
+msgid "All rooms →"
+msgstr "Alle Zimmer →"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hotel_features
+msgid "An LCD television with satellite reception and free wireless internet throughout the hotel."
+msgstr "Ein LCD-Fernseher mit Satellitenempfang und kostenloses WLAN im gesamten Hotel."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
+msgid "An extra bed for a child is available in selected rooms"
+msgstr "In ausgewählten Zimmern ist ein Zustellbett für ein Kind möglich"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_concierge_services
+msgid "At your service"
+msgstr "\"At your service\""
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_surroundings
+msgid "Athletics stadium"
+msgstr "Leichtathletikstadion"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_restaurant
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_restaurant_info
+msgid "Authentic flavours of Brazil by chef Rafael"
+msgstr "Authentische Aromen Brasiliens von Chefkoch Rafael"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_ubytovani
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_listing
+msgid "BARRIER-FREE DOUBLE ROOM"
+msgstr "BARRIEREFREIE ZWEIBETTZIMMER"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_restaurant
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_breakfast_info
+msgid "BREAKFAST"
+msgstr "FRÜHSTÜCK"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hero_slider
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_home_restaurant
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_home_trio
+msgid "Bar"
+msgstr "Bar"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_ubytovani
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_listing
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_preview
+msgid "Barrier-free"
+msgstr "Barrierefrei"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_ubytovani
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_listing
+msgid "Barrier-free double room"
+msgstr "Barrierefreies Zweibettzimmer"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_preview
+msgid "Barrier-free room"
+msgstr "Barrierefreies Zimmer"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
+msgid "Bed count"
+msgstr "Betten"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_about_hotel
+msgid "Beds"
+msgstr "Betten"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_restaurant
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_restaurant_info
+msgid "Book a table"
+msgstr "Tisch reservieren"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_header
+msgid "Book now"
+msgstr "Buchen"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hotel_services
+msgid "Brazilian and international cuisine."
+msgstr "Brasilianische und internationale Küche."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_restaurant
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_restaurant_info
+msgid "Brazilian cuisine <em>right in the hotel</em>"
+msgstr "Brasilianische Küche <em>direkt im Hotel</em>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_restaurant
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_breakfast_info
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_price_includes
+msgid "Breakfast"
+msgstr "Frühstück"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_restaurant
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_breakfast_info
+msgid "Breakfast times"
+msgstr "Frühstückszeiten"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hotel_services
+msgid "Buffet breakfast"
+msgstr "Frühstücksbüffet"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
+msgid "Buffet-style breakfast"
+msgstr "Frühstück vom Büffet"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_price_includes
+msgid "Buffet-style breakfast."
+msgstr "Frühstück vom Büffet."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hotel_services
+msgid "CCTV monitored, free of charge."
+msgstr "Videoüberwacht, kostenlos."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
+msgid "CZK 1,500"
+msgstr "1.500 Kč"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
+msgid "CZK 2,150"
+msgstr "2.150 Kč"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
+msgid "CZK 2,350"
+msgstr "2.350 Kč"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
+msgid "CZK 2,500"
+msgstr "2.500 Kč"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
+msgid "CZK 3,000"
+msgstr "3.000 Kč"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
+msgid "CZK 3,500"
+msgstr "3.500 Kč"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
+msgid "CZK 4,000"
+msgstr "4.000 Kč"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
+msgid "CZK 4,500"
+msgstr "4.500 Kč"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
+msgid "CZK 5,000"
+msgstr "5.000 Kč"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_restaurant
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_restaurant_info
+msgid "Chef Rafael, Restaurante Brasileiro"
+msgstr "Chefkoch Rafael, Restaurante Brasileiro"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_extra_services
+msgid "Children under 3 stay free"
+msgstr "Kinder unter 3 Jahren kostenlos"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hero_slider
+msgid "Chomutov, Czech Republic"
+msgstr "Komotau, Tschechische Republik"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_concierge_services
+msgid "Cinema, theatre, concerts, hockey, football."
+msgstr "Kino, Theater, Konzerte, Eishockey, Fußball."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_header
+msgid "Close"
+msgstr "Schließen"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hotel_features
+msgid "Comfort in every <em>detail</em>"
+msgstr "Komfort in jedem <em>Detail</em>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_concierge_services
+msgid "Concierge"
+msgstr "Concierge"
+
+#. module: theme_hotel_arena
+#: model:theme.website.menu,name:theme_hotel_arena.menu_contact
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_footer
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_contact
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_contact_info
+msgid "Contact"
+msgstr "Kontakt"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_contact
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_contact_form
+msgid "Contacts"
+msgstr "Kontakte"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_extra_services
+msgid "Cot"
+msgstr "Kinderbett"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_footer
+msgid "Created by"
+msgstr "Erstellt von"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_contact
+msgid "Czech Republic Investment, a.s.<br/>\n                                        Belgická 681/5<br/>\n                                        120 00 Praha 2<br/>\n                                        Company ID: 27917690<br/>\n                                        VAT ID: CZ27917690<br/>\n                                        Registered under file B 12028 at the Municipal Court in Prague"
+msgstr "Czech Republic Investment, a.s.<br/>\n                                        Belgická 681/5<br/>\n                                        120 00 Prag 2<br/>\n                                        Ident.-Nr.: 27917690<br/>\n                                        USt-IdNr.: CZ27917690<br/>\n                                        Eingetragen unter Aktenzeichen B 12028 beim Stadtgericht Prag"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_contact_form
+msgid "Czech Republic Investment, a.s.<br/>\n                                Belgická 681/5<br/>\n                                120 00 Praha 2<br/>\n                                Company ID: 27917690<br/>\n                                VAT ID: CZ27917690<br/>\n                                Registered under file B 12028 at the Municipal Court in Prague"
+msgstr "Czech Republic Investment, a.s.<br/>\n                                Belgická 681/5<br/>\n                                120 00 Prag 2<br/>\n                                Ident.-Nr.: 27917690<br/>\n                                USt-IdNr.: CZ27917690<br/>\n                                Eingetragen unter Aktenzeichen B 12028 beim Stadtgericht Prag"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_ubytovani
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_listing
+msgid "DELUXE QUEEN ROOM"
+msgstr "DELUXE-QUEEN-ZIMMER"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_preview
+msgid "Deluxe Queen"
+msgstr "Deluxe Queen"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_ubytovani
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_listing
+msgid "Deluxe Queen room"
+msgstr "Deluxe-Queen-Zimmer"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_restaurant
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_breakfast_info
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_home_restaurant
+msgid "Dining"
+msgstr "Gastronomie"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_ubytovani
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_listing
+msgid "Double"
+msgstr "Doppelzimmer"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_home_restaurant
+msgid "Drinks"
+msgstr "Getränke"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_contact
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_contact_form
+msgid "E-mail"
+msgstr "E-Mail"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_contact
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_contact_form
+msgid "E-mail *"
+msgstr "E-Mail *"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hotel_services
+msgid "Early / Late checkout"
+msgstr "Früher / später Check-out"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_restaurant
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_breakfast_info
+msgid "Every morning we lay out a generous breakfast buffet with a choice of fresh pastries, cheeses, cold cuts, fruit and other treats."
+msgstr "Jeden Morgen bereiten wir ein reichhaltiges Frühstücksbüffet mit frischem Gebäck, Käse, Wurst, Obst und weiteren Leckereien vor."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_preview
+msgid "Every room has air conditioning, a safe, satellite TV and a modern bathroom. Step-free access by lift to every floor."
+msgstr "Jedes Zimmer verfügt über Klimaanlage, Safe, Satelliten-TV und ein modernes Badezimmer. Barrierefreier Zugang per Aufzug zu allen Etagen."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hotel_features
+msgid "Every room has individually controlled air conditioning and a security safe."
+msgstr "Jedes Zimmer verfügt über eine individuell regelbare Klimaanlage und einen Sicherheitssafe."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hotel_services
+msgid "Everything you need for a carefree stay."
+msgstr "Alles, was Sie für einen sorglosen Aufenthalt brauchen."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_concierge_services
+msgid "Excursions"
+msgstr "Ausflüge"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_concierge_services
+msgid "Excursions arranged, tourist materials free of charge."
+msgstr "Organisation von Ausflügen, kostenloses Touristenmaterial."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_ubytovani
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_listing
+msgid "FAMILY ROOM"
+msgstr "FAMILIENZIMMER"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hotel_features
+msgid "Facilities"
+msgstr "Ausstattung"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_preview
+msgid "Family"
+msgstr "Familie"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_ubytovani
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_listing
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_preview
+msgid "Family room"
+msgstr "Familienzimmer"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hotel_services
+msgid "Flexible times on request."
+msgstr "Flexible Zeiten auf Wunsch."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_surroundings
+msgid "Football stadium"
+msgstr "Fußballstadion"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hotel_services
+msgid "For an extra charge, ready the next day."
+msgstr "Gegen Aufpreis, bis zum nächsten Tag."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hotel_services
+msgid "Free Wi-Fi"
+msgstr "Kostenloses WLAN"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_home_about
+msgid "Free WiFi"
+msgstr "Kostenloses WLAN"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_home_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_price_includes
+msgid "Free parking"
+msgstr "Kostenloses Parken"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
+msgid "Free parking in the hotel car park, monitored by CCTV"
+msgstr "Kostenloses Parken auf dem videoüberwachten Hotelparkplatz"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_price_includes
+msgid "Free parking in the hotel car park, monitored by CCTV."
+msgstr "Kostenloses Parken auf dem videoüberwachten Hotelparkplatz."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_footer
+msgid "Fri—Sat 15:00—00:00"
+msgstr "Fr—Sa 15:00—00:00"
+
+#. module: theme_hotel_arena
+#: model:theme.website.menu,name:theme_hotel_arena.menu_gallery
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_footer
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_gallery
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_gallery_preview
+msgid "Gallery"
+msgstr "Galerie"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hotel_features
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hotel_services
+msgid "Guarded parking"
+msgstr "Überwachter Hotelparkplatz"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_extra_services
+msgid "Half board and full board"
+msgstr "Halbpension und Vollpension"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
+msgid "Half board or full board (group stays, for an extra charge)"
+msgstr "Halb- oder Vollpension (Gruppenaufenthalte, gegen Aufpreis)"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_extra_services
+msgid "High-speed internet"
+msgstr "Schnelles Internet"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
+msgid "High-speed internet access (for an extra charge)"
+msgstr "Hochgeschwindigkeits-Internetzugang (gegen Aufpreis)"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_extra_services
+msgid "High-speed internet access is available for purchase."
+msgstr "Ein Hochgeschwindigkeits-Internetzugang kann dazugebucht werden."
+
+#. module: theme_hotel_arena
+#: model:theme.website.menu,name:theme_hotel_arena.menu_home
+msgid "Home"
+msgstr "Home"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_about_hotel
+msgid "Hotel"
+msgstr "Hotel"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_restaurant
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hotel_video
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_restaurant_video
+msgid "Hotel ARENA Chomutov"
+msgstr "Hotel ARENA Komotau"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_snippets_registry
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_gallery_preview
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hero_slider
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_parallax_section
+msgid "Hotel Arena"
+msgstr "Hotel Arena"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_restaurant
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hotel_video
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_restaurant_video
+msgid "Hotel Arena <em>on video</em>"
+msgstr "Hotel Arena <em>im Video</em>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_footer
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_header
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_gallery
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_about_hotel
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hotel_gallery
+msgid "Hotel Arena Chomutov"
+msgstr "Hotel Arena Komotau"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hero_slider
+msgid "Hotel Arena Chomutov — accommodation by Kamencové Lake"
+msgstr "Hotel Arena Komotau — Unterkunft am Kamencové-See"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_footer
+msgid "Hotel Arena Chomutov.\n                                  Operated by: Czech Republic Investment, a.s."
+msgstr "Hotel Arena Komotau. Betreiber: Czech Republic Investment, a.s."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_home_about
+msgid "Hotel Arena accommodation"
+msgstr "Hotel Arena Unterbringung"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_home_trio
+msgid "Hotel Arena bar"
+msgstr "Bar des Hotels Arena"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hotel_features
+msgid "Hotel Arena facilities"
+msgstr "Ausstattung des Hotels Arena"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_home_restaurant
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_home_trio
+msgid "Hotel Arena offers its guests not only ideal conditions for leisure activities but also high-quality dining in the newly opened hotel restaurant."
+msgstr "Das Hotel Arena bietet seinen Gästen nicht nur optimale Bedingungen für Freizeitaktivitäten, sondern auch Gastronomie auf hohem Niveau im neu eröffneten Hotelrestaurant."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_home_trio
+msgid "Hotel Arena restaurant"
+msgstr "Restaurant des Hotels Arena"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_contact_info
+msgid "Hotel Arena sits right beside Kamencové Lake, in the sports and relaxation centre of Chomutov."
+msgstr "Das Hotel Arena liegt unmittelbar am Kamencové-See, im Sport- und Erholungszentrum von Komotau."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_surroundings
+msgid "Hotel Arena surroundings — Kamencové Lake"
+msgstr "Umgebung des Hotels Arena — Kamencové-See"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_contact
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_contact_form
+msgid "Hotel Arena<br/>Mostecká 5900<br/>430 01 Chomutov<br/>"
+msgstr "Hotel Arena<br/>Mostecká 5900<br/>430 01 Komotau<br/>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_parallax_bar
+msgid "Hotel Bar"
+msgstr "Hotelbar"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_contact
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_contact_form
+msgid "Hotel manager"
+msgstr "Hotelmanager"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_footer
+msgid "Hotel manager:"
+msgstr "Hotelmanager:"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hero_slider
+msgid "Hotel photographs"
+msgstr "Hotelfotos"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hotel_services
+msgid "Hotel restaurant"
+msgstr "Hotelrestaurant"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hero_slider
+msgid "Hotel room"
+msgstr "Hotelzimmer"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_home_trio
+msgid "Hotel rooms"
+msgstr "Hotelzimmer"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_surroundings
+msgid "Ice rink"
+msgstr "Eisstadion"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_price_includes
+msgid "Included in the room rate"
+msgstr "Im Zimmerpreis enthalten"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hotel_services
+msgid "Information about the area and trip suggestions."
+msgstr "Informationen über die Umgebung und Ausflugstipps."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_footer
+msgid "Jaroslav Šulta"
+msgstr "Jaroslav Šulta"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_lang_switcher
+msgid "Language"
+msgstr "Sprache"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_extra_services
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hotel_services
+msgid "Laundry and ironing"
+msgstr "Wäsche und Bügeln"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
+msgid "Laundry and ironing (for an extra charge)"
+msgstr "Wäschewaschen und Bügeln (gegen Aufpreis)"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_extra_services
+msgid "Laundry and ironing — for an extra charge."
+msgstr "Wäschewaschen und Bügeln — gegen Aufpreis."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hotel_services
+msgid "Luggage storage"
+msgstr "Gepäckaufbewahrung"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_ubytovani
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_listing
+msgid "Luxury"
+msgstr "Luxus"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_header
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_restaurant
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_restaurant_info
+msgid "Menu"
+msgstr "Speisekarte"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_contact
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_contact_form
+msgid "Message *"
+msgstr "Nachricht *"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_contact
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_contact_form
+msgid "Message subject"
+msgstr "Betreff der Nachricht"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_footer
+msgid "Michal Varys"
+msgstr "Michal Varys"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_footer
+msgid "Mon—Thu 15:00—23:00"
+msgstr "Mo—Do 15:00—23:00"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_parallax_bar
+msgid "More information"
+msgstr "Mehr Informationen"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_footer
+msgid "Mostecká 5900"
+msgstr "Mostecká 5900"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_contact
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_contact_form
+msgid "Name *"
+msgstr "Name *"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_footer
+msgid "Navigation"
+msgstr "Navigation"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_extra_services
+msgid "On request"
+msgstr "Auf Anfrage"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_contact
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_contact_form
+msgid "Operator"
+msgstr "Betreiber"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_surroundings
+msgid "Other options include a training hall and a children's playground. In season, water skiing is available at the Wake Park next to Kamencové Lake."
+msgstr "Zu den weiteren Möglichkeiten zählen eine Trainingshalle und ein Kinderspielplatz. In der Saison kann im Wake-Park neben dem Kamencové-See Wasserski gefahren werden."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_ubytovani
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_intro
+msgid "Our accommodation"
+msgstr "Unsere Unterkunft"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_extra_services
+msgid "Our concierge will book tickets for the cinema, the theatre, concerts and matches."
+msgstr "Unser Concierge besorgt Tickets für Kino, Theater, Konzerte und Spiele."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hotel_features
+msgid "Our own CCTV-monitored car park, free for all guests."
+msgstr "Eigener videoüberwachter Parkplatz, für alle Gäste kostenlos."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_gallery_preview
+msgid "Our photographs"
+msgstr "Unsere Fotos"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
+msgid "Our prices"
+msgstr "Unsere Preise"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_parallax_section
+msgid "Page title"
+msgstr "Seitentitel"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_price_includes
+msgid "Pets are not allowed."
+msgstr "Haustiere sind nicht erlaubt."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_contact
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_contact_form
+msgid "Phone"
+msgstr "Telefon"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_gallery
+msgid "Photographs"
+msgstr "Fotos"
+
+#. module: theme_hotel_arena
+#: model:theme.website.menu,name:theme_hotel_arena.menu_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_footer
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+msgid "Pricelist"
+msgstr "Preisliste"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_ubytovani
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_listing
+msgid "Quadruple"
+msgstr "Vierbettzimmer"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_contact
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_about_hotel
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_contact_form
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hero_slider
+msgid "Reception"
+msgstr "Rezeption"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_price_includes
+msgid "Reception available 24 hours a day."
+msgstr "Rezeption rund um die Uhr geöffnet."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hotel_features
+msgid "Reception available 24 hours a day. Check in at any time, concierge services on request."
+msgstr "Rezeption rund um die Uhr geöffnet. Check-in jederzeit, Concierge-Service auf Wunsch."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_footer
+msgid "Reception:"
+msgstr "Rezeption:"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_concierge_services
+msgid "Reservations at restaurants in the area."
+msgstr "Reservierungen in Restaurants der Umgebung."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_surroundings
+msgid "Rest and relax"
+msgstr "Pause und Entspannung"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_footer
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_contact
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_restaurant
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_concierge_services
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_contact_form
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_home_restaurant
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_home_trio
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_restaurant_info
+msgid "Restaurant"
+msgstr "Restaurant"
+
+#. module: theme_hotel_arena
+#: model:theme.website.menu,name:theme_hotel_arena.menu_restaurant
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_restaurant
+msgid "Restaurant and bar"
+msgstr "Restaurant und Bar"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_footer
+msgid "Restaurant:"
+msgstr "Restaurant:"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_footer
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_restaurant
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_restaurant_info
+msgid "Restaurante Brasileiro"
+msgstr "Restaurante Brasileiro"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_restaurant
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_restaurant_info
+msgid "Restaurante Brasileiro brings Brazilian cooking with an international reach to the heart of Hotel Arena. Chef Rafael serves authentic recipes from Brazil alongside Czech and international specialities."
+msgstr "Das Restaurante Brasileiro bringt brasilianische Küche mit internationaler Note ins Herz des Hotels Arena. Chefkoch Rafael serviert authentische Rezepte aus Brasilien, ergänzt durch tschechische und internationale Spezialitäten."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
+msgid "Room type"
+msgstr "Zimmertyp"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_about_hotel
+msgid "Rooms"
+msgstr "Zimmer"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_ubytovani
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_intro
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_preview
+msgid "Rooms &amp; Apartments"
+msgstr "Zimmer &amp; Apartments"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_ubytovani
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_home_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_home_trio
+msgid "Rooms and apartments"
+msgstr "Zimmer und Apartments"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_ubytovani
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_listing
+msgid "STANDARD DOUBLE ROOM"
+msgstr "ZIMMER STANDARD"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hotel_services
+msgid "Safe storage before check-in and after check-out."
+msgstr "Sichere Aufbewahrung vor dem Check-in und nach dem Check-out."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hotel_features
+msgid "Satellite TV &amp; Wi-Fi"
+msgstr "Satelliten-TV &amp; WLAN"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_price_includes
+msgid "Satellite TV and a safe in every room."
+msgstr "Satelliten-TV und Safe in jedem Zimmer."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_price_includes
+msgid "Satellite TV and safe"
+msgstr "Satelliten-TV und Safe"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
+msgid "Satellite television and a safe in the room"
+msgstr "Satellitenfernsehen und Safe im Zimmer"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_restaurant
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_restaurant_info
+msgid "Seating for 110 including 2 private lounges and a summer terrace with 60 seats. There is also a bar, ideal for meetings and business talks."
+msgstr "110 Plätze, darunter 2 Salons und eine Sommerterrasse mit 60 Plätzen. Dazu gehört eine Bar, ideal für Treffen und Geschäftsgespräche."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_contact
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_contact_form
+msgid "Send"
+msgstr "Senden"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hotel_services
+msgid "Services for <em>guests</em>"
+msgstr "Dienstleistungen für unsere <em>Gäste</em>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_contact
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_contact_form
+msgid "Show on Google Maps →"
+msgstr "Auf Google Maps anzeigen →"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_footer
+msgid "Show on map"
+msgstr "Auf der Karte anzeigen"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_restaurant
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_restaurant_info
+msgid "Soup at Restaurante Brasileiro"
+msgstr "Suppe im Restaurante Brasileiro"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_about_hotel
+msgid "Sports and relaxation <em>facilities</em>"
+msgstr "Sport- und Erholungs- <em>einrichtungen</em>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_preview
+msgid "Standard"
+msgstr "Standard"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_ubytovani
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_listing
+msgid "Standard double room"
+msgstr "Zimmer Standard"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_preview
+msgid "Standard room"
+msgstr "Standardzimmer"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_restaurant
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_restaurant_info
+msgid "Starters at Restaurante Brasileiro"
+msgstr "Vorspeisen im Restaurante Brasileiro"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_contact
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_contact_form
+msgid "Subject *"
+msgstr "Betreff *"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_footer
+msgid "Sun 15:00—23:00"
+msgstr "So 15:00—23:00"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_surroundings
+msgid "Svět cinema"
+msgstr "Kino Svět"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_restaurant
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hotel_video
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_restaurant_video
+msgid "Take a look"
+msgstr "Sehen Sie"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_gallery
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_gallery_intro
+msgid "Take a look around the hotel"
+msgstr "Sehen Sie sich die Hotelräume an"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
+msgid "The accommodation rate includes:"
+msgstr "Im Übernachtungspreis enthalten:"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_extra_services
+msgid "The hotel also offers half board or full board for group bookings — for an extra charge."
+msgstr "Das Hotel bietet für Gruppenbuchungen außerdem Halb- oder Vollpension an — gegen Aufpreis."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_about_hotel
+msgid "The hotel is furnished in a modern design with a total capacity of 210 beds. Several of the 96 double rooms are barrier-free."
+msgstr "Das Hotel ist in modernem Design eingerichtet und bietet insgesamt 210 Betten. Mehrere der 96 Doppelzimmer sind barrierefrei."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_about_hotel
+msgid "The newly built Hotel Arena stands in the sports and relaxation centre in Zadní Vinohrady on the edge of Chomutov, letting guests spend their free time actively right next to the unique Kamencové Lake."
+msgstr "Das neu erbaute Hotel Arena liegt im Sport- und Erholungszentrum in Zadní Vinohrady am Rande von Komotau und ermöglicht seinen Gästen eine aktive Freizeitgestaltung in unmittelbarer Nähe des einzigartigen Kamencové-Sees."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_home_trio
+msgid "The rooms at Hotel Arena are furnished in a fresh, modern design. Each room has its own bathroom, satellite television, a safe and individually controlled air conditioning. A lift provides step-free access to every floor of the hotel."
+msgstr "Die Zimmer im Hotel Arena sind in frischem, modernem Design eingerichtet. Jedes Zimmer verfügt über ein eigenes Bad, Satellitenfernsehen, einen Safe und eine individuell regelbare Klimaanlage. Ein Aufzug bietet barrierefreien Zugang zu allen Etagen des Hotels."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_ubytovani
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_home_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_intro
+msgid "The rooms at Hotel Arena are marked by a fresh, modern design. Each room has its own bathroom, satellite television, a safe and individually controlled air conditioning. A lift provides step-free access to every floor of the hotel."
+msgstr "Die Zimmer im Hotel Arena zeichnen sich durch ein frisches, modernes Design aus. Jedes Zimmer verfügt über ein eigenes Bad, Satellitenfernsehen, einen Safe und eine individuell regelbare Klimaanlage. Ein Aufzug bietet barrierefreien Zugang zu allen Etagen des Hotels."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hotel_services
+msgid "Throughout the hotel, rooms included."
+msgstr "Im gesamten Hotel, einschließlich der Zimmer."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_extra_services
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
+msgid "Ticket booking"
+msgstr "Ticketservice"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_concierge_services
+msgid "Tickets"
+msgstr "Tickets"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hotel_services
+msgid "Tourist materials"
+msgstr "Touristenmaterial"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
+msgid "VAT and city tax"
+msgstr "MwSt. und Kurtaxe"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_price_includes
+msgid "VAT and city tax."
+msgstr "MwSt. und Kurtaxe."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_price_includes
+msgid "VAT and fees"
+msgstr "MwSt. und Gebühren"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_footer
+msgid "Varyshop"
+msgstr "Varyshop"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_gallery_preview
+msgid "View the whole gallery →"
+msgstr "Ganze Galerie ansehen →"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hotel_tour
+msgid "Virtual tour"
+msgstr "Virtueller Rundgang"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hotel_tour
+msgid "Virtual tour of Hotel Arena"
+msgstr "Virtueller Rundgang durch das Hotel Arena"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_surroundings
+msgid "Wake-Park"
+msgstr "Wake-Park"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_hotel_tour
+msgid "Walk through a hotel room <em>online</em>"
+msgstr "Gehen Sie durch ein Hotelzimmer <em>online</em>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_contact
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_contact_form
+msgid "We are glad to answer any question."
+msgstr "Wir beantworten gern jede Frage."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_surroundings
+msgid "We offer you the chance to combine rest and entertainment right beside the remarkable Kamencové Lake, whatever the weather or season."
+msgstr "Wir bieten Ihnen die Möglichkeit, Erholung und Unterhaltung in unmittelbarer Nähe des einzigartigen Kamencové-Sees zu verbinden — bei jedem Wetter und zu jeder Jahreszeit."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_concierge_services
+msgid "We will arrange a comfortable transfer straight to the hotel."
+msgstr "Wir organisieren einen bequemen Transfer direkt zum Hotel."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_about
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_surroundings
+msgid "What is <em>around us</em>"
+msgstr "Was ist <em>um uns herum</em>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_price_includes
+msgid "What the price <em>includes</em>"
+msgstr "Was der Preis <em>enthalten</em>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_contact_info
+msgid "Where to <em>find us</em>"
+msgstr "Wo Sie uns <em>finden</em>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_concierge_services
+msgid "Whether you are planning a business trip, a family holiday or a sporting weekend — our team is here for you."
+msgstr "Ob Sie eine Geschäftsreise, einen Familienurlaub oder ein Sportwochenende planen — unser Team ist für Sie da."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_price_includes
+msgid "Wi-Fi throughout the hotel"
+msgstr "WLAN im gesamten Hotel"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
+msgid "Wireless internet throughout the hotel"
+msgstr "WLAN im gesamten Hotel"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_price_includes
+msgid "Wireless internet throughout the hotel."
+msgstr "WLAN im gesamten Hotel."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_contact
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_contact_form
+msgid "Write to us"
+msgstr "Schreiben Sie uns"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_home_restaurant
+msgid "You will also find a bar with us, suited to both private and business meetings. The bar staff are ready to meet your wishes."
+msgstr "Bei uns finden Sie auch eine Bar, die sich für private wie geschäftliche Treffen eignet. Das Barpersonal erfüllt gern Ihre Wünsche."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_home_trio
+msgid "You will also find our bar here, suited to both personal and business meetings. The bar staff are ready to meet your wishes and to offer light refreshments alongside alcoholic and soft drinks."
+msgstr "Hier finden Sie auch unsere Bar, die sich für private wie geschäftliche Treffen eignet. Das Barpersonal erfüllt gern Ihre Wünsche und bietet neben alkoholischen und alkoholfreien Getränken auch kleine Speisen an."
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_contact
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_contact_form
+msgid "Your e-mail"
+msgstr "Ihre E-Mail"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_contact
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_contact_form
+msgid "Your message (80–300 characters recommended)"
+msgstr "Ihre Nachricht (empfohlen 80–300 Zeichen)"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_contact
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_contact_form
+msgid "Your name"
+msgstr "Ihr Name"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_contact
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_contact_form
+msgid "Your phone"
+msgstr "Ihr Telefon"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_footer
+msgid "Zdeněk Fojtík"
+msgstr "Zdeněk Fojtík"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_contact
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_contact_form
+msgid "Zdeněk Fojtík<br/>"
+msgstr "Zdeněk Fojtík<br/>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_ubytovani
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_listing
+msgid "from CZK 1,350 <small>/ night</small>"
+msgstr "ab 1.350 Kč <small>/ Nacht</small>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_preview
+msgid "from CZK 1,350 <span>/night</span>"
+msgstr "ab 1.350 Kč <span>/Nacht</span>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_ubytovani
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_listing
+msgid "from CZK 1,935 <small>/ night</small>"
+msgstr "ab 1.935 Kč <small>/ Nacht</small>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_preview
+msgid "from CZK 1,935 <span>/night</span>"
+msgstr "ab 1.935 Kč <span>/Nacht</span>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_ubytovani
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_listing
+msgid "from CZK 2,115 <small>/ night</small>"
+msgstr "ab 2.115 Kč <small>/ Nacht</small>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_preview
+msgid "from CZK 2,115 <span>/night</span>"
+msgstr "ab 2.115 Kč <span>/Nacht</span>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_ubytovani
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_listing
+msgid "from CZK 3,150 <small>/ night</small>"
+msgstr "ab 3.150 Kč <small>/ Nacht</small>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_preview
+msgid "from CZK 3,150 <span>/night</span>"
+msgstr "ab 3.150 Kč <span>/Nacht</span>"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_footer
+msgid "· powered by"
+msgstr "· läuft auf"

@@ -10,3 +10,10 @@ __pycache__/
 .chromedebug/
 .db
 .vscode/ 
+# lokalni vyvoj
+.playwright-mcp/
+
+# lokalni Docker (obsahuje hesla k DB a admin master heslo)
+docker-compose.yml
+config/
+data/

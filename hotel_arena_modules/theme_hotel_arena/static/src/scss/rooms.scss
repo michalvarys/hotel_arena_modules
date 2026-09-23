@@ -280,3 +280,12 @@ $ha-transition-cubic: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         }
     }
 }
+
+// The room cards became anchors so a click actually books a room. They already
+// had `cursor: pointer`, so they always looked clickable - nothing happened.
+// These three lines keep an <a> laying out exactly like the <div> it replaced.
+a.room-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}

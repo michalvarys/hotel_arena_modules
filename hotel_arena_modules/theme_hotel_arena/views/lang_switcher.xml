@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Language switcher.
+
+         Three rules decide whether this actually switches anything:
+
+         1. The route takes the language's URL CODE, not the locale. Czech is
+            the site default and kept the full "cs_CZ" as its url_code, while
+            the others are two letters. Sending "en_US" where Odoo wants "en"
+            fails silently - the click simply does nothing.
+         2. `?r=` must carry the path WITH its language prefix, which is what
+            url_for(..., lang_code=...) produces. A bare path leaves the choice
+            to the `frontend_lang` cookie, and in-app browsers (Instagram,
+            Facebook, Messenger) ignore it: the visitor picks German and gets
+            Czech back. Ordinary Safari and Chrome hide the bug.
+         3. The list is repeated in both templates on purpose. A t-set inside a
+            t-call'd template stays in that template's scope, so factoring it
+            out left the caller with an undefined name and a 500.
+
+         `request.env.lang` returns the locale ("cs_CZ"), so the active-language
+         comparison uses that, never the url_code. -->
+
+    <!-- Flat row of codes: footer and mobile drawer. -->
+    <template id="ha_lang_links" name="Language links">
+        <t t-set="ha_langs" t-value="[
+            {'code': 'cs_CZ', 'url': 'cs_CZ', 'short': 'CZ', 'label': 'Čeština'},
+            {'code': 'en_US', 'url': 'en',    'short': 'EN', 'label': 'English'},
+            {'code': 'de_DE', 'url': 'de',    'short': 'DE', 'label': 'Deutsch'},
+            {'code': 'ru_RU', 'url': 'ru',    'short': 'RU', 'label': 'Русский'},
+        ]"/>
+        <t t-foreach="ha_langs" t-as="lang">
+            <a t-attf-href="/website/lang/{{ lang['url'] }}?r={{ url_for(request.httprequest.path, lang_code=lang['code']) }}"
+               t-attf-class="ha-lang-link{{ ' is-active' if request.env.lang == lang['code'] else '' }}"
+               t-att-lang="lang['url']">
+                <t t-esc="lang['short']"/>
+            </a>
+        </t>
+    </template>
+
+    <!-- Dropdown for the desktop navbar. <details> keeps it working without
+         any JavaScript, which the header otherwise has none of. -->
+    <template id="ha_lang_switcher" name="Language switcher">
+        <t t-set="ha_langs" t-value="[
+            {'code': 'cs_CZ', 'url': 'cs_CZ', 'short': 'CZ', 'label': 'Čeština'},
+            {'code': 'en_US', 'url': 'en',    'short': 'EN', 'label': 'English'},
+            {'code': 'de_DE', 'url': 'de',    'short': 'DE', 'label': 'Deutsch'},
+            {'code': 'ru_RU', 'url': 'ru',    'short': 'RU', 'label': 'Русский'},
+        ]"/>
+        <t t-set="ha_short" t-value="{'cs_CZ': 'CZ', 'en_US': 'EN', 'de_DE': 'DE', 'ru_RU': 'RU'}"/>
+        <details class="ha-lang">
+            <summary aria-label="Language">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                     stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M2 12h20"/>
+                    <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+                </svg>
+                <span t-esc="ha_short.get(request.env.lang, 'CZ')"/>
+                <svg class="ha-lang-caret" width="11" height="11" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                     stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </summary>
+            <div class="ha-lang-panel">
+                <t t-foreach="ha_langs" t-as="lang">
+                    <a t-attf-href="/website/lang/{{ lang['url'] }}?r={{ url_for(request.httprequest.path, lang_code=lang['code']) }}"
+                       t-attf-class="ha-lang-opt{{ ' is-active' if request.env.lang == lang['code'] else '' }}"
+                       t-att-lang="lang['url']">
+                        <t t-esc="lang['label']"/>
+                    </a>
+                </t>
+            </div>
+        </details>
+    </template>
+
+</odoo>

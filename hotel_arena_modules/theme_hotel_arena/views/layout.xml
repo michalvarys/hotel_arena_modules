@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <odoo>
 
     <!-- ===================================================================
          HEADER - Hotel Arena Dark Theme (Fixed Transparent Nav)
          =================================================================== -->
-    <template id="ha_header" name="Hotel Arena Header" inherit_id="website.layout"
-              active="False" customize_show="True">
+    <template id="ha_header" name="Hotel Arena Header" inherit_id="website.layout" active="False" customize_show="True">
         <xpath expr="//header[@id='top']" position="attributes">
             <attribute name="class" add="ha-header o_cc o_cc5" separator=" "/>
         </xpath>
@@ -15,12 +14,16 @@
             <div class="ha-navbar">
                 <!-- Logo -->
                 <a class="ha-logo" t-attf-href="/">
-                    <span class="nav-logo-text">Hotel <span class="nav-logo-accent">Arena</span></span>
-                    <small class="nav-logo-sub">Chomutov</small>
+                    <img src="/theme_hotel_arena/static/src/img/logos/logo-big.png" alt="Hotel Arena Chomutov" class="ha-logo-img" width="200" height="96"/>
                 </a>
 
                 <!-- Desktop Nav -->
-                <ul class="ha-nav-desktop" id="top_menu" role="menu">
+                <!-- The `top_menu` CLASS is required: Odoo's frontend boot code
+                     does header.querySelector(".top_menu") and then calls a
+                     method on the result. With only the id it got null and
+                     threw on every page load, which also left the backend
+                     website preview half-initialised. -->
+                <ul class="ha-nav-desktop top_menu" id="top_menu" role="menu">
                     <t t-foreach="website.menu_id.child_id" t-as="submenu">
                         <t t-call="website.submenu">
                             <t t-set="item_class" t-valuef="ha-menu-item"/>
@@ -28,25 +31,23 @@
                         </t>
                     </t>
                     <li class="ha-menu-item">
-                        <a href="https://www.secure-hotel-booking.com/Hotel-Arena/JJZW/cs?hotelId=24506"
-                           class="ha-nav-reserve" target="_blank" rel="noopener">Rezervovat</a>
+                        <t t-call="theme_hotel_arena.ha_lang_switcher"/>
+                    </li>
+                    <li class="ha-menu-item">
+                        <a href="https://www.secure-hotel-booking.com/Hotel-Arena/JJZW/cs?hotelId=24506" data-book-lang="1" class="ha-nav-reserve" target="_blank" rel="noopener">Book now</a>
                     </li>
                 </ul>
 
                 <!-- Mobile Toggle -->
-                <button class="ha-mobile-toggle d-lg-none"
-                        data-bs-toggle="offcanvas"
-                        data-bs-target="#ha_mobile_menu"
-                        aria-label="Menu">
-                    <span></span><span></span><span></span>
+                <button class="ha-mobile-toggle d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#ha_mobile_menu" aria-label="Menu">
+                    <span/><span/><span/>
                 </button>
             </div>
 
             <!-- Mobile Offcanvas -->
             <div class="offcanvas offcanvas-end ha-offcanvas" tabindex="-1" id="ha_mobile_menu">
                 <div class="ha-offcanvas-header">
-                    <button type="button" class="ha-offcanvas-close"
-                            data-bs-dismiss="offcanvas" aria-label="Zavřít"></button>
+                    <button type="button" class="ha-offcanvas-close" data-bs-dismiss="offcanvas" aria-label="Close"/>
                 </div>
                 <div class="offcanvas-body p-0 d-flex flex-column align-items-center justify-content-center">
                     <ul class="ha-offcanvas-nav" role="menu">
@@ -57,15 +58,16 @@
                             </t>
                         </t>
                         <li>
-                            <a href="https://www.secure-hotel-booking.com/Hotel-Arena/JJZW/cs?hotelId=24506"
-                               class="btn-reserve" target="_blank" rel="noopener"
-                               style="margin-top:0.5rem;padding:0.8rem 2rem;display:inline-block;">Rezervovat</a>
+                            <a href="https://www.secure-hotel-booking.com/Hotel-Arena/JJZW/cs?hotelId=24506" data-book-lang="1" class="btn-reserve" target="_blank" rel="noopener" data-bs-dismiss="offcanvas" style="margin-top:0.5rem;padding:0.8rem 2rem;display:inline-block;">Book now</a>
+                        </li>
+                        <li class="ha-offcanvas-langs">
+                            <t t-call="theme_hotel_arena.ha_lang_links"/>
                         </li>
                     </ul>
                     <div class="ha-offcanvas-footer">
-                        <p><i class="fa fa-map-marker"/> Beethovenova 5275, 430 01 Chomutov</p>
-                        <p><i class="fa fa-phone"/> <a href="tel:+420474721290">+420 474 721 290</a></p>
-                        <p><i class="fa fa-envelope"/> <a href="mailto:recepce@arenahotel.cz">recepce@arenahotel.cz</a></p>
+                        <p><i class="fa fa-map-marker"/> Mostecká 5900, 430 01 Chomutov</p>
+                        <p><i class="fa fa-phone"/> <a href="tel:+420474721290" data-bs-dismiss="offcanvas">+420 474 721 290</a></p>
+                        <p><i class="fa fa-envelope"/> <a href="mailto:recepce@arenahotel.cz" data-bs-dismiss="offcanvas">recepce@arenahotel.cz</a></p>
                     </div>
                 </div>
             </div>
@@ -75,62 +77,102 @@
     <!-- ===================================================================
          FOOTER - Hotel Arena Dark Theme (4-column grid)
          =================================================================== -->
-    <template id="ha_footer" name="Hotel Arena Footer" inherit_id="website.layout"
-              active="True" customize_show="True">
+    <template id="ha_footer" name="Hotel Arena Footer" inherit_id="website.layout" active="True" customize_show="True">
         <xpath expr="//div[@id='footer']" position="replace">
             <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">
-                <section class="ha-footer" data-snippet="s_text_block" data-name="Footer Content"
-                         style="padding: 5rem 4rem 2rem;">
+                <section class="ha-footer" data-snippet="s_text_block" data-name="Footer Content" style="padding: 5rem 4rem 2rem;">
                     <div class="container">
                         <div class="ha-footer-top">
                             <!-- Brand -->
                             <div class="ha-footer-brand">
-                                <span class="footer-logo-text">Hotel <span>Arena</span></span>
-                                <p>Moderní hotel v srdci sportovně-relaxačního centra
-                                   u Kamencového jezera. Ideální pro obchodní cesty
-                                   i aktivní dovolenou.</p>
+                                <img src="/theme_hotel_arena/static/src/img/logos/logo-regular.png" alt="Hotel Arena Chomutov" class="ha-footer-logo-img" width="150" height="72" loading="lazy"/>
+                                <p>A modern hotel at the heart of the sports and relaxation centre by Kamencové Lake. Ideal for business trips and active holidays alike.</p>
+
+                                <!-- Restaurant Guru award. It sits in the footer so it shows on
+                                     every page, the way the old arenahotel.cz carries it. -->
+                                <a href="https://restaurantguru.com/Hotel-Arena-Chomutov-Chomutov"
+                                   class="ha-award ha-award-sm" target="_blank" rel="noopener">
+                                    <span class="ha-award-name">Hotel Aréna - Chomutov</span>
+                                    <svg class="ha-award-mark" viewBox="0 0 120 38" aria-hidden="true">
+                                        <path d="M6 32h108"/>
+                                        <path d="M18 32 L42 12 L60 26 L78 12 L102 32"/>
+                                        <path d="M42 12 L42 32 M60 26 L60 32 M78 12 L78 32"/>
+                                        <path d="M30 22 L30 32 M90 22 L90 32"/>
+                                    </svg>
+                                    <span class="ha-award-rec">Recommended</span>
+                                    <span class="ha-award-src">Restaurant Guru</span>
+                                    <span class="ha-award-year">2023</span>
+                                </a>
                             </div>
 
                             <!-- Navigace -->
                             <div class="ha-footer-col">
-                                <h5>Navigace</h5>
-                                <a href="/ubytovani">Pokoje</a>
-                                <a href="/o-hotelu">O hotelu</a>
-                                <a href="/restaurace-a-bar">Restaurace</a>
-                                <a href="/galerie">Galerie</a>
-                                <a href="/cenik">Ceník</a>
+                                <h5>Navigation</h5>
+                                <a href="/ubytovani">Accommodation</a>
+                                <a href="/o-hotelu">About us</a>
+                                <a href="/restaurace-a-bar">Restaurant</a>
+                                <a href="/galerie">Gallery</a>
+                                <a href="/cenik">Pricelist</a>
                             </div>
 
                             <!-- Kontakt -->
                             <div class="ha-footer-col">
-                                <h5>Kontakt</h5>
-                                <p>Beethovenova 5275</p>
+                                <h5>Contact</h5>
+                                <p>Mostecká 5900</p>
                                 <p>430 01 Chomutov</p>
+                                <a href="https://maps.app.goo.gl/y6WPGWMZZQkqjf3C7" target="_blank" rel="noopener">Show on map</a>
+
+                                <!-- The old arenahotel.cz carries the whole "Kontakty" block in
+                                     its footer: all four reception lines, the restaurant with the
+                                     name to ask for, and the hotel manager. Ours had two phone
+                                     numbers and neither of the people. -->
+                                <p class="ha-footer-label">Reception:</p>
                                 <a href="tel:+420474721290">+420 474 721 290</a>
+                                <a href="tel:+420474721291">+420 474 721 291</a>
+                                <a href="tel:+420474721292">+420 474 721 292</a>
                                 <a href="tel:+420602495576">+420 602 495 576</a>
                                 <a href="mailto:recepce@arenahotel.cz">recepce@arenahotel.cz</a>
+
+                                <p class="ha-footer-label">Restaurant:</p>
+                                <a href="tel:+420474721293">+420 474 721 293</a>
+                                <p class="ha-footer-person">Jaroslav Šulta</p>
+                                <a href="mailto:sulta@kamencak.cz">sulta@kamencak.cz</a>
+
+                                <p class="ha-footer-label">Hotel manager:</p>
+                                <p class="ha-footer-person">Zdeněk Fojtík</p>
+                                <a href="mailto:fojtik@arenahotel.cz">fojtik@arenahotel.cz</a>
                             </div>
 
                             <!-- Restaurace -->
                             <div class="ha-footer-col">
-                                <h5>Restaurace</h5>
-                                <a href="https://brasileiraarena.cz" target="_blank" rel="noopener">brasileiraarena.cz</a>
-                                <a href="tel:+420474721293">+420 474 721 293</a>
+                                <h5>Restaurant</h5>
+                                <a href="/restaurace-a-bar">Restaurante Brasileiro</a>
+                                <!-- The restaurant's phone and Jaroslav Šulta now live in the
+                                     Contact column, so this one keeps the brand, the opening
+                                     hours and the social link. -->
                                 <a href="mailto:restaurace@arenahotel.cz">restaurace@arenahotel.cz</a>
-                                <p style="margin-top:0.8rem;">Po—Čt 15:00—23:00</p>
-                                <p>Pá—So 15:00—00:00</p>
-                                <p>Ne 15:00—23:00</p>
+                                <a href="https://www.facebook.com/arenachomutov" target="_blank" rel="noopener">
+                                    <i class="fa fa-facebook-square ha-fb-ico"/> Facebook
+                                </a>
+                                <p style="margin-top:0.8rem;">Mon—Thu 15:00—23:00</p>
+                                <p>Fri—Sat 15:00—00:00</p>
+                                <p>Sun 15:00—23:00</p>
                             </div>
                         </div>
 
                         <!-- Bottom -->
                         <div class="ha-footer-bottom">
                             <span>© <t t-esc="datetime.date.today().year"/> Hotel Arena Chomutov.
-                                  Provozovatel: Czech Republic Investment, a.s.</span>
+                                  Operated by: Czech Republic Investment, a.s.</span>
                             <div class="ha-lang-switcher">
-                                <t t-call="website.language_selector"/>
+                                <t t-call="theme_hotel_arena.ha_lang_links"/>
                             </div>
                         </div>
+
+                        <!-- Author credit. It lives in the footer, so it is on every
+                             page; "Created by" and "powered by" translate with the
+                             rest of the site, the two names do not. -->
+                        <div class="ha-footer-credit">Created by <a href="https://www.michalvarys.eu/chytil-jste-se-do-site" target="_blank" rel="noopener">Michal Varys</a> · powered by <a href="https://www.varyshop.cz/jak-vypada-nas-system" target="_blank" rel="noopener">Varyshop</a></div>
                     </div>
                 </section>
             </div>
@@ -138,7 +180,7 @@
 
         <!-- Replace default copyright -->
         <xpath expr="//div[hasclass('o_footer_copyright')]" position="replace">
-            <div class="o_footer_copyright ha-copyright" style="display:none;"></div>
+            <div class="o_footer_copyright ha-copyright" style="display:none;"/>
         </xpath>
     </template>
 

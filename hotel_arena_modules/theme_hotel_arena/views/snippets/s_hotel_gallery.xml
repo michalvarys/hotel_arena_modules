@@ -1,17 +1,84 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <odoo>
 
     <!-- Hotel Gallery — Uses Odoo native s_image_gallery with masonry mode -->
-    <template id="s_hotel_gallery" name="Galerie hotelu">
-        <section class="s_image_gallery o_masonry pt24 pb24 s_ha_gallery o_colored_level"
-                 data-vcss="002" data-columns="4"
-                 data-snippet="s_hotel_gallery"
-                 data-name="Galerie hotelu"
-                 style="overflow:hidden;background:#1A1A22;">
+    <template id="s_hotel_gallery" name="Hotel gallery">
+<section class="s_hotel_gallery s_image_gallery o_masonry pt24 pb24 s_ha_gallery o_colored_level" data-vcss="002" data-columns="4" data-snippet="s_hotel_gallery" data-name="Hotel gallery">
+            <div class="container-fluid" style="max-width:1600px;">
+                <div class="row s_nb_column_fixed">
+                    <div class="o_masonry_col o_snippet_not_selectable col-lg-3">
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_004_2048px.jpg" data-index="0" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_008_2048px.jpg" data-index="4" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_012_2048px.jpg" data-index="8" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_016_2048px.jpg" data-index="12" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_020_2048px.jpg" data-index="16" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_024_2048px.jpg" data-index="20" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_028_2048px.jpg" data-index="24" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_032_2048px.jpg" data-index="28" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_036_2048px.jpg" data-index="32" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_040_2048px.jpg" data-index="36" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_044_2048px.jpg" data-index="40" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_048_2048px.jpg" data-index="44" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_052_2048px.jpg" data-index="48" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/meeting-v-patre.jpg" data-index="52" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                    </div>
+                    <div class="o_masonry_col o_snippet_not_selectable col-lg-3">
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_005_2048px.jpg" data-index="1" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_009_2048px.jpg" data-index="5" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_013_2048px.jpg" data-index="9" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_017_2048px.jpg" data-index="13" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_021_2048px.jpg" data-index="17" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_025_2048px.jpg" data-index="21" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_029_2048px.jpg" data-index="25" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_033_2048px.jpg" data-index="29" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_037_2048px.jpg" data-index="33" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_041_2048px.jpg" data-index="37" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_045_2048px.jpg" data-index="41" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_049_2048px.jpg" data-index="45" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_053_2048px.jpg" data-index="49" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                    </div>
+                    <div class="o_masonry_col o_snippet_not_selectable col-lg-3">
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_006_2048px.jpg" data-index="2" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_010_2048px.jpg" data-index="6" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_014_2048px.jpg" data-index="10" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_018_2048px.jpg" data-index="14" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_022_2048px.jpg" data-index="18" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_026_2048px.jpg" data-index="22" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_030_2048px.jpg" data-index="26" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_034_2048px.jpg" data-index="30" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_038_2048px.jpg" data-index="34" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_042_2048px.jpg" data-index="38" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_046_2048px.jpg" data-index="42" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_050_2048px.jpg" data-index="46" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_054_2048px.jpg" data-index="50" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                    </div>
+                    <div class="o_masonry_col o_snippet_not_selectable col-lg-3">
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_007_2048px.jpg" data-index="3" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_011_2048px.jpg" data-index="7" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_015_2048px.jpg" data-index="11" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_019_2048px.jpg" data-index="15" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_023_2048px.jpg" data-index="19" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_027_2048px.jpg" data-index="23" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_031_2048px.jpg" data-index="27" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_035_2048px.jpg" data-index="31" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_039_2048px.jpg" data-index="35" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_043_2048px.jpg" data-index="39" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_047_2048px.jpg" data-index="43" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_051_2048px.jpg" data-index="47" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                        <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/img_9289---kopie.jpg" data-index="51" data-name="Image" alt="Hotel Arena Chomutov" loading="lazy"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+
+    <template id="s_gallery_preview" name="Gallery - preview">
+<section class="s_gallery_preview s_hotel_gallery s_image_gallery o_masonry pt24 pb24 s_ha_gallery o_colored_level" data-vcss="002" data-columns="4" style="overflow:hidden;background:#1A1A22;" data-snippet="s_gallery_preview" data-name="Gallery - preview">
             <div class="container">
                 <div class="text-center reveal" style="margin-bottom:3rem;">
-                    <div class="section-tag" style="justify-content:center;">Naše fotografie</div>
-                    <h2 class="section-title">Galerie</h2>
+                    <div class="section-tag" style="justify-content:center;">Our photographs</div>
+                    <h2 class="section-title">Gallery</h2>
                 </div>
             </div>
             <div class="container-fluid">
@@ -33,6 +100,18 @@
                         <img class="img img-fluid d-block" src="/theme_hotel_arena/static/src/img/gallery/dl_hotelarena_011_2048px.jpg" data-index="7" data-name="Image" alt="Hotel Arena"/>
                     </div>
                 </div>
+                <div class="text-center mt-5">
+                    <a href="/galerie" class="btn-outline">View the whole gallery →</a>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_gallery_intro" name="Gallery - caption">
+        <section class="s_gallery_intro o_cc o_cc1 pt32 pb0 o_colored_level" data-snippet="s_gallery_intro" data-name="Gallery - caption" style="background:#1A1A22;">
+            <div class="container text-center">
+                <p style="max-width:700px;margin:0 auto;color:#C5C2BA;line-height:1.8;">
+                    Take a look around the hotel</p>
             </div>
         </section>
     </template>

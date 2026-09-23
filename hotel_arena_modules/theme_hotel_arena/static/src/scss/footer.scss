@@ -130,3 +130,132 @@ $ha-transition: all 0.3s ease;
         &:hover { color: lighten($ha-red, 10%); }
     }
 }
+
+.ha-footer-logo-img {
+    display: block;
+    height: 60px;
+    width: auto;
+    margin-bottom: 1.2rem;
+}
+
+
+// Restaurant Guru badge in the footer brand column. Kept deliberately small:
+// it is a credential, not a headline, and at full size it crowded the phone
+// layout where the brand column runs the full width.
+.ha-award-sm {
+    margin-top: 1.3rem;
+    padding: 0.65rem 0.95rem 0.6rem;
+    gap: 0.2rem;
+    border-width: 1px;
+    border-radius: 9px;
+
+    .ha-award-name { font-size: 0.72rem; }
+    .ha-award-mark { width: 70px; height: 22px; stroke-width: 2.4; }
+    .ha-award-rec  { font-size: 0.64rem; letter-spacing: 0.09em; gap: 0.45rem; }
+    .ha-award-src  { font-size: 0.62rem; }
+    .ha-award-year { font-size: 0.75rem; }
+}
+
+@media (max-width: 768px) {
+    .ha-award-sm {
+        margin-top: 1rem;
+        padding: 0.6rem 0.85rem 0.55rem;
+
+        .ha-award-name { font-size: 0.68rem; }
+        .ha-award-mark { width: 62px; height: 20px; }
+        .ha-award-rec  { font-size: 0.6rem; }
+        .ha-award-src  { font-size: 0.58rem; }
+        .ha-award-year { font-size: 0.7rem; }
+    }
+}
+
+// Sub-heading inside a footer column ("Reception:"), lighter than the column
+// title so the group reads as a label rather than a second heading.
+.ha-footer-col p.ha-footer-label {
+    margin-top: 0.7rem;
+    margin-bottom: 0.35rem;
+    font-weight: 600;
+    color: #E8E6E1;
+}
+
+// A person's name in a footer column: plain text, so it must not look like the
+// links above and below it.
+.ha-footer-col p.ha-footer-person {
+    margin-bottom: 0.15rem;
+    color: #C5C2BA;
+}
+
+// The contact column grew to seventeen lines once the full "Kontakty" block
+// moved in, which left it towering over the other three. Tightening the line
+// rhythm shortens every column a little and evens the footer out.
+@media (min-width: 769px) {
+    .ha-footer-col a,
+    .ha-footer-col p { margin-bottom: 0.42rem; }
+}
+
+// On a phone the three columns sit in a 2x2 grid, and "Kontakt" is three times
+// the height of "Navigace" — so the cell under Navigace was empty and
+// Restaurace started below the whole block. Placing the columns explicitly
+// stacks Navigace and Restaurace in the left column while Kontakt runs down
+// the right one, which closes the gap.
+//
+// nth-of-type counts divs, and the brand block is the first of them, so the
+// three columns are 2, 3 and 4.
+@media (max-width: 768px) {
+    .ha-footer-col:nth-of-type(2) { grid-column: 1; grid-row: 2; }           // Navigace
+    .ha-footer-col:nth-of-type(3) { grid-column: 2; grid-row: 2 / span 2; }  // Kontakt
+    .ha-footer-col:nth-of-type(4) { grid-column: 1; grid-row: 3; }           // Restaurace
+}
+
+// Author credit, under the copyright line. Deliberately quiet: smaller and
+// dimmer than the copyright, with the brand crimson only on the links.
+.ha-footer-credit {
+    margin-top: 0.9rem;
+    padding-top: 0.9rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    font-size: 0.7rem;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.4);
+    text-align: center;
+
+    a {
+        color: rgba(255, 255, 255, 0.62);
+        text-decoration: none;
+        border-bottom: 1px solid rgba(240, 112, 112, 0.4);
+        padding-bottom: 1px;
+        transition: all 0.25s ease;
+
+        &:hover {
+            color: #F07070;
+            border-color: #F07070;
+        }
+    }
+}
+
+
+// Odoo's own `.o_footer a:not(.btn)` rule has the same specificity as a plain
+// `.ha-footer .ha-footer-credit a` and loads after ours, so it won and left the
+// credit's links in full brand red. The #wrapwrap prefix settles it — the same
+// trick this file already uses at the top.
+#wrapwrap .ha-footer-credit {
+    color: rgba(255, 255, 255, 0.4);
+
+    a {
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
+        border-bottom: 1px solid rgba(240, 112, 112, 0.35);
+
+        &:hover { color: #F07070; border-color: #F07070; }
+    }
+}
+
+// The theme already colours every link with
+// `.o_cc a:not(.btn):not(.btn-reserve)…{ color: #F07070 !important }`,
+// written back when this file was fighting Odoo's own :not() chains. Nothing
+// without !important can beat it, so the credit's links need the same weight
+// rather than another round of selector escalation.
+#wrapwrap .ha-footer-credit a {
+    color: rgba(255, 255, 255, 0.6) !important;
+
+    &:hover { color: #F07070 !important; }
+}

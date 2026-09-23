@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Make the hero photos changeable from the block's side panel.
+
+         Odoo only offers the "Background Image" option to a fixed list of
+         selectors (section, .carousel-item, .parallax and a handful of
+         snippet-specific ones). The hero's slides are plain divs carrying an
+         inline background-image, so the panel offered nothing for them and the
+         photos could only be swapped in the module source.
+
+         Adding .ha-hero-slide to that option is enough: clicking a slide in the
+         editor now shows the image picker, with no Bootstrap carousel markup to
+         drag along.
+
+         Colour options stay off on purpose - a slide is a photo, and the scrim
+         above it is what controls how dark it reads. -->
+
+    <template id="ha_snippet_options" inherit_id="website.snippet_options"
+              name="Hotel Arena - snippet options">
+        <xpath expr="//div[@data-js='ContainerWidth']" position="before">
+            <t t-call="website.snippet_options_background_options">
+                <t t-set="selector" t-value="'.ha-hero-slide'"/>
+                <t t-set="exclude" t-value="''"/>
+                <t t-set="with_colors" t-value="False"/>
+                <t t-set="with_images" t-value="True"/>
+                <t t-set="with_videos" t-value="False"/>
+                <t t-set="with_shapes" t-value="False"/>
+                <t t-set="with_color_combinations" t-value="False"/>
+                <t t-set="with_gradients" t-value="False"/>
+            </t>
+        </xpath>
+    </template>
+
+</odoo>

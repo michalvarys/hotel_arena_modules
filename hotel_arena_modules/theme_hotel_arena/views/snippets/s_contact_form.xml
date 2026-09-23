@@ -1,31 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <odoo>
 
     <!-- Contact Form — Dark theme with red accent -->
-    <template id="s_contact_form" name="Kontaktní formulář">
-        <section class="s_ha_contact_form o_cc o_cc2 pt104 pb104 o_colored_level"
-                 data-snippet="s_contact_form"
-                 data-name="Kontaktní formulář">
+    <template id="s_contact_form" name="Contact form">
+<section class="s_contact_form s_ha_contact_form o_cc o_cc2 pt104 pb104 o_colored_level" data-snippet="s_contact_form" data-name="Contact form">
             <div class="container">
                 <div class="row">
                     <!-- Contact Info -->
                     <div class="col-lg-5 mb-4 mb-lg-0">
-                        <div class="section-tag">Napište nám</div>
-                        <h2 class="section-title">Kontakty</h2>
-                        <p style="color:#C5C2BA;margin-bottom:30px;">Rádi zodpovíme každý dotaz.</p>
+                        <div class="section-tag">Write to us</div>
+                        <h2 class="section-title">Contacts</h2>
+                        <p style="color:#C5C2BA;margin-bottom:30px;">We are glad to answer any question.</p>
 
                         <div class="ha-contact-info">
                             <div class="ha-contact-info-item">
                                 <div class="ha-contact-info-icon"><i class="fa fa-map-marker"/></div>
                                 <div class="ha-contact-info-text">
-                                    <h6>Adresa</h6>
-                                    <p>Hotel Arena<br/>Beethovenova 5275<br/>430 01 Chomutov</p>
+                                    <h6>Address</h6>
+                                    <p>Hotel Arena<br/>Mostecká 5900<br/>430 01 Chomutov<br/>
+                                        <a href="https://maps.app.goo.gl/y6WPGWMZZQkqjf3C7" target="_blank" rel="noopener">Show on Google Maps →</a>
+                                    </p>
                                 </div>
                             </div>
                             <div class="ha-contact-info-item">
                                 <div class="ha-contact-info-icon"><i class="fa fa-phone"/></div>
                                 <div class="ha-contact-info-text">
-                                    <h6>Recepce</h6>
+                                    <h6>Reception</h6>
                                     <p>
                                         <a href="tel:+420474721290">+420 474 721 290</a><br/>
                                         <a href="tel:+420474721291">+420 474 721 291</a><br/>
@@ -44,18 +44,19 @@
                             <div class="ha-contact-info-item">
                                 <div class="ha-contact-info-icon"><i class="fa fa-cutlery"/></div>
                                 <div class="ha-contact-info-text">
-                                    <h6>Restaurace</h6>
+                                    <h6>Restaurant</h6>
                                     <p>
                                         <a href="tel:+420474721293">+420 474 721 293</a><br/>
                                         Jaroslav Šulta<br/>
-                                        <a href="mailto:sulta@kamencak.cz">sulta@kamencak.cz</a>
+                                        <a href="mailto:sulta@kamencak.cz">sulta@kamencak.cz</a><br/>
+                                        <a href="https://www.facebook.com/arenachomutov" target="_blank" rel="noopener"><i class="fa fa-facebook-square ha-fb-ico"/> Facebook</a>
                                     </p>
                                 </div>
                             </div>
                             <div class="ha-contact-info-item">
                                 <div class="ha-contact-info-icon"><i class="fa fa-user"/></div>
                                 <div class="ha-contact-info-text">
-                                    <h6>Manažer hotelu</h6>
+                                    <h6>Hotel manager</h6>
                                     <p>
                                         Zdeněk Fojtík<br/>
                                         <a href="mailto:fojtik@arenahotel.cz">fojtik@arenahotel.cz</a>
@@ -66,63 +67,64 @@
 
                         <!-- Operator info -->
                         <div style="margin-top:30px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.04);">
-                            <h6 style="text-transform:uppercase;margin-bottom:10px;font-family:'DM Sans',sans-serif;
-                                letter-spacing:0.1em;font-size:0.85rem;color:#FAFAF8;">Provozovatel</h6>
+                            <h6 style="text-transform:uppercase;margin-bottom:10px;font-family:'DM Sans',sans-serif;                                 letter-spacing:0.1em;font-size:0.85rem;color:#FAFAF8;">Operator</h6>
                             <p style="color:#C5C2BA;font-size:0.9rem;line-height:1.8;">
                                 Czech Republic Investment, a.s.<br/>
                                 Belgická 681/5<br/>
                                 120 00 Praha 2<br/>
-                                IČ: 27917690<br/>
-                                DIČ: CZ27917690<br/>
-                                Spisová značka: B 12028 u Městského soudu v Praze
+                                Company ID: 27917690<br/>
+                                VAT ID: CZ27917690<br/>
+                                Registered under file B 12028 at the Municipal Court in Prague
                             </p>
                         </div>
                     </div>
                     <!-- Form -->
                     <div class="col-lg-7">
-                        <form id="ha-contact-form" class="ha-contact-form"
-                              action="/hotel-arena/contact" method="post">
-                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                        <form id="ha-contact-form" class="ha-contact-form" action="/hotel-arena/contact" method="post">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="ha-name">Jméno *</label>
-                                        <input type="text" id="ha-name" name="name"
-                                               placeholder="Vaše jméno" required="required"/>
+                                        <label for="ha-name">Name *</label>
+                                        <input type="text" id="ha-name" name="name" placeholder="Your name" required="required"/>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="ha-email">E-mail *</label>
-                                        <input type="email" id="ha-email" name="email"
-                                               placeholder="Váš e-mail" required="required"/>
+                                        <input type="email" id="ha-email" name="email" placeholder="Your e-mail" required="required"/>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="ha-phone">Telefon</label>
-                                        <input type="tel" id="ha-phone" name="phone"
-                                               placeholder="Váš telefon"/>
+                                        <label for="ha-phone">Phone</label>
+                                        <input type="tel" id="ha-phone" name="phone" placeholder="Your phone"/>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="ha-subject">Předmět *</label>
-                                        <input type="text" id="ha-subject" name="subject"
-                                               placeholder="Předmět zprávy" required="required"/>
+                                        <label for="ha-subject">Subject *</label>
+                                        <input type="text" id="ha-subject" name="subject" placeholder="Message subject" required="required"/>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="ha-message">Zpráva *</label>
-                                <textarea id="ha-message" name="message"
-                                          placeholder="Vaše zpráva (doporučený počet znaků 80–300)" required="required"></textarea>
+                                <label for="ha-message">Message *</label>
+                                <textarea id="ha-message" name="message" placeholder="Your message (80–300 characters recommended)" required="required"/>
                             </div>
-                            <button type="submit" class="ha-btn-submit">Odeslat</button>
-                            <div id="ha-form-result" class="ha-form-message"></div>
+                            <button type="submit" class="ha-btn-submit">Send</button>
+                            <div id="ha-form-result" class="ha-form-message"/>
                         </form>
+
+                        <!-- Map sits under the form: the right column
+                             ran out of content halfway down the page,
+                             and a standalone map section below only
+                             added scrolling. -->
+                        <div class="map-container ha-map-inline">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.514992941407!2d13.4279344!3d50.4687557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470a1ba01b66fbef%3A0xf6420ac3e30c884f!2sHotel%20Arena!5e0!3m2!1scs!2scz!4v1790164691981!5m2!1scs!2scz" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen="">
+                            </iframe>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -130,41 +132,36 @@
     </template>
 
     <!-- Contact Info Block (standalone for homepage) -->
-    <template id="s_contact_info" name="Kontaktní informace">
-        <section class="s_ha_contact_info o_cc o_cc2 pt104 pb104 o_colored_level"
-                 data-snippet="s_contact_info"
-                 data-name="Kontaktní informace">
+    <template id="s_contact_info" name="Contact information">
+<section class="s_contact_info s_ha_contact_info o_cc o_cc2 pt104 pb104 o_colored_level" data-snippet="s_contact_info" data-name="Contact information">
             <div class="container">
                 <div class="location-grid">
                     <div class="reveal">
-                        <div class="section-tag">Kontakt</div>
-                        <h2 class="section-title">Kde nás <em>najdete</em></h2>
+                        <div class="section-tag">Contact</div>
+                        <h2 class="section-title">Where to <em>find us</em></h2>
                         <p style="font-size:1.2rem;line-height:1.7;color:#C5C2BA;margin-bottom:2rem;">
-                            Hotel Arena se nachází v bezprostřední blízkosti Kamencového jezera,
-                            ve sportovně-relaxačním centru Chomutova.</p>
+                            Hotel Arena sits right beside Kamencové Lake, in the sports and relaxation centre of Chomutov.</p>
                         <div class="location-highlights">
                             <div class="highlight">
-                                <strong>Kamencové jezero</strong>
-                                <span>5 min pěšky</span>
+                                <strong>Kamencové Lake</strong>
+                                <span>5 min walk</span>
                             </div>
                             <div class="highlight">
-                                <strong>Zimní stadion</strong>
-                                <span>2 min pěšky</span>
+                                <strong>Ice rink</strong>
+                                <span>2 min walk</span>
                             </div>
                             <div class="highlight">
-                                <strong>Centrum města</strong>
-                                <span>10 min autem</span>
+                                <strong>Town centre</strong>
+                                <span>10 min by car</span>
                             </div>
                             <div class="highlight">
-                                <strong>Dálnice D7</strong>
-                                <span>15 min autem</span>
+                                <strong>D7 motorway</strong>
+                                <span>15 min by car</span>
                             </div>
                         </div>
                     </div>
                     <div class="map-container reveal">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2528.8!2d13.427579!3d50.468502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsDI4JzA3LjAiTiAxM8KwMjUnMzkuMyJF!5e0!3m2!1scs!2scz!4v1"
-                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                                allowfullscreen="">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.514992941407!2d13.4279344!3d50.4687557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470a1ba01b66fbef%3A0xf6420ac3e30c884f!2sHotel%20Arena!5e0!3m2!1scs!2scz!4v1790164691981!5m2!1scs!2scz" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen="">
                         </iframe>
                     </div>
                 </div>
@@ -173,14 +170,10 @@
     </template>
 
     <!-- Google Map Section (standalone) -->
-    <template id="s_google_map" name="Mapa">
-        <section class="s_ha_google_map o_cc o_cc1 pt104 pb104 o_colored_level"
-                 data-snippet="s_google_map"
-                 data-name="Mapa">
-            <div class="map-container" style="aspect-ratio:21/9;">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2528.8!2d13.427579!3d50.468502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsDI4JzA3LjAiTiAxM8KwMjUnMzkuMyJF!5e0!3m2!1scs!2scz!4v1"
-                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                        allowfullscreen="">
+    <template id="s_ha_map" name="Map">
+        <section class="s_ha_map s_ha_google_map o_cc o_cc1 pt104 pb104 o_colored_level" data-snippet="s_ha_map" data-name="Map">
+            <div class="map-container ha-map-standalone">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.514992941407!2d13.4279344!3d50.4687557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470a1ba01b66fbef%3A0xf6420ac3e30c884f!2sHotel%20Arena!5e0!3m2!1scs!2scz!4v1790164691981!5m2!1scs!2scz" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen="">
                 </iframe>
             </div>
         </section>

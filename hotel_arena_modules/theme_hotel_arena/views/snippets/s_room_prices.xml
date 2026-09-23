@@ -1,68 +1,66 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <odoo>
 
     <!-- Room Prices Table -->
-    <template id="s_room_prices" name="Ceník pokojů">
-        <section class="s_ha_room_prices o_cc o_cc1 pt104 pb104 o_colored_level"
-                 data-snippet="s_room_prices"
-                 data-name="Ceník pokojů">
+    <template id="s_room_prices" name="Room pricelist">
+<section class="s_room_prices s_ha_room_prices o_cc o_cc1 pt104 pb104 o_colored_level" data-snippet="s_room_prices" data-name="Room pricelist">
             <div class="container">
                 <div class="text-center" style="margin-bottom:4rem;">
-                    <div class="section-tag" style="justify-content:center;">Naše ceny</div>
-                    <h2 class="section-title">Ceník ubytování</h2>
+                    <div class="section-tag" style="justify-content:center;">Our prices</div>
+                    <h2 class="section-title">Accommodation pricelist</h2>
                 </div>
                 <div class="table-responsive">
                     <table class="ha-price-table">
                         <thead>
                             <tr>
-                                <th>Typ pokoje</th>
-                                <th>Lůžka</th>
-                                <th>1 osoba</th>
-                                <th>2 osoby</th>
-                                <th>3 osoby</th>
-                                <th>4 osoby</th>
+                                <th>Room type</th>
+                                <th>Bed count</th>
+                                <th>1 person</th>
+                                <th>2 people</th>
+                                <th>3 people</th>
+                                <th>4 people</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td><strong>Standard (2 oddělené postele)</strong></td>
+                                <td><strong>Standard (2 separate beds)</strong></td>
                                 <td>2</td>
-                                <td class="ha-price-cell">1 500 Kč</td>
-                                <td class="ha-price-cell">2 150 Kč</td>
+                                <td class="ha-price-cell">CZK 1,500</td>
+                                <td class="ha-price-cell">CZK 2,150</td>
                                 <td class="ha-price-cell">—</td>
                                 <td class="ha-price-cell">—</td>
                             </tr>
                             <tr>
-                                <td><strong>Standard (manželská postel)</strong></td>
+                                <td><strong>Standard (double bed)</strong></td>
                                 <td>1</td>
-                                <td class="ha-price-cell">2 150 Kč</td>
-                                <td class="ha-price-cell">2 150 Kč</td>
+                                <td class="ha-price-cell">CZK 2,150</td>
+                                <td class="ha-price-cell">CZK 2,150</td>
                                 <td class="ha-price-cell">—</td>
                                 <td class="ha-price-cell">—</td>
                             </tr>
                             <tr>
-                                <td><strong>Bezbariérový pokoj</strong></td>
+                                <td><strong>Barrier-free room</strong></td>
                                 <td>2</td>
-                                <td class="ha-price-cell">2 350 Kč</td>
-                                <td class="ha-price-cell">3 000 Kč</td>
+                                <td class="ha-price-cell">CZK 2,350</td>
+                                <td class="ha-price-cell">CZK 3,000</td>
                                 <td class="ha-price-cell">—</td>
                                 <td class="ha-price-cell">—</td>
                             </tr>
                             <tr>
-                                <td><strong>Rodinný pokoj</strong></td>
+                                <td><strong>Family room</strong></td>
                                 <td>4</td>
-                                <td class="ha-price-cell">2 500 Kč</td>
-                                <td class="ha-price-cell">3 000 Kč</td>
-                                <td class="ha-price-cell">3 500 Kč</td>
-                                <td class="ha-price-cell">4 000 Kč</td>
+                                <td class="ha-price-cell">CZK 2,500</td>
+                                <td class="ha-price-cell">CZK 3,000</td>
+                                <td class="ha-price-cell">CZK 3,500</td>
+                                <td class="ha-price-cell">CZK 4,000</td>
                             </tr>
                             <tr>
-                                <td><strong>Deluxe Queen (2 queen postele)</strong></td>
+                                <td><strong>Deluxe Queen (2 queen beds)</strong></td>
                                 <td>2</td>
-                                <td class="ha-price-cell">3 500 Kč</td>
-                                <td class="ha-price-cell">4 000 Kč</td>
-                                <td class="ha-price-cell">4 500 Kč</td>
-                                <td class="ha-price-cell">5 000 Kč</td>
+                                <td class="ha-price-cell">CZK 3,500</td>
+                                <td class="ha-price-cell">CZK 4,000</td>
+                                <td class="ha-price-cell">CZK 4,500</td>
+                                <td class="ha-price-cell">CZK 5,000</td>
                             </tr>
                         </tbody>
                     </table>
@@ -70,20 +68,20 @@
 
                 <!-- Included in price -->
                 <div class="mt-5">
-                    <h4 style="text-transform: uppercase; margin-bottom: 20px;">V ceně ubytování je zahrnuto:</h4>
+                    <h4 style="text-transform: uppercase; margin-bottom: 20px;">The accommodation rate includes:</h4>
                     <div class="row">
                         <div class="col-md-6">
                             <ul class="ha-iconlist">
-                                <li>Snídaně formou bufetových stolů</li>
-                                <li>Satelitní televize a trezor na pokoji</li>
-                                <li>Bezdrátové připojení k internetu v celém hotelu</li>
+                                <li>Buffet-style breakfast</li>
+                                <li>Satellite television and a safe in the room</li>
+                                <li>Wireless internet throughout the hotel</li>
                             </ul>
                         </div>
                         <div class="col-md-6">
                             <ul class="ha-iconlist">
-                                <li>DPH a městský poplatek</li>
-                                <li>Non-stop recepce</li>
-                                <li>Možnost parkování na hotelovém parkovišti pod dozorem kamerového systému bez poplatku</li>
+                                <li>VAT and city tax</li>
+                                <li>24/7 reception</li>
+                                <li>Free parking in the hotel car park, monitored by CCTV</li>
                             </ul>
                         </div>
                     </div>
@@ -91,14 +89,14 @@
 
                 <!-- Additional services -->
                 <div class="mt-4">
-                    <h4 style="text-transform: uppercase; margin-bottom: 20px;">Doplňkové služby:</h4>
+                    <h4 style="text-transform: uppercase; margin-bottom: 20px;">Additional services:</h4>
                     <ul class="ha-iconlist">
-                        <li>Ubytování dětí do 3 let — zdarma</li>
-                        <li>Pro vybrané pokoje možnost přistýlky pro dítě</li>
-                        <li>Polopenze, případně plná penze (skupinové pobyty, za příplatek)</li>
-                        <li>Vysokorychlostní připojení k internetu (za příplatek)</li>
-                        <li>Praní a žehlení prádla (za příplatek)</li>
-                        <li>Zajištění vstupenek</li>
+                        <li>Accommodation for children under 3 — free of charge</li>
+                        <li>An extra bed for a child is available in selected rooms</li>
+                        <li>Half board or full board (group stays, for an extra charge)</li>
+                        <li>High-speed internet access (for an extra charge)</li>
+                        <li>Laundry and ironing (for an extra charge)</li>
+                        <li>Ticket booking</li>
                     </ul>
                 </div>
 
@@ -106,7 +104,7 @@
                 <div class="mt-4 p-3" style="background:rgba(240,112,112,0.06);border-left:4px solid #F07070;">
                     <p style="margin: 0; font-weight: 600;">
                         <i class="fa fa-paw" style="color:#F07070;margin-right:8px;"/>
-                        Domácí zvířata nejsou povolena.
+                        Pets are not allowed.
                     </p>
                 </div>
             </div>

@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+
+    <template id="s_home_trio" name="Rooms, restaurant and bar">
+<section class="s_home_trio s_ha_home_trio o_cc o_cc1 pt104 pb104 o_colored_level" data-snippet="s_home_trio" data-name="Rooms, restaurant and bar">
+            <div class="container">
+                <div class="ha-trio">
+                    <div class="ha-trio-card reveal">
+                        <a href="https://www.secure-hotel-booking.com/Hotel-Arena/JJZW/cs?hotelId=24506" data-book-lang="1" class="ha-trio-img">
+                            <img src="/theme_hotel_arena/static/src/img/rooms/pokoj-standard.webp" alt="Hotel rooms" loading="lazy"/>
+                        </a>
+                        <div class="ha-trio-body">
+                            <div class="ha-trio-head">
+                                <h3><a href="https://www.secure-hotel-booking.com/Hotel-Arena/JJZW/cs?hotelId=24506" data-book-lang="1" class="ha-trio-title">Rooms and apartments</a></h3>
+                            </div>
+                            <div class="ha-trio-text">
+                                <p>The rooms at Hotel Arena are furnished in a fresh, modern design. Each room has its own bathroom, satellite television, a safe and individually controlled air conditioning. A lift provides step-free access to every floor of the hotel.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ha-trio-card reveal">
+                        <a href="/restaurace-a-bar" class="ha-trio-img">
+                            <img src="/theme_hotel_arena/static/src/img/homepage/restaurace-interier.webp" alt="Hotel Arena restaurant" loading="lazy"/>
+                        </a>
+                        <div class="ha-trio-body">
+                            <div class="ha-trio-head">
+                                <h3><a href="/restaurace-a-bar" class="ha-trio-title">Restaurant</a></h3>
+                            </div>
+                            <div class="ha-trio-text">
+                                <p>Hotel Arena offers its guests not only ideal conditions for leisure activities but also high-quality dining in the newly opened hotel restaurant.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ha-trio-card reveal">
+                        <a href="/restaurace-a-bar" class="ha-trio-img">
+                            <img src="/theme_hotel_arena/static/src/img/homepage/uvodni-bar.webp" alt="Hotel Arena bar" loading="lazy"/>
+                        </a>
+                        <div class="ha-trio-body">
+                            <div class="ha-trio-head">
+                                <h3><a href="/restaurace-a-bar" class="ha-trio-title">Bar</a></h3>
+                            </div>
+                            <div class="ha-trio-text">
+                                <p>You will also find our bar here, suited to both personal and business meetings. The bar staff are ready to meet your wishes and to offer light refreshments alongside alcoholic and soft drinks.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </template>
+
+</odoo>
