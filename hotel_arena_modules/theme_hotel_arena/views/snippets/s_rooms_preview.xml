@@ -18,28 +18,28 @@
                         <img src="/theme_hotel_arena/static/src/img/rooms/pokoj-standard.webp" alt="Standard room" loading="lazy"/>
                         <div class="room-overlay">
                             <div class="room-name">Standard</div>
-                            <div class="room-price">from CZK 1,350 <span>/night</span></div>
+                            <div class="room-price">from CZK 1,600 <span>/night</span></div>
                         </div>
                     </a>
                     <a class="room-card reveal" href="https://www.secure-hotel-booking.com/Hotel-Arena/JJZW/cs?hotelId=24506" data-book-lang="1" target="_blank" rel="noopener">
                         <img src="/theme_hotel_arena/static/src/img/rooms/bezbarierovy-pokoj.webp" alt="Barrier-free room" loading="lazy"/>
                         <div class="room-overlay">
                             <div class="room-name">Barrier-free</div>
-                            <div class="room-price">from CZK 1,935 <span>/night</span></div>
+                            <div class="room-price">from CZK 2,450 <span>/night</span></div>
                         </div>
                     </a>
                     <a class="room-card reveal" href="https://www.secure-hotel-booking.com/Hotel-Arena/JJZW/cs?hotelId=24506" data-book-lang="1" target="_blank" rel="noopener">
                         <img src="/theme_hotel_arena/static/src/img/rooms/rodinny-pokoj.webp" alt="Family room" loading="lazy"/>
                         <div class="room-overlay">
                             <div class="room-name">Family</div>
-                            <div class="room-price">from CZK 2,115 <span>/night</span></div>
+                            <div class="room-price">from CZK 2,600 <span>/night</span></div>
                         </div>
                     </a>
                     <a class="room-card reveal" href="https://www.secure-hotel-booking.com/Hotel-Arena/JJZW/cs?hotelId=24506" data-book-lang="1" target="_blank" rel="noopener">
                         <img src="/theme_hotel_arena/static/src/img/rooms/pokoj-deluxe-queen.webp" alt="Deluxe Queen" loading="lazy"/>
                         <div class="room-overlay">
                             <div class="room-name">Deluxe Queen</div>
-                            <div class="room-price">from CZK 3,150 <span>/night</span></div>
+                            <div class="room-price">from CZK 3,600 <span>/night</span></div>
                         </div>
                     </a>
                 </div>

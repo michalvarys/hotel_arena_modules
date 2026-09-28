@@ -1773,50 +1773,50 @@ msgstr "Zdeněk Fojtík<br/>"
 #. module: theme_hotel_arena
 #: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_ubytovani
 #: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_listing
-msgid "from CZK 1,350 <small>/ night</small>"
-msgstr "от 1 350 Kč <small>/ ночь</small>"
+msgid "from CZK 1,600 <small>/ night</small>"
+msgstr "от 1 600 Kč <small>/ ночь</small>"
 
 #. module: theme_hotel_arena
 #: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
 #: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_preview
-msgid "from CZK 1,350 <span>/night</span>"
-msgstr "от 1 350 Kč <span>/ночь</span>"
+msgid "from CZK 1,600 <span>/night</span>"
+msgstr "от 1 600 Kč <span>/ночь</span>"
 
 #. module: theme_hotel_arena
 #: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_ubytovani
 #: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_listing
-msgid "from CZK 1,935 <small>/ night</small>"
-msgstr "от 1 935 Kč <small>/ ночь</small>"
+msgid "from CZK 2,450 <small>/ night</small>"
+msgstr "от 2 450 Kč <small>/ ночь</small>"
 
 #. module: theme_hotel_arena
 #: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
 #: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_preview
-msgid "from CZK 1,935 <span>/night</span>"
-msgstr "от 1 935 Kč <span>/ночь</span>"
+msgid "from CZK 2,450 <span>/night</span>"
+msgstr "от 2 450 Kč <span>/ночь</span>"
 
 #. module: theme_hotel_arena
 #: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_ubytovani
 #: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_listing
-msgid "from CZK 2,115 <small>/ night</small>"
-msgstr "от 2 115 Kč <small>/ ночь</small>"
+msgid "from CZK 2,600 <small>/ night</small>"
+msgstr "от 2 600 Kč <small>/ ночь</small>"
 
 #. module: theme_hotel_arena
 #: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
 #: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_preview
-msgid "from CZK 2,115 <span>/night</span>"
-msgstr "от 2 115 Kč <span>/ночь</span>"
+msgid "from CZK 2,600 <span>/night</span>"
+msgstr "от 2 600 Kč <span>/ночь</span>"
 
 #. module: theme_hotel_arena
 #: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_ubytovani
 #: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_listing
-msgid "from CZK 3,150 <small>/ night</small>"
-msgstr "от 3 150 Kč <small>/ ночь</small>"
+msgid "from CZK 3,600 <small>/ night</small>"
+msgstr "от 3 600 Kč <small>/ ночь</small>"
 
 #. module: theme_hotel_arena
 #: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_homepage_content
 #: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_rooms_preview
-msgid "from CZK 3,150 <span>/night</span>"
-msgstr "от 3 150 Kč <span>/ночь</span>"
+msgid "from CZK 3,600 <span>/night</span>"
+msgstr "от 3 600 Kč <span>/ночь</span>"
 
 #. module: theme_hotel_arena
 #: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_footer
