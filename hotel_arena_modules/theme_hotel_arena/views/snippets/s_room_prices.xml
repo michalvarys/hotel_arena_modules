@@ -25,46 +25,49 @@
                             <tr>
                                 <td><strong>Standard (2 separate beds)</strong></td>
                                 <td>2</td>
-                                <td class="ha-price-cell">CZK 1,500</td>
-                                <td class="ha-price-cell">CZK 2,150</td>
+                                <td class="ha-price-cell">CZK 1,600</td>
+                                <td class="ha-price-cell">CZK 2,350</td>
                                 <td class="ha-price-cell">—</td>
                                 <td class="ha-price-cell">—</td>
                             </tr>
                             <tr>
                                 <td><strong>Standard (double bed)</strong></td>
                                 <td>1</td>
-                                <td class="ha-price-cell">CZK 2,150</td>
-                                <td class="ha-price-cell">CZK 2,150</td>
+                                <td class="ha-price-cell">CZK 2,250</td>
+                                <td class="ha-price-cell">CZK 2,350</td>
                                 <td class="ha-price-cell">—</td>
                                 <td class="ha-price-cell">—</td>
                             </tr>
                             <tr>
                                 <td><strong>Barrier-free room</strong></td>
                                 <td>2</td>
-                                <td class="ha-price-cell">CZK 2,350</td>
-                                <td class="ha-price-cell">CZK 3,000</td>
+                                <td class="ha-price-cell">CZK 2,450</td>
+                                <td class="ha-price-cell">CZK 3,200</td>
                                 <td class="ha-price-cell">—</td>
                                 <td class="ha-price-cell">—</td>
                             </tr>
                             <tr>
                                 <td><strong>Family room</strong></td>
                                 <td>4</td>
-                                <td class="ha-price-cell">CZK 2,500</td>
-                                <td class="ha-price-cell">CZK 3,000</td>
-                                <td class="ha-price-cell">CZK 3,500</td>
-                                <td class="ha-price-cell">CZK 4,000</td>
+                                <td class="ha-price-cell">CZK 2,600</td>
+                                <td class="ha-price-cell">CZK 3,200</td>
+                                <td class="ha-price-cell">CZK 3,800</td>
+                                <td class="ha-price-cell">CZK 4,400</td>
                             </tr>
                             <tr>
                                 <td><strong>Deluxe Queen (2 queen beds)</strong></td>
-                                <td>2</td>
-                                <td class="ha-price-cell">CZK 3,500</td>
-                                <td class="ha-price-cell">CZK 4,000</td>
-                                <td class="ha-price-cell">CZK 4,500</td>
-                                <td class="ha-price-cell">CZK 5,000</td>
+                                <td>4</td>
+                                <td class="ha-price-cell">CZK 3,600</td>
+                                <td class="ha-price-cell">CZK 4,200</td>
+                                <td class="ha-price-cell">CZK 4,800</td>
+                                <td class="ha-price-cell">CZK 5,400</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
+
+                <!-- Validity, the way the printed pricelist states it -->
+                <p class="ha-price-valid"><i class="fa fa-calendar"/> The pricelist is valid from 1 October 2026.</p>
 
                 <!-- Included in price -->
                 <div class="mt-5">

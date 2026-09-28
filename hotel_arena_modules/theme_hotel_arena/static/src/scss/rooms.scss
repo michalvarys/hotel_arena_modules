@@ -253,9 +253,33 @@ $ha-transition-cubic: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         }
     }
 
+    // Six columns have to fit a phone without sideways scrolling. The old rule
+    // set the size on the table, but `td { font-size: 1rem }` above outranks
+    // that, so the cells stayed at 16px and the table spilled over the edge.
     @media (max-width: 767px) {
-        font-size: 0.85rem;
-        thead th, tbody td { padding: 10px; }
+        thead th {
+            padding: 10px 6px;
+            font-size: 0.68rem;
+            letter-spacing: 0.04em;
+        }
+
+        tbody td {
+            padding: 10px 6px;
+            font-size: 0.8rem;
+        }
+    }
+}
+
+// Validity note under the table, the way the printed pricelist states it
+.ha-price-valid {
+    margin: -10px 0 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+
+    i {
+        color: $ha-red;
+        margin-right: 8px;
     }
 }
 

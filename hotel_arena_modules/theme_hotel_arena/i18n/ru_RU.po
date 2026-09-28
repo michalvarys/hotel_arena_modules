@@ -47,6 +47,12 @@ msgid "4 people"
 msgstr "4 человека"
 
 #. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
+msgid "<i class=\"fa fa-calendar\"/> The pricelist is valid from 1 October 2026."
+msgstr "<i class=\"fa fa-calendar\"/> Прейскурант действует с 1 октября 2026 года."
+
+#. module: theme_hotel_arena
 #: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_footer
 msgid "430 01 Chomutov"
 msgstr "430 01 Хомутов"
@@ -608,14 +614,14 @@ msgstr "Под видеонаблюдением, бесплатно."
 #. module: theme_hotel_arena
 #: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
 #: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
-msgid "CZK 1,500"
-msgstr "1 500 Kč"
+msgid "CZK 1,600"
+msgstr "1 600 Kč"
 
 #. module: theme_hotel_arena
 #: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
 #: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
-msgid "CZK 2,150"
-msgstr "2 150 Kč"
+msgid "CZK 2,250"
+msgstr "2 250 Kč"
 
 #. module: theme_hotel_arena
 #: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
@@ -626,38 +632,56 @@ msgstr "2 350 Kč"
 #. module: theme_hotel_arena
 #: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
 #: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
-msgid "CZK 2,500"
-msgstr "2 500 Kč"
+msgid "CZK 2,450"
+msgstr "2 450 Kč"
 
 #. module: theme_hotel_arena
 #: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
 #: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
-msgid "CZK 3,000"
-msgstr "3 000 Kč"
+msgid "CZK 2,600"
+msgstr "2 600 Kč"
 
 #. module: theme_hotel_arena
 #: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
 #: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
-msgid "CZK 3,500"
-msgstr "3 500 Kč"
+msgid "CZK 3,200"
+msgstr "3 200 Kč"
 
 #. module: theme_hotel_arena
 #: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
 #: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
-msgid "CZK 4,000"
-msgstr "4 000 Kč"
+msgid "CZK 3,600"
+msgstr "3 600 Kč"
 
 #. module: theme_hotel_arena
 #: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
 #: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
-msgid "CZK 4,500"
-msgstr "4 500 Kč"
+msgid "CZK 3,800"
+msgstr "3 800 Kč"
 
 #. module: theme_hotel_arena
 #: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
 #: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
-msgid "CZK 5,000"
-msgstr "5 000 Kč"
+msgid "CZK 4,200"
+msgstr "4 200 Kč"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
+msgid "CZK 4,400"
+msgstr "4 400 Kč"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
+msgid "CZK 4,800"
+msgstr "4 800 Kč"
+
+#. module: theme_hotel_arena
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_pricelist
+#: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.s_room_prices
+msgid "CZK 5,400"
+msgstr "5 400 Kč"
 
 #. module: theme_hotel_arena
 #: model_terms:theme.ir.ui.view,arch:theme_hotel_arena.ha_page_restaurant

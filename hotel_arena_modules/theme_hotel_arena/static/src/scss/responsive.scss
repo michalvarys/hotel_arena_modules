@@ -733,26 +733,76 @@
     }
 }
 
-// Six columns (room, beds, and a price for one through four guests) genuinely
-// do not fit 390px at a readable size, so the table keeps its sideways scroll.
-// Tighter type puts five of the six on screen, which is enough for the scroll
-// to read as a rail rather than a surprise. Bleeding it past the container's
-// gutters was tried and reverted: the table is its own scroll box, so negative
-// margins pushed its first column off the left edge and produced a second
-// scrollbar.
+// Six columns used to overflow, so the table was left as its own sideways
+// scroll box. That hid the last price column behind a swipe nobody expects on
+// a pricelist. It fits once the bed count goes: the printed pricelist has no
+// such column either, and the room name already says how it sleeps. The table
+// then lays out as a normal table, so the five remaining columns share the
+// width instead of spilling over the edge.
+//
+// Bleeding it past the container gutters was tried and reverted: back when the
+// table was its own scroll box, negative margins pushed the first column off
+// the left edge and produced a second scrollbar.
 @media (max-width: 767px) {
     .ha-price-table {
+        display: table !important;
+        width: 100% !important;
+        table-layout: fixed;
+        overflow-x: visible !important;
         font-size: 0.72rem !important;
 
         thead th,
-        tbody td { padding: 0.45rem 0.3rem !important; }
+        tbody td { padding: 0.45rem 0.25rem !important; }
 
         thead th:first-child,
-        tbody td:first-child { padding-left: 0.6rem !important; }
+        tbody td:first-child {
+            width: 30%;
+            padding-left: 0.5rem !important;
+            line-height: 1.35;
+            // "Bezbariérový" alone is wider than the column on a 320px screen.
+            overflow-wrap: break-word;
+            hyphens: auto;
+        }
 
-        tbody td.ha-price-cell { font-size: 0.72rem !important; }
+        // Bed count: dropped here, still there from tablet up.
+        thead th:nth-child(2),
+        tbody td:nth-child(2) { display: none; }
 
-        tbody td:first-child { line-height: 1.35; }
+        thead th:nth-child(n + 3),
+        tbody td:nth-child(n + 3) { width: 17.5%; }
+
+        // German turns "2 people" into "2 Personen", one word wider than the
+        // column; the smaller header type fits it, break-word is the backstop.
+        thead th {
+            font-size: 0.55rem !important;
+            overflow-wrap: break-word;
+        }
+
+        // The prices must stay on one line; only the room name may wrap.
+        tbody td.ha-price-cell {
+            font-size: 0.72rem !important;
+            text-align: right;
+        }
+
+        thead th:nth-child(n + 3) { text-align: right; }
+    }
+}
+
+// Under ~360px even five columns need the type pulled in a notch further.
+@media (max-width: 374px) {
+    .ha-price-table {
+        font-size: 0.66rem !important;
+
+        thead th { font-size: 0.55rem !important; }
+        tbody td.ha-price-cell { font-size: 0.66rem !important; }
+        thead th, tbody td { padding: 0.4rem 0.15rem !important; }
+
+        // "Bezbariérový" needs a wider column here or it breaks mid-word.
+        thead th:first-child,
+        tbody td:first-child { width: 34%; }
+
+        thead th:nth-child(n + 3),
+        tbody td:nth-child(n + 3) { width: 16.5%; }
     }
 }
 
