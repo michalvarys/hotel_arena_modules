@@ -788,21 +788,24 @@
     }
 }
 
-// Under ~360px even five columns need the type pulled in a notch further.
+// Under ~375px the type has to come in another notch, and the fixed column
+// widths have to go: English writes the currency in front ("CZK 1,600"), which
+// is wider than "1 600 Kč", so a share of the width that suits Czech cuts
+// English off. Left to lay itself out, the table gives each language the width
+// its own wording needs.
 @media (max-width: 374px) {
     .ha-price-table {
-        font-size: 0.66rem !important;
+        table-layout: auto;
+        font-size: 0.62rem !important;
 
-        thead th { font-size: 0.55rem !important; }
-        tbody td.ha-price-cell { font-size: 0.66rem !important; }
+        thead th { font-size: 0.5rem !important; }
+        tbody td.ha-price-cell { font-size: 0.62rem !important; }
         thead th, tbody td { padding: 0.4rem 0.15rem !important; }
 
-        // "Bezbariérový" needs a wider column here or it breaks mid-word.
         thead th:first-child,
-        tbody td:first-child { width: 34%; }
-
+        tbody td:first-child,
         thead th:nth-child(n + 3),
-        tbody td:nth-child(n + 3) { width: 16.5%; }
+        tbody td:nth-child(n + 3) { width: auto; }
     }
 }
 
